@@ -982,7 +982,7 @@ visible = false
 visible = false
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_lxovs")
-frame_progress = 0.417022
+frame_progress = 0.783751
 
 [node name="Run" type="Node2D" parent="."]
 visible = false
@@ -998,7 +998,7 @@ visible = false
 [node name="BurbujaExplosionAnim" type="AnimatedSprite2D" parent="BurbujaExplosion"]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_pkejj")
-frame_progress = 0.885961
+frame_progress = 0.379057
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -1006,5 +1006,5 @@ frame_progress = 0.885961
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_uygy3")
 animation = &"Hidrante"
-frame = 43
-frame_progress = 0.555926
+frame = 189
+frame_progress = 0.216497
