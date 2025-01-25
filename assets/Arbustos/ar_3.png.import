@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbdh2vl4o1lx7"
-path="res://.godot/imported/ar_4.png-499183bfcb02c2df9adea26b22de58d7.ctex"
+uid="uid://bdt3x3l1yw0t0"
+path="res://.godot/imported/ar_3.png-67786723a4a8fa28be35e5530c167100.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arbustos/ar_4.png"
-dest_files=["res://.godot/imported/ar_4.png-499183bfcb02c2df9adea26b22de58d7.ctex"]
+source_file="res://assets/Arbustos/ar_3.png"
+dest_files=["res://.godot/imported/ar_3.png-67786723a4a8fa28be35e5530c167100.ctex"]
 
 [params]
 
