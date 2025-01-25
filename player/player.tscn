@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://dbp0jc4ok8e8i"]
+[gd_scene load_steps=39 format=3 uid="uid://cobitw0jlcec0"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ud835"]
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="2_4piiv"]
@@ -164,10 +164,8 @@ script = ExtResource("1_ud835")
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_stipv")
-animation = &"run"
+animation = &"jump"
 autoplay = "run"
-frame = 18
-frame_progress = 0.285713
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3, 273)
