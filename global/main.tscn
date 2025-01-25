@@ -982,7 +982,7 @@ visible = false
 visible = false
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_lxovs")
-frame_progress = 0.787087
+frame_progress = 0.556595
 
 [node name="Run" type="Node2D" parent="."]
 visible = false
@@ -998,7 +998,7 @@ visible = false
 [node name="BurbujaExplosionAnim" type="AnimatedSprite2D" parent="BurbujaExplosion"]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_pkejj")
-frame_progress = 0.961399
+frame_progress = 0.731726
 
 [node name="Node2D" type="Node2D" parent="."]
 
