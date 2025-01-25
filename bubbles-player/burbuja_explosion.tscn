@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bibm0v41k36ag"]
+[gd_scene load_steps=10 format=3 uid="uid://bfeuw71fqa2p"]
 
 [ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="1_11bv0"]
 [ext_resource type="Texture2D" uid="uid://cxth8eeqgxpyk" path="res://assets/Burbujas/Bub (2).png" id="2_sjf5s"]
@@ -36,7 +36,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_ty1rd")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 12.0
 }]
@@ -49,4 +49,3 @@ visible = false
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_pkejj")
 frame = 5
-frame_progress = 0.965093
