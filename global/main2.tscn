@@ -1325,7 +1325,7 @@ texture = ExtResource("269_ywsfv")
 [node name="vidrio" type="AnimatedSprite2D" parent="Vidrio"]
 sprite_frames = SubResource("SpriteFrames_lm77x")
 animation = &"Vidrio"
-frame_progress = 0.731974
+frame_progress = 0.706223
 
 [node name="Trabajador1" type="Sprite2D" parent="Vidrio"]
 texture = ExtResource("307_64im1")
