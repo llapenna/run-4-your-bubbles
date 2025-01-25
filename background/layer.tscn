@@ -7,3 +7,5 @@
 script = ExtResource("1_e5q3m")
 
 [node name="Sprite" parent="." instance=ExtResource("2_ha1sf")]
+
+[connection signal="on_background_entered" from="Sprite" to="." method="_on_background_entered"]
