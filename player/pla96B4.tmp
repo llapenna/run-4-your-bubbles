@@ -183,7 +183,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"SlideUp",
-"speed": 24.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -301,15 +301,6 @@ animations = [{
 "speed": 48.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("23_8rxy8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_8rxy8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_8rxy8")
-}, {
 "duration": 1.0,
 "texture": ExtResource("23_8rxy8")
 }],

@@ -183,7 +183,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"SlideUp",
-"speed": 24.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -299,23 +299,6 @@ animations = [{
 "loop": true,
 "name": &"run",
 "speed": 48.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("23_8rxy8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_8rxy8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_8rxy8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_8rxy8")
-}],
-"loop": true,
-"name": &"slide",
-"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qn01r"]
@@ -327,7 +310,7 @@ script = ExtResource("1_ud835")
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_stipv")
-animation = &"slide"
+animation = &"SlideUp"
 autoplay = "run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
