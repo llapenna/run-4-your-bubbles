@@ -1,15 +1,16 @@
 extends Node
 
 # Es necesario que sea static?
-var speed = 1
-@export var factor = 1.5
+@export var acceleration: float
+@export var initialSpeed: float
+var speed
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	speed = initialSpeed
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	speed += factor * delta
+	speed += acceleration * delta
 	pass

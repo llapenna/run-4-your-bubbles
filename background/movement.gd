@@ -12,7 +12,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	sprite.position.x -= get_parent().speed
+	var speed = $"/root/Main".speed * $"..".slowingFactor
+	sprite.position.x -= speed
 
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:

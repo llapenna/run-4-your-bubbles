@@ -4,7 +4,6 @@ var backgroundScene = preload("res://background/background.tscn")
 @export var texture: CompressedTexture2D
 
 @export var slowingFactor = .9
-var speed = 1
 
 func remove_sprite(sprite:Sprite2D):
 	sprite.queue_free()
@@ -34,8 +33,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	var main = $"/root/Main"
-	speed = (main.speed if main else 1) * slowingFactor
+	pass
 
 
 func _on_sprite_on_background_entered(sprite: Sprite2D) -> void:
