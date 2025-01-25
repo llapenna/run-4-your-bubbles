@@ -14,3 +14,7 @@ config/name="Run 4 your bubbles"
 run/main_scene="res://Scenes/Menu principal.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Juego="*res://Scripts/__juego__.gd"
