@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dbp0jc4ok8e8i"]
+[gd_scene load_steps=39 format=3 uid="uid://dbp0jc4ok8e8i"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ud835"]
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="2_4piiv"]
@@ -82,9 +82,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_r0pti")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
-"speed": 5.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -155,10 +155,22 @@ animations = [{
 "speed": 48.0
 }]
 
-[node name="Player" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_qn01r"]
+radius = 100.18
+
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ud835")
 
 [node name="Anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_stipv")
 animation = &"run"
 autoplay = "run"
+frame = 18
+frame_progress = 0.285713
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 273)
+shape = SubResource("CircleShape2D_qn01r")
+
+[connection signal="animation_finished" from="Anim" to="." method="_on_anim_animation_finished"]
