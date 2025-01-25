@@ -1,9 +1,13 @@
 extends Node
 
 var backgroundScene = preload("res://background/background.tscn")
-var texture = Image.load_from_file("res://background/bg.jpg")
+@export var texture: CompressedTexture2D
+
+@export var slowingFactor = .9
+var speed = 1
 
 func spawn_next():
+	print_debug("Adding next")
 	var last = get_sprites()[-1]
 	
 	if !last:
@@ -12,7 +16,8 @@ func spawn_next():
 	var instance: Sprite2D = backgroundScene.instantiate()
 	$".".add_child(instance)
 	
-	instance.position.x += last.position.x + get_bg_length()/2
+	instance.position.x += last.position.x + get_bg_length() / 2
+	instance.texture = texture
 	instance.connect("on_background_entered", Callable(self, "spawn_next"))
 	
 
@@ -22,6 +27,7 @@ func remove_previous():
 	if !first:
 		return
 	
+	print_debug("Removing previous", first)
 	first.queue_free()
 
 func get_bg_length() -> int:
@@ -42,14 +48,13 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	pass
+	var main = $"/root/Main"
+	speed = (main.speed if main else 1) * slowingFactor
 
 
 func _on_sprite_on_background_entered() -> void:
-	print("Needs new background")
 	spawn_next()
 
 
 func _on_sprite_on_background_exited() -> void:
-	print("Remove background")
 	remove_previous()
