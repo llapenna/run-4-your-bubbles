@@ -1,4 +1,4 @@
-[gd_scene load_steps=274 format=3 uid="uid://3l7mv4vm65xj"]
+[gd_scene load_steps=314 format=3 uid="uid://3l7mv4vm65xj"]
 
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="1_6qr0h"]
 [ext_resource type="Texture2D" uid="uid://it0t6wly7dun" path="res://player/Jump/Jump (2).png" id="2_bj7kw"]
@@ -268,6 +268,45 @@
 [ext_resource type="Texture2D" uid="uid://ch5lrrq8idce" path="res://Lavador_Auto/limpiador_00030.png" id="266_ufpay"]
 [ext_resource type="Texture2D" uid="uid://cn1a74cksj3o6" path="res://Lavador_Auto/limpiador_00031.png" id="267_18j8p"]
 [ext_resource type="Texture2D" uid="uid://duuwsmdyr4y87" path="res://Lavador_Auto/limpiador_00032.png" id="268_yrh5q"]
+[ext_resource type="Texture2D" uid="uid://c8fmsh60qygpe" path="res://Vidrio/T2.png" id="269_ywsfv"]
+[ext_resource type="Texture2D" uid="uid://d357si06aujq0" path="res://Vidrio/vidriopix_00000.png" id="270_rmadg"]
+[ext_resource type="Texture2D" uid="uid://s8cktyetka6e" path="res://Vidrio/vidriopix_00001.png" id="271_vuyf5"]
+[ext_resource type="Texture2D" uid="uid://cxy0hhg5q83qu" path="res://Vidrio/vidriopix_00002.png" id="272_6qfjk"]
+[ext_resource type="Texture2D" uid="uid://dj2b5haasxey4" path="res://Vidrio/vidriopix_00003.png" id="273_voqay"]
+[ext_resource type="Texture2D" uid="uid://ccasm61l6xf1c" path="res://Vidrio/vidriopix_00004.png" id="274_1nbhh"]
+[ext_resource type="Texture2D" uid="uid://cx4yeqlrflgri" path="res://Vidrio/vidriopix_00005.png" id="275_m7kmg"]
+[ext_resource type="Texture2D" uid="uid://ygfmb02fhgf" path="res://Vidrio/vidriopix_00006.png" id="276_ylda7"]
+[ext_resource type="Texture2D" uid="uid://csgs0jq6f6iia" path="res://Vidrio/vidriopix_00007.png" id="277_7ll42"]
+[ext_resource type="Texture2D" uid="uid://cmdv1q5ns2hlf" path="res://Vidrio/vidriopix_00008.png" id="278_5vbuo"]
+[ext_resource type="Texture2D" uid="uid://ce57gxf88ath8" path="res://Vidrio/vidriopix_00009.png" id="279_8gldt"]
+[ext_resource type="Texture2D" uid="uid://cl45pvwm8wm2" path="res://Vidrio/vidriopix_00010.png" id="280_wa53v"]
+[ext_resource type="Texture2D" uid="uid://b0vwfnnvyei3g" path="res://Vidrio/vidriopix_00011.png" id="281_yaqw5"]
+[ext_resource type="Texture2D" uid="uid://bta36pm3pkwe5" path="res://Vidrio/vidriopix_00012.png" id="282_iodi4"]
+[ext_resource type="Texture2D" uid="uid://bxiejygvu2rq5" path="res://Vidrio/vidriopix_00013.png" id="283_jio0c"]
+[ext_resource type="Texture2D" uid="uid://dfyec6sutggpp" path="res://Vidrio/vidriopix_00014.png" id="284_5jkqy"]
+[ext_resource type="Texture2D" uid="uid://bjrvp10ewn5p0" path="res://Vidrio/vidriopix_00015.png" id="285_61xmj"]
+[ext_resource type="Texture2D" uid="uid://crfolbhvxcxfg" path="res://Vidrio/vidriopix_00016.png" id="286_yiep8"]
+[ext_resource type="Texture2D" uid="uid://ca3mtkfrcidej" path="res://Vidrio/vidriopix_00017.png" id="287_w542y"]
+[ext_resource type="Texture2D" uid="uid://der48kapgdbfx" path="res://Vidrio/vidriopix_00018.png" id="288_08twh"]
+[ext_resource type="Texture2D" uid="uid://itikvl43tist" path="res://Vidrio/vidriopix_00019.png" id="289_p6lhe"]
+[ext_resource type="Texture2D" uid="uid://btiy6wye5vsp8" path="res://Vidrio/vidriopix_00020.png" id="290_gb8r2"]
+[ext_resource type="Texture2D" uid="uid://d1q2q6pb0gyh6" path="res://Vidrio/vidriopix_00021.png" id="291_msm0b"]
+[ext_resource type="Texture2D" uid="uid://gv2vhf5s7n6f" path="res://Vidrio/vidriopix_00022.png" id="292_yfepw"]
+[ext_resource type="Texture2D" uid="uid://d23wkboscmgy1" path="res://Vidrio/vidriopix_00023.png" id="293_lpge3"]
+[ext_resource type="Texture2D" uid="uid://csdnuu7vcjpvq" path="res://Vidrio/vidriopix_00024.png" id="294_544th"]
+[ext_resource type="Texture2D" uid="uid://c7jlsrprud6v3" path="res://Vidrio/vidriopix_00025.png" id="295_dq8p0"]
+[ext_resource type="Texture2D" uid="uid://choryyvlqg0l7" path="res://Vidrio/vidriopix_00026.png" id="296_f3qb2"]
+[ext_resource type="Texture2D" uid="uid://dr0ggvgie4t24" path="res://Vidrio/vidriopix_00027.png" id="297_5icx5"]
+[ext_resource type="Texture2D" uid="uid://begs2ebl7vlkn" path="res://Vidrio/vidriopix_00028.png" id="298_8cqvm"]
+[ext_resource type="Texture2D" uid="uid://b5y1665g4su64" path="res://Vidrio/vidriopix_00029.png" id="299_6ofls"]
+[ext_resource type="Texture2D" uid="uid://dunv1wopfccqt" path="res://Vidrio/vidriopix_00030.png" id="300_uif7q"]
+[ext_resource type="Texture2D" uid="uid://cgkhfio3ma56g" path="res://Vidrio/vidriopix_00031.png" id="301_gr4u7"]
+[ext_resource type="Texture2D" uid="uid://bobpe5caes8rk" path="res://Vidrio/vidriopix_00032.png" id="302_rpttv"]
+[ext_resource type="Texture2D" uid="uid://crsy85eo5vnv6" path="res://Vidrio/vidriopix_00033.png" id="303_etb53"]
+[ext_resource type="Texture2D" uid="uid://dgpseupg2j4uw" path="res://Vidrio/vidriopix_00034.png" id="304_2kju0"]
+[ext_resource type="Texture2D" uid="uid://dvekts7prjxpp" path="res://Vidrio/vidriopix_00035.png" id="305_rk5j1"]
+[ext_resource type="Texture2D" uid="uid://dgsbxglus1muh" path="res://Vidrio/vidriopix_00036.png" id="306_2d744"]
+[ext_resource type="Texture2D" uid="uid://sj3mriq1ewf3" path="res://Vidrio/T1.png" id="307_64im1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lxovs"]
 animations = [{
@@ -1113,6 +1152,125 @@ animations = [{
 "speed": 24.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_lm77x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("270_rmadg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_vuyf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_6qfjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_voqay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_1nbhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_m7kmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_ylda7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_7ll42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("278_5vbuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("279_8gldt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("280_wa53v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("281_yaqw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("282_iodi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("283_jio0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("284_5jkqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("285_61xmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("286_yiep8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("287_w542y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("288_08twh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("289_p6lhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("290_gb8r2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("291_msm0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("292_yfepw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("293_lpge3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("294_544th")
+}, {
+"duration": 1.0,
+"texture": ExtResource("295_dq8p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("296_f3qb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("297_5icx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("298_8cqvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("299_6ofls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("300_uif7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("301_gr4u7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("302_rpttv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("303_etb53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("304_2kju0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("305_rk5j1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("306_2d744")
+}],
+"loop": true,
+"name": &"Vidrio",
+"speed": 24.0
+}]
+
 [node name="Main" type="Node2D"]
 
 [node name="Jump" type="Node2D" parent="."]
@@ -1151,9 +1309,23 @@ frame = 87
 frame_progress = 0.582519
 
 [node name="Lavador" type="Node2D" parent="."]
+visible = false
 
 [node name="lavador_anim" type="AnimatedSprite2D" parent="Lavador"]
 sprite_frames = SubResource("SpriteFrames_3onjw")
 animation = &"lavador"
 frame = 19
 frame_progress = 0.845624
+
+[node name="Vidrio" type="Node2D" parent="."]
+
+[node name="Trabajador2" type="Sprite2D" parent="Vidrio"]
+texture = ExtResource("269_ywsfv")
+
+[node name="vidrio" type="AnimatedSprite2D" parent="Vidrio"]
+sprite_frames = SubResource("SpriteFrames_lm77x")
+animation = &"Vidrio"
+frame_progress = 0.731974
+
+[node name="Trabajador1" type="Sprite2D" parent="Vidrio"]
+texture = ExtResource("307_64im1")
