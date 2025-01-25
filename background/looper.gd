@@ -9,10 +9,20 @@ func spawn_next():
 	if !last:
 		return
 	
-	var x = last.position.x
+	var instance: Sprite2D = backgroundScene.instantiate()
+	$".".add_child(instance)
+	
+	instance.position.x += last.position.x + get_bg_length()/2
+	instance.connect("on_background_entered", Callable(self, "spawn_next"))
+	
 
 func remove_previous():
-	pass
+	var first = get_sprites()[0]
+	
+	if !first:
+		return
+	
+	first.queue_free()
 
 func get_bg_length() -> int:
 	return texture.get_width()
@@ -33,3 +43,13 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass
+
+
+func _on_sprite_on_background_entered() -> void:
+	print("Needs new background")
+	spawn_next()
+
+
+func _on_sprite_on_background_exited() -> void:
+	print("Remove background")
+	remove_previous()
