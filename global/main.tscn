@@ -1,4 +1,4 @@
-[gd_scene load_steps=240 format=3 uid="uid://dt16av3gwv058"]
+[gd_scene load_steps=274 format=3 uid="uid://dt16av3gwv058"]
 
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="1_c8mkl"]
 [ext_resource type="Texture2D" uid="uid://it0t6wly7dun" path="res://player/Jump/Jump (2).png" id="2_rp5vf"]
@@ -235,6 +235,39 @@
 [ext_resource type="Texture2D" uid="uid://d0d0qqynqtlyd" path="res://Hidrante/Hidra (190).png" id="233_aciny"]
 [ext_resource type="Texture2D" uid="uid://bnui6a04c0s51" path="res://Hidrante/Hidra (191).png" id="234_bdj14"]
 [ext_resource type="Texture2D" uid="uid://g0fqi7fol2kx" path="res://Hidrante/Hidra (192).png" id="235_xstnc"]
+[ext_resource type="Texture2D" uid="uid://bjgf6ytqsgyop" path="res://Lavador_Auto/limpiador_00000.png" id="236_fx830"]
+[ext_resource type="Texture2D" uid="uid://8qb8p4lw0c5k" path="res://Lavador_Auto/limpiador_00001.png" id="237_pvo0w"]
+[ext_resource type="Texture2D" uid="uid://chu4d8cg1b0cl" path="res://Lavador_Auto/limpiador_00002.png" id="238_bkbnq"]
+[ext_resource type="Texture2D" uid="uid://di208loyp8bnk" path="res://Lavador_Auto/limpiador_00003.png" id="239_cba31"]
+[ext_resource type="Texture2D" uid="uid://6al2xt6i5cxx" path="res://Lavador_Auto/limpiador_00004.png" id="240_qcm8u"]
+[ext_resource type="Texture2D" uid="uid://cwvmp3cnnpx8r" path="res://Lavador_Auto/limpiador_00005.png" id="241_hql6k"]
+[ext_resource type="Texture2D" uid="uid://crs3nu6i8lcvu" path="res://Lavador_Auto/limpiador_00006.png" id="242_wtmyu"]
+[ext_resource type="Texture2D" uid="uid://dm6trgqbfhq34" path="res://Lavador_Auto/limpiador_00007.png" id="243_j5mcf"]
+[ext_resource type="Texture2D" uid="uid://g5j1uskl36e8" path="res://Lavador_Auto/limpiador_00008.png" id="244_whckg"]
+[ext_resource type="Texture2D" uid="uid://dics30l7i3wv2" path="res://Lavador_Auto/limpiador_00009.png" id="245_vxbd2"]
+[ext_resource type="Texture2D" uid="uid://bpnej33rsnp12" path="res://Lavador_Auto/limpiador_00010.png" id="246_7suw2"]
+[ext_resource type="Texture2D" uid="uid://cjb0qrnakgrdt" path="res://Lavador_Auto/limpiador_00011.png" id="247_0mvy5"]
+[ext_resource type="Texture2D" uid="uid://bybdq7nhfme4y" path="res://Lavador_Auto/limpiador_00012.png" id="248_pgb7c"]
+[ext_resource type="Texture2D" uid="uid://b01616njyw030" path="res://Lavador_Auto/limpiador_00013.png" id="249_rbwfm"]
+[ext_resource type="Texture2D" uid="uid://cpt1phbxgedgr" path="res://Lavador_Auto/limpiador_00014.png" id="250_webjo"]
+[ext_resource type="Texture2D" uid="uid://dljv0rnqve7f3" path="res://Lavador_Auto/limpiador_00015.png" id="251_ubh0n"]
+[ext_resource type="Texture2D" uid="uid://dc7xymtxgxxet" path="res://Lavador_Auto/limpiador_00016.png" id="252_yinqe"]
+[ext_resource type="Texture2D" uid="uid://ba65hdu2i8fq7" path="res://Lavador_Auto/limpiador_00017.png" id="253_1ci0a"]
+[ext_resource type="Texture2D" uid="uid://cwl05gi5igdyx" path="res://Lavador_Auto/limpiador_00018.png" id="254_25awm"]
+[ext_resource type="Texture2D" uid="uid://b730ryeqxmdvb" path="res://Lavador_Auto/limpiador_00019.png" id="255_5xkin"]
+[ext_resource type="Texture2D" uid="uid://b1cd6in4p6qxj" path="res://Lavador_Auto/limpiador_00020.png" id="256_hbf2c"]
+[ext_resource type="Texture2D" uid="uid://lmnyuogo5cqq" path="res://Lavador_Auto/limpiador_00021.png" id="257_weapo"]
+[ext_resource type="Texture2D" uid="uid://b37jo0lkcbe53" path="res://Lavador_Auto/limpiador_00022.png" id="258_v2yo7"]
+[ext_resource type="Texture2D" uid="uid://cylf7rn3dsrfi" path="res://Lavador_Auto/limpiador_00023.png" id="259_3oujo"]
+[ext_resource type="Texture2D" uid="uid://dc1r1ai4tvwgh" path="res://Lavador_Auto/limpiador_00024.png" id="260_espg7"]
+[ext_resource type="Texture2D" uid="uid://ca23fhba5gc4t" path="res://Lavador_Auto/limpiador_00025.png" id="261_su4m1"]
+[ext_resource type="Texture2D" uid="uid://dxkw6dg4fh8k4" path="res://Lavador_Auto/limpiador_00026.png" id="262_sra8r"]
+[ext_resource type="Texture2D" uid="uid://bbdjeenmx6lh7" path="res://Lavador_Auto/limpiador_00027.png" id="263_lxr8n"]
+[ext_resource type="Texture2D" uid="uid://dpcufufl16vui" path="res://Lavador_Auto/limpiador_00028.png" id="264_fsujg"]
+[ext_resource type="Texture2D" uid="uid://wuagytdry7jn" path="res://Lavador_Auto/limpiador_00029.png" id="265_hxoj5"]
+[ext_resource type="Texture2D" uid="uid://ch5lrrq8idce" path="res://Lavador_Auto/limpiador_00030.png" id="266_qjtar"]
+[ext_resource type="Texture2D" uid="uid://cn1a74cksj3o6" path="res://Lavador_Auto/limpiador_00031.png" id="267_k375m"]
+[ext_resource type="Texture2D" uid="uid://duuwsmdyr4y87" path="res://Lavador_Auto/limpiador_00032.png" id="268_j46fb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lxovs"]
 animations = [{
@@ -973,6 +1006,113 @@ animations = [{
 "speed": 24.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_3onjw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("236_fx830")
+}, {
+"duration": 1.0,
+"texture": ExtResource("237_pvo0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("238_bkbnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("239_cba31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("240_qcm8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("241_hql6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("242_wtmyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("243_j5mcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("244_whckg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("245_vxbd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("246_7suw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("247_0mvy5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("248_pgb7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("249_rbwfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("250_webjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("251_ubh0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("252_yinqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("253_1ci0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("254_25awm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("255_5xkin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("256_hbf2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("257_weapo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("258_v2yo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("259_3oujo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("260_espg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("261_su4m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_sra8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_lxr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_fsujg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_hxoj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_qjtar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_k375m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_j46fb")
+}],
+"loop": true,
+"name": &"lavador",
+"speed": 24.0
+}]
+
 [node name="Main" type="Node2D"]
 
 [node name="Jump" type="Node2D" parent="."]
@@ -982,7 +1122,7 @@ visible = false
 visible = false
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_lxovs")
-frame_progress = 0.556595
+frame_progress = 0.904476
 
 [node name="Run" type="Node2D" parent="."]
 visible = false
@@ -998,13 +1138,22 @@ visible = false
 [node name="BurbujaExplosionAnim" type="AnimatedSprite2D" parent="BurbujaExplosion"]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_pkejj")
-frame_progress = 0.731726
+frame_progress = 0.207239
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Hidrante" type="Node2D" parent="."]
+visible = false
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D"]
+[node name="Hidrante_Anim" type="AnimatedSprite2D" parent="Hidrante"]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_uygy3")
 animation = &"Hidrante"
-frame = 189
-frame_progress = 0.216497
+frame = 87
+frame_progress = 0.582519
+
+[node name="Lavador" type="Node2D" parent="."]
+
+[node name="lavador_anim" type="AnimatedSprite2D" parent="Lavador"]
+sprite_frames = SubResource("SpriteFrames_3onjw")
+animation = &"lavador"
+frame = 19
+frame_progress = 0.845624
