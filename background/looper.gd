@@ -6,8 +6,10 @@ var backgroundScene = preload("res://background/background.tscn")
 @export var slowingFactor = .9
 var speed = 1
 
-func spawn_next():
-	print_debug("Adding next")
+func remove_sprite(sprite:Sprite2D):
+	sprite.queue_free()
+
+func spawn_next(_sprite: Sprite2D):
 	var last = get_sprites()[-1]
 	
 	if !last:
@@ -19,6 +21,7 @@ func spawn_next():
 	instance.position.x += last.position.x + get_bg_length() / 2
 	instance.texture = texture
 	instance.connect("on_background_entered", Callable(self, "spawn_next"))
+	instance.connect("on_background_exited", Callable(self, "remove_sprite"))
 	
 
 func remove_previous():
@@ -27,7 +30,6 @@ func remove_previous():
 	if !first:
 		return
 	
-	print_debug("Removing previous", first)
 	first.queue_free()
 
 func get_bg_length() -> int:
@@ -52,9 +54,9 @@ func _process(_delta: float) -> void:
 	speed = (main.speed if main else 1) * slowingFactor
 
 
-func _on_sprite_on_background_entered() -> void:
-	spawn_next()
+func _on_sprite_on_background_entered(sprite: Sprite2D) -> void:
+	spawn_next(sprite)
 
 
-func _on_sprite_on_background_exited() -> void:
-	remove_previous()
+func _on_sprite_on_background_exited(sprite: Sprite2D) -> void:
+	remove_sprite(sprite)

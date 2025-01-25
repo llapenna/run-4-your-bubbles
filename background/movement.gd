@@ -1,7 +1,7 @@
 extends Node
 
-signal on_background_entered
-signal on_background_exited
+signal on_background_entered(sprite)
+signal on_background_exited(sprite)
 
 @onready var sprite: Node2D = $"."
 
@@ -16,8 +16,8 @@ func _process(delta: float) -> void:
 
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
-	on_background_entered.emit()
+	on_background_entered.emit(self)
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	on_background_exited.emit()
+	on_background_exited.emit(self)
