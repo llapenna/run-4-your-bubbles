@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy3lm6xs2g7if"]
+
+[ext_resource type="Texture2D" uid="uid://dby83s2rcpnie" path="res://background/bg1.png" id="1_uwfd7"]
+[ext_resource type="Script" path="res://background/movement.gd" id="2_538q6"]
+
+[node name="Sprite" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_uwfd7")
+script = ExtResource("2_538q6")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-1920, -540)
+scale = Vector2(38.4, 10.8)
+rect = Rect2(0, 0, 100, 100)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

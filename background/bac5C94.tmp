@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://f4oj74h6vfye"]
+
+[ext_resource type="Script" path="res://background/looper.gd" id="1_yruyl"]
+[ext_resource type="Texture2D" uid="uid://cvdf6r7qph40" path="res://background/bg.jpg" id="2_pweyn"]
+
+[node name="Background" type="Node2D"]
+script = ExtResource("1_yruyl")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(576, 233)
+texture = ExtResource("2_pweyn")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Sprite"]
+position = Vector2(-576, -233)
+scale = Vector2(11.53, 4.67)
+rect = Rect2(0, 0, 100, 100)
+
+[connection signal="screen_entered" from="Sprite/VisibleOnScreenNotifier2D" to="." method="_on_background_enter"]
