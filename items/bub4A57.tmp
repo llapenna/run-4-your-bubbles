@@ -7,8 +7,8 @@ size = Vector2(270, 270)
 
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(625, 255)
-scale = Vector2(0.125, 0.125)
 script = ExtResource("1_nmkmo")
+bubbleEffect = null
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 rect = Rect2(-180, -180, 360, 360)

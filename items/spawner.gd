@@ -8,11 +8,13 @@ var elapsed_time = 0
 func get_random_time():
 	var rng = RandomNumberGenerator.new()
 	return rng.randf_range(minimumTime, maximumTime)
-	
+
+# Initialize the variable to spawn next item
 var trigger_time = get_random_time()
 
 func spawn():
 	var instance: Sprite2D = bubble_item.instantiate()
+	instance.position.y = 0
 	$".".add_child(instance)
 
 
@@ -24,13 +26,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	elapsed_time += delta * 1000
-	print(elapsed_time, ">=", trigger_time)
 	if (elapsed_time >= trigger_time):
-		print("spawn!")
 		spawn()
 		
 		# Reset timer
 		elapsed_time = 0
 		trigger_time = get_random_time()
-		
-	
