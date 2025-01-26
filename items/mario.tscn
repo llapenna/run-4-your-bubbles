@@ -9,6 +9,7 @@ size = Vector2(44.5, 111.5)
 [node name="Node2D" type="Node2D"]
 scale = Vector2(3, 3)
 script = ExtResource("1_yiamh")
+effect = 20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 50

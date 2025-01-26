@@ -17,5 +17,9 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 
 
 func _on_rigid_body_2d_body_entered(body: Node) -> void:
-	print("falopa")
-	pass # Replace with function body.
+	print("collision")
+	var player = $"/root/Main/Player"
+	if effect < 0:
+		player.reduce_life(-effect)
+	else:
+		player.increase_life(effect)

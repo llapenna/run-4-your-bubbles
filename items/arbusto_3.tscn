@@ -10,7 +10,7 @@ size = Vector2(161, 340)
 z_index = 50
 scale = Vector2(0.65, 0.65)
 script = ExtResource("1_1tpup")
-effect = 0.8
+effect = -20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)

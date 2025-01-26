@@ -9,6 +9,7 @@ size = Vector2(59.2, 71.4)
 [node name="Node2D" type="Node2D"]
 scale = Vector2(2, 2)
 script = ExtResource("1_63x2m")
+effect = 20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
