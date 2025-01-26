@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dt16av3gwv058"]
+[gd_scene load_steps=6 format=3 uid="uid://dt16av3gwv058"]
 
 [ext_resource type="Script" path="res://global/speed.gd" id="1_a40dn"]
 [ext_resource type="PackedScene" path="res://background/layer.tscn" id="2_8rev6"]
 [ext_resource type="Texture2D" uid="uid://dby83s2rcpnie" path="res://background/bg1.png" id="3_ye3ty"]
 [ext_resource type="Texture2D" uid="uid://c1nyf51jlnf4s" path="res://background/bg2.png" id="4_20kst"]
 [ext_resource type="Texture2D" uid="uid://badl1ehhuy4cl" path="res://background/bg3.png" id="5_mwbia"]
-[ext_resource type="PackedScene" uid="uid://bfj8u884cbgvn" path="res://items/Spawner.tscn" id="6_kjj6x"]
 
 [node name="Main" type="Node2D"]
 position = Vector2(3, 108)
@@ -29,7 +28,3 @@ slowingFactor = 0.7
 visible = false
 position = Vector2(960, 270)
 texture = ExtResource("3_ye3ty")
-slowingFactor = 1.0
-
-[node name="Spawner" parent="." instance=ExtResource("6_kjj6x")]
-position = Vector2(1110, 282)
