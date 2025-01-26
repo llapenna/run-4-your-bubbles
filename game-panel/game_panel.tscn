@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://game-panel/game_panel.gd" id="2_glbb7"]
 
-[node name="__Juego__" type="Node2D"]
+[node name="game_panel" type="Node2D"]
 
 [node name="Timer" type="Panel" parent="."]
 offset_right = 215.0

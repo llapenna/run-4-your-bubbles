@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp0eqg3dpl4o"
-path="res://.godot/imported/barra vida-12.png-64b44f83184fc52cfb87003e20271c10.ctex"
+uid="uid://cjagqfrbqpod"
+path="res://.godot/imported/exitButton.png-c7502137f2e3812254f3e4e12821d77b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/barra vida-12.png"
-dest_files=["res://.godot/imported/barra vida-12.png-64b44f83184fc52cfb87003e20271c10.ctex"]
+source_file="res://assets/exitButton.png"
+dest_files=["res://.godot/imported/exitButton.png-c7502137f2e3812254f3e4e12821d77b.ctex"]
 
 [params]
 

@@ -14,5 +14,10 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	speed += acceleration * delta
+	
+	if (player.hp > 0):
+		$LifeBar.set_value(player.hp)	
+	
 	if (player.hp <= 0):
+		$LifeBar.set_value(0)	
 		GlobalSceneManager.end_game()

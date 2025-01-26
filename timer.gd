@@ -1,8 +1,8 @@
-extends Timer
+extends Node2D
 
+func init(value):
+	$ProgressBar.value = value
 
-
-
-func _on_timeout() -> void:
-	if $ProgressBar.value > 0:
-		$ProgressBar.value -=1
+func set_value(value) -> void:
+	$ProgressBar.value = value
+	

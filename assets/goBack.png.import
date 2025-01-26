@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp0eqg3dpl4o"
-path="res://.godot/imported/barra vida-12.png-64b44f83184fc52cfb87003e20271c10.ctex"
+uid="uid://cy6gio1uyedgp"
+path="res://.godot/imported/goBack.png-25cf3e4c6627e2567b7cbd6fb2e1af21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/barra vida-12.png"
-dest_files=["res://.godot/imported/barra vida-12.png-64b44f83184fc52cfb87003e20271c10.ctex"]
+source_file="res://assets/goBack.png"
+dest_files=["res://.godot/imported/goBack.png-25cf3e4c6627e2567b7cbd6fb2e1af21.ctex"]
 
 [params]
 

@@ -15,10 +15,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:	
-	GlobalSceneManager.score +=1
+	GlobalSceneManager.score += 10
 	ScoreLabel.text= "Score: %d" % GlobalSceneManager.score
 
-	time +=delta
 	miliseconds = fmod(time, 1) * 100
 	seconds= fmod(time, 60)
 	minutes= fmod(time,3600) / 60
