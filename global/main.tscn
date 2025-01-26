@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://global/main.gd" id="1_a40dn"]
 [ext_resource type="PackedScene" uid="uid://f4oj74h6vfye" path="res://background/layer.tscn" id="2_8rev6"]
-[ext_resource type="Texture2D" uid="uid://cihsj3tcrkp5g" path="res://background/BG1.png" id="3_ye3ty"]
-[ext_resource type="Texture2D" uid="uid://upf4bu6kmape" path="res://background/BG2.png" id="4_20kst"]
+[ext_resource type="Texture2D" uid="uid://dby83s2rcpnie" path="res://background/bg1.png" id="3_ye3ty"]
+[ext_resource type="Texture2D" uid="uid://c1nyf51jlnf4s" path="res://background/bg2.png" id="4_20kst"]
 [ext_resource type="Texture2D" uid="uid://kxq3u3busfxc" path="res://background/piso.png" id="6_8eeoq"]
-[ext_resource type="PackedScene" path="res://items/Spawner.tscn" id="7_4x6uh"]
-[ext_resource type="PackedScene" uid="uid://cobitw0jlcec0" path="res://player/player.tscn" id="7_hi7x6"]
+[ext_resource type="PackedScene" uid="uid://bfj8u884cbgvn" path="res://items/Spawner.tscn" id="7_4x6uh"]
+[ext_resource type="PackedScene" uid="uid://b5sfbtn7uoxgl" path="res://player/player.tscn" id="7_hi7x6"]
 [ext_resource type="PackedScene" uid="uid://dyqogsd4wcoja" path="res://life_bar/life_bar.tscn" id="8_w7qui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eihi5"]
@@ -22,6 +22,7 @@ initialSpeed = 10.0
 position = Vector2(0, 350)
 
 [node name="Layer" parent="Background" instance=ExtResource("2_8rev6")]
+position = Vector2(0, -100)
 texture = ExtResource("3_ye3ty")
 slowingFactor = 0.01
 
