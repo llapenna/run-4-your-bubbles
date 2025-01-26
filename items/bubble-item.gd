@@ -1,16 +1,14 @@
 extends Node
 
-signal on_collision(effect)
-
 @onready var sprite: Sprite2D = $"."
 @onready var effect = random_effect()
 @export var bubbleEffect: int = 10
 
 var effects = [
-	{ "effect": 0.8, "resource":"res://assets/Arbustos/ar_1.png" },
-	{ "effect": 0.8, "resource":"res://assets/Arbustos/ar_2.png" },
-	{ "effect": 0.8, "resource":"res://assets/Arbustos/ar_3.png" },
-	{ "effect": 0.8, "resource":"res://assets/Arbustos/ar_4.png" },
+	{ "change": 0.8, "resource":"res://assets/Arbustos/ar_1.png" },
+	{ "change": 0.8, "resource":"res://assets/Arbustos/ar_2.png" },
+	{ "change": 0.8, "resource":"res://assets/Arbustos/ar_3.png" },
+	{ "change": 0.8, "resource":"res://assets/Arbustos/ar_4.png" },
 ]
 
 func random_effect():
@@ -33,3 +31,6 @@ func _process(delta: float) -> void:
 
 func _on_item_exited() -> void:
 	$".".queue_free()
+
+func _on_rigid_body_2d_body_entered(body: Node) -> void:
+	GlobalSceneManager.change_hp(effect.change)

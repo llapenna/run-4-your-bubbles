@@ -19,3 +19,4 @@ rect = Rect2(-180, -180, 360, 360)
 shape = SubResource("RectangleShape2D_py7vv")
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_item_exited"]
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_body_entered"]
