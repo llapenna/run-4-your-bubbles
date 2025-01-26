@@ -23,6 +23,7 @@ initialSpeed = 10.0
 position = Vector2(0, 350)
 
 [node name="Layer" parent="Background" instance=ExtResource("2_8rev6")]
+position = Vector2(0, -100)
 texture = ExtResource("3_ye3ty")
 slowingFactor = 0.01
 

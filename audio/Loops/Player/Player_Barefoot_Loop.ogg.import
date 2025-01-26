@@ -2,7 +2,7 @@
 
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
-uid="uid://bcxhjesoigdy8"
+uid="uid://c5tyxl28nineu"
 path="res://.godot/imported/Player_Barefoot_Loop.ogg-e5e5abe2466d183b2dadacc6a5bcba59.oggvorbisstr"
 
 [deps]
@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/Player_Barefoot_Loop.ogg-e5e5abe2466d183b2dad
 
 [params]
 
-loop=true
-loop_offset=0.0
-bpm=0.0
+loop=false
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4
