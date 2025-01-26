@@ -1,7 +1,7 @@
 extends Node2D
 
 var initial_position = Vector2(0, 0)
-var initial_scale = Vector2(0.005, 0.005)
+var initial_scale = Vector2(0.2, 0.2)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 
 func init(parent_position, parent_scale):
 	position = parent_position
-	scale = parent_scale
+	scale = initial_scale * parent_scale
 
 func explode():
 	$Area2D/AnimatedSprite2D.play("default")

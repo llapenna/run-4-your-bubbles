@@ -7,6 +7,7 @@ var posOrigin
 var posOffsetX: float = 0
 var posOffsetY: float = 0
 var bubbleScale = 1
+const DECAY_FACTOR = 0.003
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,11 +17,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
-func init(origin: Vector2, offsetX: float, offsetY: float, parentBubbleScale: float):
+func init(origin: Vector2, offsetX: float, offsetY: float, parentBubbleScale: float, numBubbles: int = 0):
 	posOrigin = origin
 	posOffsetX = offsetX
 	posOffsetY = offsetY
 	bubbleScale = parentBubbleScale
+	if (numBubbles > 0):
+		pushBubbles(numBubbles)
 	pass
 
 func popBubbles(bubbleCount, timeToPopALl):
@@ -48,8 +51,7 @@ func pushBubbles(bubbleCount):
 		
 		var distance = randPos.distance_to(posOrigin)
 		
-		var randScaleNumber = 1*bubbleScale
-		# var randScaleNumber = clamp(bubbleScale*expexpbubbleScale/(distance*distance), bubbleScale*0.15, bubbleScale)
+		var randScaleNumber = clamp(bubbleScale * exp(-DECAY_FACTOR*distance + 1), 1, 3)		
 		var randScale = Vector2(randScaleNumber, randScaleNumber)
 		
 		bubbleInstance.init(randPos, randScale)
