@@ -5,11 +5,11 @@ var inputs_locked = false
 
 const GAME_START_SCENE_PATH =  "res://global/main.tscn"
 const GAME_OVER_SCENE_PATH = "res://game-over/game_ovah.tscn"
+const MAIN_MENU_SCENE_PATH = "res://menu-ui/menu_ui.tscn"
+const CREDITS_SCENE_PATH = "res://credits/credits.tscn"
 
 var score = 0
 var hp = 100
-
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -26,11 +26,20 @@ func goto_scene(path):
 	call_deferred("_deferred_goto_scene", path)
 	
 func start_game():
+	inputs_locked = false
 	score = 0
 	goto_scene(GAME_START_SCENE_PATH)
 
 func end_game():
+	inputs_locked = true
+	await get_tree().create_timer(1).timeout
 	goto_scene(GAME_OVER_SCENE_PATH)
+
+func go_to_main_menu():
+	goto_scene(MAIN_MENU_SCENE_PATH)
+	
+func show_credits():
+	goto_scene(CREDITS_SCENE_PATH)
 
 func quit_game():
 	get_tree().quit()

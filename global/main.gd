@@ -1,23 +1,18 @@
-extends Node2D
-var bubblesScene = preload("res://bubbles-player/bubbles.tscn")
-var bubbles = []
+extends Node
+
+@onready var player = $Player
+
+# Es necesario que sea static?
+@export var acceleration: float
+@export var initialSpeed: float
+var speed
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	bubbles = bubblesScene.instantiate()
-	bubbles.init(Vector2($Player.position.x - 12, $Player.position.y + 20), 50, 40, 0.1)
-	bubbles.pushBubbles(10)
-	
-	$".".add_child(bubbles)
-	
-	pass # Replace with function body.
-
+	speed = initialSpeed
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
-
-func _on_timer_timeout() -> void:
-	bubbles.popBubbles(5, 10)
-	pass # Replace with function body.
+	speed += acceleration * delta
+	if (player.hp <= 0):
+		GlobalSceneManager.end_game()
