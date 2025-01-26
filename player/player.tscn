@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://cubcem2dailki"]
+[gd_scene load_steps=38 format=3 uid="uid://b5sfbtn7uoxgl"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ud835"]
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="2_4piiv"]

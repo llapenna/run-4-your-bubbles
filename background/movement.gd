@@ -25,10 +25,8 @@ func _process(delta: float) -> void:
 
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
-	print("spawn next")
 	on_background_entered.emit(self)
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	print("remove")
 	on_background_exited.emit(self)

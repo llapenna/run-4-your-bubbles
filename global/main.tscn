@@ -1,24 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://dt16av3gwv058"]
+[gd_scene load_steps=6 format=3 uid="uid://dt16av3gwv058"]
 
 [ext_resource type="Script" path="res://global/speed.gd" id="1_a40dn"]
-[ext_resource type="PackedScene" uid="uid://f4oj74h6vfye" path="res://background/layer.tscn" id="2_8rev6"]
-[ext_resource type="Texture2D" uid="uid://upf4bu6kmape" path="res://background/BG2.png" id="4_aow12"]
-[ext_resource type="Texture2D" uid="uid://cihsj3tcrkp5g" path="res://background/BG1.png" id="5_5ehnl"]
+[ext_resource type="PackedScene" path="res://background/layer.tscn" id="2_8rev6"]
+[ext_resource type="Texture2D" uid="uid://dby83s2rcpnie" path="res://background/bg1.png" id="3_ye3ty"]
+[ext_resource type="Texture2D" uid="uid://c1nyf51jlnf4s" path="res://background/bg2.png" id="4_20kst"]
+[ext_resource type="Texture2D" uid="uid://badl1ehhuy4cl" path="res://background/bg3.png" id="5_mwbia"]
 
 [node name="Main" type="Node2D"]
 position = Vector2(3, 108)
 script = ExtResource("1_a40dn")
 factor = 1.1
 
-[node name="Layer" parent="." instance=ExtResource("2_8rev6")]
+[node name="Layer3" parent="." instance=ExtResource("2_8rev6")]
 position = Vector2(960, 270)
-texture = ExtResource("5_5ehnl")
+texture = ExtResource("5_mwbia")
+slowingFactor = 0.3
 
 [node name="Layer2" parent="." instance=ExtResource("2_8rev6")]
 position = Vector2(960, 270)
-texture = ExtResource("4_aow12")
+texture = ExtResource("4_20kst")
 slowingFactor = 0.6
 
-[node name="Layer3" parent="." instance=ExtResource("2_8rev6")]
+[node name="Layer" parent="." instance=ExtResource("2_8rev6")]
 position = Vector2(960, 270)
-slowingFactor = 0.3
+texture = ExtResource("3_ye3ty")
