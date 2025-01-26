@@ -1,6 +1,17 @@
 extends Node
 
-var bubble_item = preload("res://items/bubble-item.tscn")
+var arbusto_1_item = preload("res://items/arbusto_1.tscn")
+var arbusto_2_item = preload("res://items/arbusto_2.tscn")
+var arbusto_3_item = preload("res://items/arbusto_3.tscn")
+var arbusto_4_item = preload("res://items/arbusto_4.tscn")
+
+var item_list = [
+	preload("res://items/arbusto_1.tscn"),
+	preload("res://items/arbusto_2.tscn"),
+	preload("res://items/arbusto_3.tscn"),
+	preload("res://items/arbusto_4.tscn")
+]
+
 @export var minimumTime = 2 * 1000 # 2 seconds
 @export var maximumTime = 5 * 1000 # 5 seconds
 var elapsed_time = 0
@@ -12,8 +23,14 @@ func get_random_time():
 # Initialize the variable to spawn next item
 var trigger_time = get_random_time()
 
+func pick_random_instance():
+	var rng = RandomNumberGenerator.new()
+	var index = rng.randf_range(0, item_list.size())
+	
+	return item_list[index]
+
 func spawn():
-	var instance: Sprite2D = bubble_item.instantiate()
+	var instance: Node2D = pick_random_instance().instantiate()
 	instance.position.y = 0
 	$".".add_child(instance)
 

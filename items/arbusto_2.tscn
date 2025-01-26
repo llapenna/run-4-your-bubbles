@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbrfrmy2v3g30"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_aibfm"]
+[ext_resource type="Texture2D" uid="uid://dc07ds5uk5okp" path="res://assets/Arbustos/ar_2.png" id="2_8po1v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2iqo"]
+size = Vector2(112, 368)
+
+[node name="Arbusto" type="Node2D"]
+script = ExtResource("1_aibfm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_8po1v")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(8, 7)
+shape = SubResource("RectangleShape2D_d2iqo")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(7.50001, -24)
+scale = Vector2(2.21, 2.42)
+rect = Rect2(-50, -100, 100, 200)
+
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_collided"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_exited"]
