@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Run 4 Your bubbles"
-run/main_scene="res://player/player.tscn"
+run/main_scene="res://menu-ui/menu_ui.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -39,4 +39,6 @@ duck={
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 Juego="*res://Scripts/__juego__.gd"
