@@ -1271,7 +1271,7 @@ animations = [{
 "speed": 24.0
 }]
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 
 [node name="Jump" type="Node2D" parent="."]
 visible = false

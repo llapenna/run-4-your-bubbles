@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://global/main.gd" id="1_a40dn"]
 [ext_resource type="PackedScene" uid="uid://f4oj74h6vfye" path="res://background/layer.tscn" id="2_8rev6"]
-[ext_resource type="Texture2D" uid="uid://cihsj3tcrkp5g" path="res://background/bg1.png" id="3_ye3ty"]
-[ext_resource type="Texture2D" uid="uid://upf4bu6kmape" path="res://background/bg2.png" id="4_20kst"]
+[ext_resource type="Texture2D" uid="uid://6k8ivuaqohpi" path="res://background/bg1.png" id="3_ye3ty"]
+[ext_resource type="Texture2D" uid="uid://bm26qhn1bnrc0" path="res://background/BG2.png" id="4_jox5u"]
 [ext_resource type="Texture2D" uid="uid://kxq3u3busfxc" path="res://background/piso.png" id="6_8eeoq"]
-[ext_resource type="PackedScene" uid="uid://bfj8u884cbgvn" path="res://items/Spawner.tscn" id="7_4x6uh"]
+[ext_resource type="PackedScene" path="res://items/Spawner.tscn" id="7_4x6uh"]
 [ext_resource type="PackedScene" uid="uid://cobitw0jlcec0" path="res://player/player.tscn" id="7_hi7x6"]
-[ext_resource type="PackedScene" uid="uid://b3eut8dox8t1n" path="res://audio/audio.tscn" id="8_f6raq"]
+[ext_resource type="PackedScene" path="res://audio/audio.tscn" id="8_f6raq"]
 [ext_resource type="PackedScene" uid="uid://dyqogsd4wcoja" path="res://life_bar/life_bar.tscn" id="8_w7qui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eihi5"]
@@ -28,7 +28,7 @@ texture = ExtResource("3_ye3ty")
 slowingFactor = 0.01
 
 [node name="Layer2" parent="Background" instance=ExtResource("2_8rev6")]
-texture = ExtResource("4_20kst")
+texture = ExtResource("4_jox5u")
 slowingFactor = 0.7
 
 [node name="Layer3" parent="Background" instance=ExtResource("2_8rev6")]

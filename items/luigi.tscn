@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bppludgwl5sa"]
+[gd_scene load_steps=4 format=3 uid="uid://c47quvd2m3sse"]
 
 [ext_resource type="Script" path="res://items/item.gd" id="1_d62on"]
 [ext_resource type="Texture2D" uid="uid://etsridyewg03" path="res://assets/Conserjes_PowerUp/Luiggi.png" id="2_va67c"]
@@ -7,6 +7,7 @@
 size = Vector2(59.2, 114)
 
 [node name="Node2D" type="Node2D"]
+z_index = 50
 scale = Vector2(3, 3)
 script = ExtResource("1_d62on")
 
@@ -15,6 +16,9 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_va67c")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 10000
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2(27, -14)
@@ -25,5 +29,5 @@ position = Vector2(18.5, -8)
 scale = Vector2(1.432, 0.688)
 rect = Rect2(-50, -100, 100, 200)
 
-[connection signal="body_entered" from="RigidBody2D" to="." method="_on_collided"]
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_exited"]

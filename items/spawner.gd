@@ -2,13 +2,13 @@ extends Node
 
 var item_list = [
 	preload("res://items/arbusto_1.tscn"),
-	preload("res://items/arbusto_2.tscn"),
-	preload("res://items/arbusto_3.tscn"),
-	preload("res://items/arbusto_4.tscn"),
-	preload("res://items/kid.tscn"),
-	preload("res://items/luigi.tscn"),
-	preload("res://items/mario.tscn"),
-	preload("res://items/ladies.tscn"),
+	#preload("res://items/arbusto_2.tscn"),
+	#preload("res://items/arbusto_3.tscn"),
+	#preload("res://items/arbusto_4.tscn"),
+	#preload("res://items/kid.tscn"),
+	#preload("res://items/luigi.tscn"),
+	#preload("res://items/mario.tscn"),
+	#preload("res://items/ladies.tscn"),
 ]
 
 @export var minimumTime = 2 * 1000 # 2 seconds
