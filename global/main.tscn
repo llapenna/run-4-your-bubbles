@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dt16av3gwv058"]
+[gd_scene load_steps=7 format=3 uid="uid://dt16av3gwv058"]
 
 [ext_resource type="Script" path="res://global/speed.gd" id="1_a40dn"]
 [ext_resource type="PackedScene" uid="uid://f4oj74h6vfye" path="res://background/layer.tscn" id="2_8rev6"]
 [ext_resource type="Texture2D" uid="uid://cihsj3tcrkp5g" path="res://background/bg1.png" id="3_ye3ty"]
 [ext_resource type="Texture2D" uid="uid://upf4bu6kmape" path="res://background/bg2.png" id="4_20kst"]
-[ext_resource type="Texture2D" uid="uid://bg7sbc3sqbok4" path="res://background/bg3.png" id="5_mwbia"]
 [ext_resource type="Texture2D" uid="uid://kxq3u3busfxc" path="res://background/piso.png" id="6_8eeoq"]
 [ext_resource type="PackedScene" uid="uid://bfj8u884cbgvn" path="res://items/Spawner.tscn" id="7_4x6uh"]
 
@@ -26,7 +25,6 @@ texture = ExtResource("4_20kst")
 slowingFactor = 0.7
 
 [node name="Layer3" parent="Background" instance=ExtResource("2_8rev6")]
-texture = ExtResource("5_mwbia")
 
 [node name="Floor" parent="." instance=ExtResource("2_8rev6")]
 position = Vector2(0, 900)

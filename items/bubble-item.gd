@@ -11,6 +11,7 @@ var effects = [
 	{ "effect": 0.8, "resource":"res://assets/Arbustos/ar_2.png" },
 	{ "effect": 0.8, "resource":"res://assets/Arbustos/ar_3.png" },
 	{ "effect": 0.8, "resource":"res://assets/Arbustos/ar_4.png" },
+	{ "effect": 1.1, "resource":"res://assets/Arbustos/ar_2.png" },
 ]
 
 func random_effect():
@@ -26,6 +27,10 @@ func movement():
 func _ready() -> void:
 	var texture: CompressedTexture2D = load(effect.resource)
 	sprite.texture = texture
+	var h = texture.get_height() * .9
+	var w = texture.get_width() * .9
+	
+	$"RigidBody2D/CollisionShape2D".shape.size = Vector2(h,w)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
