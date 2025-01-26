@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://vpxya8c67mex"]
+
+[ext_resource type="Script" path="res://game-panel/game_panel.gd" id="2_glbb7"]
+
+[node name="__Juego__" type="Node2D"]
+
+[node name="Timer" type="Panel" parent="."]
+offset_right = 215.0
+offset_bottom = 58.0
+script = ExtResource("2_glbb7")
+
+[node name="Horas" type="Label" parent="Timer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.051
+offset_right = 52.035
+offset_bottom = 56.0
+theme_override_font_sizes/font_size = 40
+text = "00:"
+horizontal_alignment = 2
+
+[node name="Minutos" type="Label" parent="Timer"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 142.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 40
+text = "00:"
+horizontal_alignment = 2
+
+[node name="Segundos" type="Label" parent="Timer"]
+layout_mode = 0
+offset_left = 143.0
+offset_right = 216.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 40
+text = "00
+"
+horizontal_alignment = 2
+
+[node name="Score" type="Panel" parent="."]
+offset_left = 1601.0
+offset_top = 5.0
+offset_right = 1917.0
+offset_bottom = 61.0
+script = ExtResource("2_glbb7")
+
+[node name="ScoreLabel" type="Label" parent="Score"]
+layout_mode = 0
+offset_right = 315.0
+offset_bottom = 56.0
+theme_override_font_sizes/font_size = 40
+text = "SCORE: 0"
