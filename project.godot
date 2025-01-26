@@ -11,9 +11,22 @@ config_version=5
 [application]
 
 config/name="Run 4 Your bubbles"
-run/main_scene="res://player/player.tscn"
+run/main_scene="res://menu-ui/menu_ui.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalSceneManager="*res://global/global_scene_manager.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/AS2P/plugin.cfg")
 
 [input]
 
@@ -32,3 +45,4 @@ duck={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+Juego="*res://Scripts/__juego__.gd"

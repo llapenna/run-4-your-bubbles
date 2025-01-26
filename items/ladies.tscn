@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://koy4idwlosfw"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_mu1pi"]
+[ext_resource type="Texture2D" uid="uid://c6d71rop5u0up" path="res://assets/Señoras_Obstaculo/Ladies.png" id="2_cyim5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2iqo"]
+size = Vector2(244.8, 175.2)
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(2.5, 2.5)
+script = ExtResource("1_mu1pi")
+effect = 0.8
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(0, -18)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_cyim5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(6.4, 0.400013)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_d2iqo")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-2, -0.499996)
+scale = Vector2(2.84, 0.995)
+rect = Rect2(-50, -100, 100, 200)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

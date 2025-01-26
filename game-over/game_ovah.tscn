@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn8sc22k7jkcs"]
+
+[ext_resource type="Script" path="res://game-over/game_ovah.gd" id="1_y8dno"]
+[ext_resource type="Texture2D" uid="uid://dw6pb72kxljgc" path="res://assets/gameOver.png" id="2_y232h"]
+[ext_resource type="Texture2D" uid="uid://dobmg74p576am" path="res://assets/tryAgain.png" id="3_f4uu2"]
+[ext_resource type="Texture2D" uid="uid://bmq73lh7khycy" path="res://assets/backMenu.png" id="4_acmid"]
+
+[node name="GameOvah" type="CanvasLayer"]
+script = ExtResource("1_y8dno")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_y232h")
+
+[node name="TryAgain" type="Button" parent="."]
+offset_left = 1162.0
+offset_top = 679.0
+offset_right = 1736.0
+offset_bottom = 949.0
+icon = ExtResource("3_f4uu2")
+flat = true
+
+[node name="BackMenu" type="Button" parent="."]
+offset_left = 208.0
+offset_top = 678.0
+offset_right = 782.0
+offset_bottom = 948.0
+icon = ExtResource("4_acmid")
+flat = true
+
+[node name="Score" type="Label" parent="."]
+offset_left = 864.0
+offset_top = 486.0
+offset_right = 1063.0
+offset_bottom = 536.0
+
+[connection signal="pressed" from="TryAgain" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="BackMenu" to="." method="_on_back_menu_pressed"]

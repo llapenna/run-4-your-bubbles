@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn6yu4vgj6c02"]
+
+[ext_resource type="Script" path="res://items/bubble-item.gd" id="1_nmkmo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_py7vv"]
+size = Vector2(270, 270)
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(625, 255)
+script = ExtResource("1_nmkmo")
+bubbleEffect = null
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+rect = Rect2(-180, -180, 360, 360)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_py7vv")
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_item_exited"]

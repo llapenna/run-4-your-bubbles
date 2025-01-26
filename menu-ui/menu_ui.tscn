@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://c35saqni6y457"]
+
+[ext_resource type="Script" path="res://menu-ui/menu_ui.gd" id="1_5t4ex"]
+[ext_resource type="Texture2D" uid="uid://daei2xo026ri7" path="res://assets/menu.png" id="2_njwy4"]
+[ext_resource type="Texture2D" uid="uid://de5xmoc2rnjov" path="res://assets/startButton.png" id="3_g046f"]
+[ext_resource type="Texture2D" uid="uid://cjagqfrbqpod" path="res://assets/exitButton.png" id="4_qjn0a"]
+[ext_resource type="Texture2D" uid="uid://dpsuujf2sdjl8" path="res://assets/creditsButton.png" id="5_dll7n"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5t4ex")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -100
+position = Vector2(960, 540)
+texture = ExtResource("2_njwy4")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 825.0
+offset_top = 605.0
+offset_right = 1106.0
+offset_bottom = 904.0
+icon = ExtResource("3_g046f")
+flat = true
+
+[node name="Exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1435.0
+offset_top = 682.0
+offset_right = 1694.0
+offset_bottom = 958.0
+icon = ExtResource("4_qjn0a")
+flat = true
+
+[node name="Credits" type="Button" parent="."]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 678.0
+offset_right = 488.0
+offset_bottom = 954.0
+icon = ExtResource("5_dll7n")
+flat = true
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]

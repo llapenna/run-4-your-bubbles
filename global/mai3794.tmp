@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://dt16av3gwv058"]
+
+[ext_resource type="Script" path="res://global/speed.gd" id="1_a40dn"]
+[ext_resource type="PackedScene" uid="uid://f4oj74h6vfye" path="res://background/layer.tscn" id="2_8rev6"]
+[ext_resource type="Texture2D" uid="uid://cihsj3tcrkp5g" path="res://background/bg1.png" id="3_ye3ty"]
+[ext_resource type="Texture2D" uid="uid://upf4bu6kmape" path="res://background/bg2.png" id="4_20kst"]
+[ext_resource type="Texture2D" uid="uid://kxq3u3busfxc" path="res://background/piso.png" id="6_8eeoq"]
+[ext_resource type="PackedScene" uid="uid://bfj8u884cbgvn" path="res://items/Spawner.tscn" id="7_4x6uh"]
+[ext_resource type="PackedScene" uid="uid://b5sfbtn7uoxgl" path="res://player/player.tscn" id="7_hi7x6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eihi5"]
+size = Vector2(929, 254.5)
+
+[node name="Main" type="Node2D"]
+position = Vector2(3, 108)
+script = ExtResource("1_a40dn")
+acceleration = 0.05
+initialSpeed = 10.0
+
+[node name="Background" type="Node2D" parent="."]
+position = Vector2(0, 350)
+
+[node name="Layer" parent="Background" instance=ExtResource("2_8rev6")]
+texture = ExtResource("3_ye3ty")
+slowingFactor = 0.01
+
+[node name="Layer2" parent="Background" instance=ExtResource("2_8rev6")]
+texture = ExtResource("4_20kst")
+slowingFactor = 0.7
+
+[node name="Layer3" parent="Background" instance=ExtResource("2_8rev6")]
+
+[node name="Floor" parent="." instance=ExtResource("2_8rev6")]
+position = Vector2(0, 900)
+texture = ExtResource("6_8eeoq")
+
+[node name="Spawner" parent="." instance=ExtResource("7_4x6uh")]
+position = Vector2(2036, 700)
+
+[node name="Player" parent="." instance=ExtResource("7_hi7x6")]
+position = Vector2(232, 606)
+scale = Vector2(0.4, 0.4)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(475, 915)
+shape = SubResource("RectangleShape2D_eihi5")
