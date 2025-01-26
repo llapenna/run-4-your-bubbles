@@ -15,9 +15,6 @@ run/main_scene="res://menu-ui/menu_ui.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/AS2P/plugin.cfg")
 [autoload]
 
 GlobalSceneManager="*res://global/global_scene_manager.gd"
@@ -26,6 +23,10 @@ GlobalSceneManager="*res://global/global_scene_manager.gd"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/AS2P/plugin.cfg")
 
 [input]
 

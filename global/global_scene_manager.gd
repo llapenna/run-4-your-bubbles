@@ -7,6 +7,9 @@ const GAME_START_SCENE_PATH =  "res://global/main.tscn"
 const GAME_OVER_SCENE_PATH = "res://game-over/game_ovah.tscn"
 
 var score = 0
+var hp = 100
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -31,6 +34,10 @@ func end_game():
 
 func quit_game():
 	get_tree().quit()
+	
+# Effect should be a percentage value ranging from 0 to 2
+func change_hp(effect: float):
+	hp *= effect
 	
 func _deferred_goto_scene(path: String):
 	current_scene.free()

@@ -1,7 +1,5 @@
 extends Node
 
-signal on_collision(effect)
-
 @onready var sprite: Sprite2D = $"."
 @onready var effect = random_effect()
 @export var bubbleEffect: int = 10
@@ -38,3 +36,6 @@ func _process(delta: float) -> void:
 
 func _on_item_exited() -> void:
 	$".".queue_free()
+
+func _on_rigid_body_2d_body_entered(body: Node) -> void:
+	GlobalSceneManager.change_hp(effect.change)
