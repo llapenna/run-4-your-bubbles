@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=3 uid="uid://bfeuw71fqa2p"]
+
+[ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="1_11bv0"]
+[ext_resource type="Texture2D" uid="uid://cxth8eeqgxpyk" path="res://assets/Burbujas/Bub (2).png" id="2_sjf5s"]
+[ext_resource type="Texture2D" uid="uid://ue35v5hs40qm" path="res://assets/Burbujas/Bub (3).png" id="3_mqleg"]
+[ext_resource type="Texture2D" uid="uid://cctyu7gxhykcc" path="res://assets/Burbujas/Bub (4).png" id="4_uusp5"]
+[ext_resource type="Texture2D" uid="uid://o5mhv6c7edxu" path="res://assets/Burbujas/Bub (5).png" id="5_qm5ct"]
+[ext_resource type="Texture2D" uid="uid://d0hx0n3qqbra0" path="res://assets/Burbujas/Bub (6).png" id="6_mh52f"]
+[ext_resource type="Texture2D" uid="uid://b2kra3hsbbjnd" path="res://assets/Burbujas/Bub (7).png" id="7_s081v"]
+[ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="8_ty1rd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pkejj"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("1_11bv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_sjf5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mqleg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uusp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qm5ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mh52f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_s081v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ty1rd")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="BurbujaExplosion" type="Node2D"]
+visible = false
+
+[node name="BurbujaExplosionAnim" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_pkejj")
+frame = 5
