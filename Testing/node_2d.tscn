@@ -1,0 +1,78 @@
+[gd_scene load_steps=14 format=3 uid="uid://du71pltbiy122"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_vyabu"]
+[ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="2_froxe"]
+[ext_resource type="Texture2D" uid="uid://cxth8eeqgxpyk" path="res://assets/Burbujas/Bub (2).png" id="3_cyp20"]
+[ext_resource type="Texture2D" uid="uid://ue35v5hs40qm" path="res://assets/Burbujas/Bub (3).png" id="4_g3fu2"]
+[ext_resource type="Texture2D" uid="uid://cctyu7gxhykcc" path="res://assets/Burbujas/Bub (4).png" id="5_5drqh"]
+[ext_resource type="Texture2D" uid="uid://o5mhv6c7edxu" path="res://assets/Burbujas/Bub (5).png" id="6_xjluv"]
+[ext_resource type="Texture2D" uid="uid://d0hx0n3qqbra0" path="res://assets/Burbujas/Bub (6).png" id="7_j88m3"]
+[ext_resource type="Texture2D" uid="uid://b2kra3hsbbjnd" path="res://assets/Burbujas/Bub (7).png" id="8_281rb"]
+[ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="9_hfqk7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_566nn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_froxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cyp20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g3fu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5drqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xjluv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j88m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_281rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hfqk7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_icudq"]
+particles_animation = true
+particles_anim_h_frames = 5
+particles_anim_v_frames = 7
+particles_anim_loop = false
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dcpda"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(-3, 0, 0)
+gravity = Vector3(0, -5, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 29.03
+radial_accel_min = -2.23517e-06
+radial_accel_max = 37.63
+tangential_accel_min = -2.23517e-06
+tangential_accel_max = 27.96
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_agw0i"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_vyabu")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(20, 20)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="SubViewport"]
+self_modulate = Color(1, 1, 1, 0.498039)
+sprite_frames = SubResource("SpriteFrames_566nn")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_icudq")
+process_material = SubResource("ParticleProcessMaterial_dcpda")
+texture = SubResource("ViewportTexture_agw0i")

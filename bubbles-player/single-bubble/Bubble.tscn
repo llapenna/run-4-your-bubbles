@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://7aw3yaguwkh7"]
+[gd_scene load_steps=12 format=3 uid="uid://7aw3yaguwkh7"]
 
 [ext_resource type="Script" path="res://bubbles-player/single-bubble/bubble.gd" id="1_tgmx8"]
 [ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="2_u8lal"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://d0hx0n3qqbra0" path="res://assets/Burbujas/Bub (6).png" id="7_eim5o"]
 [ext_resource type="Texture2D" uid="uid://b2kra3hsbbjnd" path="res://assets/Burbujas/Bub (7).png" id="8_qow0n"]
 [ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="9_rl8ug"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hfked"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ymgei"]
 animations = [{
@@ -43,6 +45,8 @@ animations = [{
 }]
 
 [node name="Bubble" type="Node2D"]
+material = SubResource("ShaderMaterial_hfked")
+position = Vector2(0, 1)
 script = ExtResource("1_tgmx8")
 metadata/_edit_group_ = true
 
@@ -51,4 +55,4 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
 self_modulate = Color(1, 1, 1, 0.498039)
 sprite_frames = SubResource("SpriteFrames_ymgei")
-frame_progress = 0.0226693
+frame_progress = 0.444804
