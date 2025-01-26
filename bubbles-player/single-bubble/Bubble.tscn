@@ -1,0 +1,54 @@
+[gd_scene load_steps=11 format=3 uid="uid://7aw3yaguwkh7"]
+
+[ext_resource type="Script" path="res://bubbles-player/single-bubble/bubble.gd" id="1_tgmx8"]
+[ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="2_u8lal"]
+[ext_resource type="Texture2D" uid="uid://cxth8eeqgxpyk" path="res://assets/Burbujas/Bub (2).png" id="3_wuy6q"]
+[ext_resource type="Texture2D" uid="uid://ue35v5hs40qm" path="res://assets/Burbujas/Bub (3).png" id="4_vqttv"]
+[ext_resource type="Texture2D" uid="uid://cctyu7gxhykcc" path="res://assets/Burbujas/Bub (4).png" id="5_atqlr"]
+[ext_resource type="Texture2D" uid="uid://o5mhv6c7edxu" path="res://assets/Burbujas/Bub (5).png" id="6_17olx"]
+[ext_resource type="Texture2D" uid="uid://d0hx0n3qqbra0" path="res://assets/Burbujas/Bub (6).png" id="7_eim5o"]
+[ext_resource type="Texture2D" uid="uid://b2kra3hsbbjnd" path="res://assets/Burbujas/Bub (7).png" id="8_qow0n"]
+[ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="9_rl8ug"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ymgei"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u8lal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wuy6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vqttv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_atqlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_17olx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_eim5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qow0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rl8ug")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Bubble" type="Node2D"]
+script = ExtResource("1_tgmx8")
+metadata/_edit_group_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+self_modulate = Color(1, 1, 1, 0.498039)
+sprite_frames = SubResource("SpriteFrames_ymgei")
+frame_progress = 0.0226693

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy3lm6xs2g7if"]
+
+[ext_resource type="Script" path="res://background/movement.gd" id="2_538q6"]
+
+[node name="Sprite" type="Sprite2D"]
+script = ExtResource("2_538q6")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+modulate = Color(0.836761, 0.583382, 0.263372, 1)
+rect = Rect2(0, 0, 1, 1)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
