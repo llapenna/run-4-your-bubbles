@@ -486,4 +486,6 @@ libraries = {
 }
 autoplay = "run"
 
+[node name="BubbleCloud" type="Node2D" parent="."]
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -8,9 +8,17 @@ var can_jump = true
 var is_ducking = false
 var is_jumping = false
 
+var bubblesScene = preload("res://bubbles-player/bubbles.tscn")
+var bubbles
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	var bubblesInstance = bubblesScene.instantiate()
+	bubblesInstance.init(Vector2(-20, 75), 50, 50, 0.00005, 40)
+	
+	$BubbleCloud.add_child(bubblesInstance)
 	$AnimationPlayer.play("run")  # Start with the "run" animation as default.
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
@@ -18,7 +26,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	velocity.y += get_gravity().y * delta
 
-func get_input():    
+func get_input():
 	var jump = Input.is_action_just_pressed("jump")
 	var slide_down = Input.is_action_just_pressed("duck")
 	var slide_up = Input.is_action_just_released("duck")
@@ -61,3 +69,6 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "jump":
 		is_ducking = false
 	
+func reduce_life():
+	bubbles.popBubbles
+	pass
