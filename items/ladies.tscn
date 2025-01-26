@@ -17,12 +17,12 @@ position = Vector2(0, -18)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_cyim5")
 
-[node name="Area2D" type="RigidBody2D" parent="."]
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
 gravity_scale = 0.0
 contact_monitor = true
 max_contacts_reported = 10000
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2(6.4, 0.400013)
 shape = SubResource("RectangleShape2D_d2iqo")
 
@@ -31,4 +31,5 @@ position = Vector2(-2, -0.499996)
 scale = Vector2(2.84, 0.995)
 rect = Rect2(-50, -100, 100, 200)
 
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
