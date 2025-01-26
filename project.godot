@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Run 4 your bubbles"
-run/main_scene="res://Scenes/Menu principal.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/name="Run 4 Your bubbles"
+run/main_scene="res://player/player.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
