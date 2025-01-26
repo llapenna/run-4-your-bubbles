@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://csqmetaprkku2"]
+
+[ext_resource type="Script" path="res://items/item.gd" id="1_63x2m"]
+[ext_resource type="Texture2D" uid="uid://b5ufvbk8rmxsx" path="res://assets/Kid_PowerUp/Kid.png" id="2_1nr7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2iqo"]
+size = Vector2(59.2, 71.4)
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_63x2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_1nr7v")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(48.8, -11.2)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_d2iqo")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(20.4, -9.6)
+scale = Vector2(1.432, 0.688)
+rect = Rect2(-50, -100, 100, 200)
+
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_collided"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_exited"]
