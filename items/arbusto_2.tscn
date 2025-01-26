@@ -17,9 +17,6 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_8po1v")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-gravity_scale = 0.0
-contact_monitor = true
-max_contacts_reported = 100000
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2(8, 7)

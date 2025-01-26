@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c47quvd2m3sse"]
+[gd_scene load_steps=4 format=3 uid="uid://bppludgwl5sa"]
 
 [ext_resource type="Script" path="res://items/item.gd" id="1_d62on"]
 [ext_resource type="Texture2D" uid="uid://etsridyewg03" path="res://assets/Conserjes_PowerUp/Luiggi.png" id="2_va67c"]
@@ -15,9 +15,6 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_va67c")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-gravity_scale = 0.0
-contact_monitor = true
-max_contacts_reported = 10000
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2(27, -14)
