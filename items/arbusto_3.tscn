@@ -7,6 +7,7 @@
 size = Vector2(161, 340)
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2(0.65, 0.65)
 script = ExtResource("1_1tpup")
 effect = 0.8
 
