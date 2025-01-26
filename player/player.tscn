@@ -329,6 +329,8 @@ position = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_stipv")
 animation = &"slide"
 autoplay = "run"
+frame = 23
+frame_progress = 0.886277
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5, 246)
