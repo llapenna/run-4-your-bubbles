@@ -14,7 +14,7 @@ var bubbles
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var bubblesInstance = bubblesScene.instantiate()
-	bubblesInstance.init(Vector2(-20, 75), 50, 50, 0.00005, 40)
+	bubblesInstance.init(Vector2(0, 30), 50, 50, 0.00005, 40)
 	
 	$BubbleCloud.add_child(bubblesInstance)
 	$AnimationPlayer.play("run")  # Start with the "run" animation as default.

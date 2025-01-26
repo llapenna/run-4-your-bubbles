@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://b5sfbtn7uoxgl"]
+[gd_scene load_steps=80 format=3 uid="uid://cobitw0jlcec0"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ud835"]
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="2_4piiv"]
@@ -347,6 +347,18 @@ tracks/1/keys = {
 "update": 1,
 "values": ["SlideDown"]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BubbleCloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.166667, 0.233333, 0.3, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-25, 12), Vector2(-25, 36), Vector2(0, 127), Vector2(-10, 161), Vector2(-18, 237), Vector2(0, 257), Vector2(30, 252), Vector2(-7, 256), Vector2(43, 257), Vector2(-45, 272), Vector2(33, 266), Vector2(-45, 272), Vector2(33, 266), Vector2(-45, 272), Vector2(33, 266)]
+}
 
 [sub_resource type="Animation" id="Animation_kpsxo"]
 length = 0.46
@@ -374,6 +386,18 @@ tracks/1/keys = {
 "update": 1,
 "values": ["SlideUp"]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BubbleCloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.166667, 0.233333, 0.3, 0.4, 0.466667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 248), Vector2(-28, 222), Vector2(-15, 184), Vector2(-6, 179), Vector2(-22, 171), Vector2(-19, 158), Vector2(-15, 129), Vector2(-26, 121)]
+}
 
 [sub_resource type="Animation" id="Animation_qbykn"]
 length = 0.583333
@@ -400,6 +424,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": ["jump"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BubbleCloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.166667, 0.233333, 0.333333, 0.4, 0.466667, 0.5, 0.566667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-38, -42), Vector2(-53, -58), Vector2(-66, -63), Vector2(-79, -127), Vector2(-94, -95), Vector2(-105, -64), Vector2(-100, -46), Vector2(-99, -2), Vector2(-95, 32), Vector2(-75, 52)]
 }
 
 [sub_resource type="Animation" id="Animation_ecpua"]
@@ -429,9 +465,21 @@ tracks/1/keys = {
 "update": 1,
 "values": ["run"]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BubbleCloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.133333, 0.166667, 0.266667, 0.366667, 0.433333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-32, 30), Vector2(-35, 23), Vector2(-39, 13), Vector2(-37, 31), Vector2(-35, 54), Vector2(-47, 14), Vector2(-47, 39), Vector2(-40, 27)]
+}
 
 [sub_resource type="Animation" id="Animation_04bwu"]
-length = 0.8
+length = 0.3
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -457,9 +505,37 @@ tracks/1/keys = {
 "update": 1,
 "values": ["slide"]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BubbleCloud:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 257), Vector2(30, 252), Vector2(-7, 256), Vector2(0, 257), Vector2(30, 252), Vector2(-7, 256), Vector2(25, 256)]
+}
+
+[sub_resource type="Animation" id="Animation_4v8c3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BubbleCloud:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-32, 30)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lv80o"]
 _data = {
+"RESET": SubResource("Animation_4v8c3"),
 "SlideDown": SubResource("Animation_hlkvm"),
 "SlideUp": SubResource("Animation_kpsxo"),
 "jump": SubResource("Animation_qbykn"),
@@ -473,8 +549,9 @@ script = ExtResource("1_ud835")
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_stipv")
-animation = &"jump"
+animation = &"SlideUp"
 autoplay = "run"
+frame = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5, 246)
@@ -487,5 +564,6 @@ libraries = {
 autoplay = "run"
 
 [node name="BubbleCloud" type="Node2D" parent="."]
+position = Vector2(-32, 30)
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
