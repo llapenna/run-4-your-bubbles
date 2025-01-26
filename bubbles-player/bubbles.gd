@@ -31,7 +31,7 @@ func popBubbles(bubbleCount, timeToPopALl):
 		var bubbleToPop = bubbles.pop_front()
 		if (bubbleToPop):
 			bubbleToPop.explode()
-			await get_tree().create_timer(timeToPopALl/bubbleCount).timeout
+			await get_tree().create_timer(1).timeout
 		
 			$".".remove_child(bubbleToPop)
 	pass

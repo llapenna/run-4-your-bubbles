@@ -73,7 +73,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	
 func reduce_life(n: int):
 	hp -= n
-	bubbles.popBubbles(n, 2)
+	bubbles.popBubbles(n, 0.5)
 
 func increase_life(n: int):
 	hp += n
