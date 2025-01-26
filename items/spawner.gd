@@ -1,15 +1,11 @@
 extends Node
 
-var arbusto_1_item = preload("res://items/arbusto_1.tscn")
-var arbusto_2_item = preload("res://items/arbusto_2.tscn")
-var arbusto_3_item = preload("res://items/arbusto_3.tscn")
-var arbusto_4_item = preload("res://items/arbusto_4.tscn")
-
 var item_list = [
-	preload("res://items/arbusto_1.tscn"),
-	preload("res://items/arbusto_2.tscn"),
-	preload("res://items/arbusto_3.tscn"),
-	preload("res://items/arbusto_4.tscn")
+	#preload("res://items/arbusto_1.tscn"),
+	#preload("res://items/arbusto_2.tscn"),
+	#preload("res://items/arbusto_3.tscn"),
+	#preload("res://items/arbusto_4.tscn"),
+	preload("res://items/kid.tscn")
 ]
 
 @export var minimumTime = 2 * 1000 # 2 seconds

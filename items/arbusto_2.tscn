@@ -6,8 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d2iqo"]
 size = Vector2(112, 368)
 
-[node name="Arbusto" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 script = ExtResource("1_aibfm")
+effect = 0.8
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
