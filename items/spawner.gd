@@ -31,7 +31,7 @@ func pick_random_instance():
 
 func spawn():
 	var instance: Node2D = pick_random_instance().instantiate()
-	instance.position = Vector2(2024, 780)
+	instance.position = Vector2(2024, 750)
 	$".".add_child(instance)
 
 

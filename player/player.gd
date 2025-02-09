@@ -23,6 +23,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	velocity.y += get_gravity().y * delta
 	velocity.x = 0
+	print($BubbleCloud.global_position)
 
 func get_input():
 	if GlobalSceneManager.inputs_locked:
@@ -70,8 +71,13 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	
 func reduce_life(n: int):
 	hp -= n
+	print(hp)
 	bubbles.popBubbles(n, 0.5)
 
 func increase_life(n: int):
 	hp += n
+	print(hp)
 	bubbles.pushBubbles(n)
+
+func affectBubbles(n, isGood: bool):
+	increase_life(n) if isGood else reduce_life(n)

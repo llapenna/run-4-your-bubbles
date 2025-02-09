@@ -21,15 +21,13 @@ position = Vector2(245, 702)
 [node name="Audio" parent="." instance=ExtResource("8_f6raq")]
 
 [node name="Bush1" parent="." instance=ExtResource("10_3iiko")]
-position = Vector2(1032, 743)
+position = Vector2(854, 750)
 
 [node name="UI" type="Node2D" parent="."]
 
 [node name="LifeBar" parent="UI" instance=ExtResource("8_w7qui")]
 z_index = 1000
 position = Vector2(960, 1000)
-
-[node name="Spawner" parent="." instance=ExtResource("7_4x6uh")]
 
 [node name="FloorCollider" type="RigidBody2D" parent="."]
 position = Vector2(1146, 592)
@@ -39,3 +37,5 @@ gravity_scale = 0.0
 position = Vector2(3, 400)
 shape = SubResource("RectangleShape2D_lpkau")
 debug_color = Color(1, 0.482353, 0.333333, 0.419608)
+
+[node name="Spawner" parent="." instance=ExtResource("7_4x6uh")]

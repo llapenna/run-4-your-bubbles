@@ -9,17 +9,18 @@ height = 239.0
 
 [node name="Bush1" type="Area2D"]
 z_index = 50
+position = Vector2(-1, 1)
 collision_layer = 2
 collision_mask = 2
+input_pickable = false
 script = ExtResource("1_o7k6p")
-effect = -20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_pemgt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 3.5)
 shape = SubResource("CapsuleShape2D_bculb")
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
