@@ -9,6 +9,8 @@ var posOffsetY: float = 0
 var bubbleScale = 1
 const DECAY_FACTOR = 0.003
 
+@onready var bubbleContainer = $Container
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -33,7 +35,7 @@ func popBubbles(bubbleCount, timeToPopALl):
 			bubbleToPop.explode()
 			await get_tree().create_timer(1).timeout
 		
-			$".".remove_child(bubbleToPop)
+			bubbleContainer.remove_child(bubbleToPop)
 	pass
 
 func pushBubbles(bubbleCount):
@@ -56,7 +58,7 @@ func pushBubbles(bubbleCount):
 		var randScale = Vector2(randScaleNumber, randScaleNumber)
 		
 		bubbleInstance.init(randPos, randScale)
-		$".".add_child(bubbleInstance)
+		bubbleContainer.add_child(bubbleInstance)
 		bubbles.append(bubbleInstance)
 
 func get_average_position(points):

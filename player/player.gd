@@ -2,22 +2,18 @@ extends CharacterBody2D
 
 var hp = 200
 var speed = 10
-var jump_speed = speed * 65
+var jump_speed = speed * 70
 var anim_speed = speed * 0.1
 
 var can_jump = true
 var is_ducking = false
 var is_jumping = false
 
-var bubblesScene = preload("res://bubbles-player/bubbles.tscn")
-var bubbles
+@onready var bubbles = $BubbleCloud
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	bubbles = bubblesScene.instantiate()
 	bubbles.init(Vector2(-20, 75), 50, 50, 0.00005, hp)
-	
-	$BubbleCloud.add_child(bubbles)
 	$AnimationPlayer.play("run")  # Start with the "run" animation as default.
 	
 
@@ -26,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	get_input()
 	move_and_slide()
 	velocity.y += get_gravity().y * delta
+	velocity.x = 0
 
 func get_input():
 	if GlobalSceneManager.inputs_locked:

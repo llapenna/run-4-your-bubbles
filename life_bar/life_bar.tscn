@@ -7,15 +7,14 @@
 script = ExtResource("1_g2tw1")
 
 [node name="LifeBar" type="Sprite2D" parent="."]
-position = Vector2(518, 49)
 texture = ExtResource("2_36512")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 anchors_preset = -1
 anchor_right = 0.531
 anchor_bottom = 0.129
-offset_left = 90.0
-offset_top = 34.0
-offset_right = 942.0
-offset_bottom = 61.0
+offset_left = -426.0
+offset_top = -14.0
+offset_right = 426.0
+offset_bottom = 14.0
 max_value = 200.0

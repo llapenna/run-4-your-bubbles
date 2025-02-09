@@ -3,32 +3,23 @@
 [ext_resource type="Script" path="res://items/item.gd" id="1_o7k6p"]
 [ext_resource type="Texture2D" uid="uid://bnll74i5j20p4" path="res://assets/Arbustos/ar_1.png" id="2_pemgt"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2iqo"]
-size = Vector2(112, 328)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bculb"]
+radius = 47.0
+height = 239.0
 
-[node name="Node2D" type="Node2D"]
+[node name="Bush1" type="Area2D"]
 z_index = 50
-scale = Vector2(0.65, 0.65)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_o7k6p")
 effect = -20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_pemgt")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-gravity_scale = 0.0
-contact_monitor = true
-max_contacts_reported = 10000
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 3.5)
+shape = SubResource("CapsuleShape2D_bculb")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(8, 27)
-shape = SubResource("RectangleShape2D_d2iqo")
-
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(2.00001, 2.00002)
-scale = Vector2(2.1, 2.16)
-rect = Rect2(-50, -100, 100, 200)
-
-[connection signal="body_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_body_entered"]
-[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_exited"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

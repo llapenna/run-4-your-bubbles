@@ -1,11 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://dmotfnmgns03i"]
+[gd_scene load_steps=3 format=3 uid="uid://dmotfnmgns03i"]
 
 [ext_resource type="Script" path="res://bubbles-player/bubbles.gd" id="1_4775h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dvylh"]
+radius = 22.0
 
 [node name="Bubbles" type="Node2D"]
 script = ExtResource("1_4775h")
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(232, -18)
+collision_layer = 2
+collision_mask = 2
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CircleShape2D_dvylh")
+
+[node name="Container" type="Node2D" parent="."]
+position = Vector2(13, -16)
+scale = Vector2(0.4, 0.4)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

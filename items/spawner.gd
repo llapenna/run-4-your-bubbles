@@ -2,17 +2,18 @@ extends Node
 
 var item_list = [
 	preload("res://items/arbusto_1.tscn"),
-	preload("res://items/arbusto_2.tscn"),
-	preload("res://items/arbusto_3.tscn"),
-	preload("res://items/arbusto_4.tscn"),
-	preload("res://items/kid.tscn"),
-	preload("res://items/luigi.tscn"),
-	preload("res://items/mario.tscn"),
-	preload("res://items/ladies.tscn"),
+	#preload("res://items/arbusto_2.tscn"),
+	#preload("res://items/arbusto_3.tscn"),
+	#preload("res://items/arbusto_4.tscn"),
+	#preload("res://items/kid.tscn"),
+	#preload("res://items/luigi.tscn"),
+	#preload("res://items/mario.tscn"),
+	#preload("res://items/ladies.tscn"),
 ]
 
-@export var minimumTime = 2 * 1000 # 2 seconds
-@export var maximumTime = 5 * 1000 # 5 seconds
+var time: float = 1
+@export var minimumTime = time * 1000 # 2 seconds
+@export var maximumTime = time * 2.5 * 1000 # 5 seconds
 var elapsed_time = 0
 
 func get_random_time():
@@ -30,7 +31,7 @@ func pick_random_instance():
 
 func spawn():
 	var instance: Node2D = pick_random_instance().instantiate()
-	instance.position.y = 0
+	instance.position = Vector2(2024, 780)
 	$".".add_child(instance)
 
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://cobitw0jlcec0"]
+[gd_scene load_steps=82 format=3 uid="uid://cobitw0jlcec0"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ud835"]
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="2_4piiv"]
@@ -71,6 +71,7 @@
 [ext_resource type="Texture2D" uid="uid://cqe5waddelsaa" path="res://player/Slide/Slide (34).png" id="35_w7aer"]
 [ext_resource type="Texture2D" uid="uid://g3hx2jaigbvk" path="res://player/Run/Run (21).png" id="36_00nia"]
 [ext_resource type="AudioStream" uid="uid://c5tyxl28nineu" path="res://audio/Loops/Player/Player_Barefoot_Loop.ogg" id="71_0hsqh"]
+[ext_resource type="PackedScene" uid="uid://dmotfnmgns03i" path="res://bubbles-player/bubbles.tscn" id="72_uoy4q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_stipv"]
 animations = [{
@@ -320,7 +321,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qn01r"]
-radius = 100.18
+radius = 48.0416
 
 [sub_resource type="Animation" id="Animation_4v8c3"]
 length = 0.001
@@ -370,10 +371,10 @@ tracks/2/path = NodePath("BubbleCloud:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.166667, 0.233333, 0.3, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.166667, 0.233333, 0.3, 0.366667, 0.433333, 0.5, 0.566667, 0.633333, 0.7, 0.766667, 0.833333, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-25, 12), Vector2(-25, 36), Vector2(0, 127), Vector2(-10, 161), Vector2(-18, 237), Vector2(0, 257), Vector2(30, 252), Vector2(-7, 256), Vector2(43, 257), Vector2(-45, 272), Vector2(33, 266), Vector2(-45, 272), Vector2(33, 266), Vector2(-45, 272), Vector2(33, 266)]
+"values": [Vector2(-4, 11), Vector2(-4, 21), Vector2(-1, 49), Vector2(-3, 67), Vector2(13, 98), Vector2(14, 109), Vector2(15, 116), Vector2(-7, 119), Vector2(23, 115), Vector2(-6, 115), Vector2(17, 113), Vector2(-8, 117), Vector2(7, 112), Vector2(24, 113)]
 }
 
 [sub_resource type="Animation" id="Animation_kpsxo"]
@@ -409,10 +410,10 @@ tracks/2/path = NodePath("BubbleCloud:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.166667, 0.233333, 0.3, 0.4, 0.466667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.233333, 0.3, 0.366667, 0.466667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1, 248), Vector2(-28, 222), Vector2(-15, 184), Vector2(-6, 179), Vector2(-22, 171), Vector2(-19, 158), Vector2(-15, 129), Vector2(-26, 121)]
+"values": [Vector2(-3, 98), Vector2(-8, 92), Vector2(-4, 71), Vector2(1, 60), Vector2(-7, 57), Vector2(-2, 51), Vector2(-10, 55)]
 }
 
 [sub_resource type="Animation" id="Animation_qbykn"]
@@ -448,10 +449,10 @@ tracks/2/path = NodePath("BubbleCloud:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.166667, 0.233333, 0.333333, 0.4, 0.466667, 0.5, 0.566667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.166667, 0.233333, 0.3, 0.366667, 0.433333, 0.5, 0.566667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-38, -42), Vector2(-53, -58), Vector2(-66, -63), Vector2(-79, -127), Vector2(-94, -95), Vector2(-105, -64), Vector2(-100, -46), Vector2(-99, -2), Vector2(-95, 32), Vector2(-75, 52)]
+"values": [Vector2(-12, -7), Vector2(-26, -20), Vector2(-28, -33), Vector2(-33, -36), Vector2(-35, -32), Vector2(-33, -23), Vector2(-31, -1), Vector2(-31, 13), Vector2(-33, 25)]
 }
 
 [sub_resource type="Animation" id="Animation_ecpua"]
@@ -488,10 +489,10 @@ tracks/2/path = NodePath("BubbleCloud:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.133333, 0.166667, 0.266667, 0.366667, 0.433333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-32, 30), Vector2(-35, 23), Vector2(-39, 13), Vector2(-37, 31), Vector2(-35, 54), Vector2(-47, 14), Vector2(-47, 39), Vector2(-40, 27)]
+"values": [Vector2(-12, 18), Vector2(-11, 8), Vector2(-13, 19), Vector2(-19, 20), Vector2(-14, 10), Vector2(-12, 18), Vector2(-10, 23)]
 }
 
 [sub_resource type="Animation" id="Animation_04bwu"]
@@ -528,10 +529,10 @@ tracks/2/path = NodePath("BubbleCloud:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.233333, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 257), Vector2(30, 252), Vector2(-7, 256), Vector2(0, 257), Vector2(30, 252), Vector2(-7, 256), Vector2(25, 256)]
+"values": [Vector2(18, 107), Vector2(-6, 107), Vector2(-22, 112), Vector2(2, 109), Vector2(18, 107)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lv80o"]
@@ -545,19 +546,19 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
-collision_layer = 3
-collision_mask = 3
 script = ExtResource("1_ud835")
 
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(6, 6)
+scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_stipv")
-animation = &"SlideUp"
+animation = &"run"
 autoplay = "run"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(5, 246)
+[node name="FloorCollider" type="CollisionShape2D" parent="."]
+position = Vector2(0, 96)
 shape = SubResource("CircleShape2D_qn01r")
+debug_color = Color(1, 0.482353, 0.333333, 0.419608)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -565,11 +566,11 @@ libraries = {
 }
 autoplay = "run"
 
-[node name="BubbleCloud" type="Node2D" parent="."]
-position = Vector2(-32, 30)
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("71_0hsqh")
 volume_db = 3.0
+
+[node name="BubbleCloud" parent="." instance=ExtResource("72_uoy4q")]
+position = Vector2(-32, 30)
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
