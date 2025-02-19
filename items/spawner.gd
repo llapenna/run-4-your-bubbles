@@ -1,7 +1,7 @@
 extends Node
 
 var item_list = [
-	preload("res://items/arbusto_1.tscn"),
+	preload("res://items_new/Arbustos/ar_1.tscn"),
 	#preload("res://items/arbusto_2.tscn"),
 	#preload("res://items/arbusto_3.tscn"),
 	#preload("res://items/arbusto_4.tscn"),
