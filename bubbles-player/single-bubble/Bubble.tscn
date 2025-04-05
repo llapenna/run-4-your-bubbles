@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://7aw3yaguwkh7"]
+[gd_scene load_steps=18 format=3 uid="uid://7aw3yaguwkh7"]
 
 [ext_resource type="Script" path="res://bubbles-player/single-bubble/bubble.gd" id="1_tgmx8"]
 [ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="2_u8lal"]
@@ -11,6 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="9_rl8ug"]
 [ext_resource type="Texture2D" uid="uid://dp2k40glu2kq3" path="res://bubbles-player/single-bubble/empty png.png" id="10_bl68c"]
 [ext_resource type="AudioStream" uid="uid://bo52cgpf2fhoi" path="res://audio/OneShot/Bubbles/Bubble_Pop_1.ogg" id="11_lwj0s"]
+[ext_resource type="AudioStream" uid="uid://0ckoli2f67kw" path="res://audio/OneShot/Bubbles/Bubble_Pop_2.ogg" id="12_1yoro"]
+[ext_resource type="AudioStream" uid="uid://ba3nml1csvem7" path="res://audio/OneShot/Bubbles/Bubble_Pop_3.ogg" id="13_4cpfx"]
+[ext_resource type="AudioStream" uid="uid://sgajw01brnss" path="res://audio/OneShot/Bubbles/Bubble_Pop_4.ogg" id="14_rk1p6"]
+[ext_resource type="AudioStream" uid="uid://dr5asm4gpl31u" path="res://audio/OneShot/Bubbles/Bubble_Pop_5.ogg" id="15_njsl3"]
+[ext_resource type="AudioStream" uid="uid://c37skkmedtay6" path="res://audio/OneShot/Bubbles/Bubble_Pop_6.ogg" id="16_x5y3q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ymgei"]
 animations = [{
@@ -65,8 +70,30 @@ animation = &"explode"
 frame = 8
 frame_progress = 1.0
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sounds"]
 stream = ExtResource("11_lwj0s")
+volume_db = 3.0
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("12_1yoro")
+volume_db = 3.0
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("13_4cpfx")
+volume_db = 3.0
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("14_rk1p6")
+volume_db = 3.0
+
+[node name="AudioStreamPlayer2D5" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("15_njsl3")
+volume_db = 3.0
+
+[node name="AudioStreamPlayer2D6" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("16_x5y3q")
 volume_db = 3.0
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
