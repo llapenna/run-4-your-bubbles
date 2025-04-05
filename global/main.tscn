@@ -39,3 +39,8 @@ shape = SubResource("RectangleShape2D_lpkau")
 debug_color = Color(1, 0.482353, 0.333333, 0.419608)
 
 [node name="Spawner" parent="." instance=ExtResource("7_4x6uh")]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

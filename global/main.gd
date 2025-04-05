@@ -21,3 +21,7 @@ func _process(delta: float) -> void:
 	if (player.hp <= 0):
 		$UI/LifeBar.set_value(0)	
 		GlobalSceneManager.end_game()
+
+
+func _on_timer_timeout() -> void:
+	$Player.affectBubbles(5, false)

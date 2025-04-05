@@ -25,13 +25,16 @@ func init(origin: Vector2, offsetX: float, offsetY: float, parentBubbleScale: fl
 	pass
 
 func popBubbles(bubbleCount, timeToPopALl):
+	print("debug")
+	
+	var timePerBubble: float = bubbleCount / timeToPopALl
+	print(timePerBubble)
 	for i in bubbleCount:
 		var bubbleToPop = bubbles.pop_front()
 		if (bubbleToPop):
 			bubbleToPop.explode()
-			await get_tree().create_timer(1).timeout
-		
-			bubbleContainer.remove_child(bubbleToPop)
+			await get_tree().create_timer(timePerBubble).timeout
+
 	pass
 
 func pushBubbles(bubbleCount):

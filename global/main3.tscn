@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5tfs0ddki7yy"]
+
+[ext_resource type="Script" path="res://global/main.gd" id="1_36yri"]
+[ext_resource type="PackedScene" uid="uid://cobitw0jlcec0" path="res://player/player.tscn" id="2_qhi5v"]
+[ext_resource type="PackedScene" uid="uid://b3eut8dox8t1n" path="res://audio/audio.tscn" id="3_agohl"]
+[ext_resource type="PackedScene" uid="uid://dyqogsd4wcoja" path="res://life_bar/life_bar.tscn" id="5_0xq54"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpkau"]
+size = Vector2(2522.5, 254.5)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_36yri")
+acceleration = 0.05
+initialSpeed = 10.0
+
+[node name="Player" parent="." instance=ExtResource("2_qhi5v")]
+position = Vector2(245, 702)
+
+[node name="Audio" parent="." instance=ExtResource("3_agohl")]
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="LifeBar" parent="UI" instance=ExtResource("5_0xq54")]
+z_index = 1000
+position = Vector2(960, 1000)
+
+[node name="FloorCollider" type="RigidBody2D" parent="."]
+position = Vector2(1146, 592)
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FloorCollider"]
+position = Vector2(3, 400)
+shape = SubResource("RectangleShape2D_lpkau")
+debug_color = Color(1, 0.482353, 0.333333, 0.419608)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
