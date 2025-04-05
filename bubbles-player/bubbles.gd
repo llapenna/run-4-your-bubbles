@@ -27,7 +27,7 @@ func init(origin: Vector2, offsetX: float, offsetY: float, parentBubbleScale: fl
 func popBubbles(bubbleCount, timeToPopALl):
 	print("debug")
 	
-	var timePerBubble: float = bubbleCount / timeToPopALl
+	var timePerBubble: float = timeToPopALl / bubbleCount
 	print(timePerBubble)
 	for i in bubbleCount:
 		var bubbleToPop = bubbles.pop_front()
