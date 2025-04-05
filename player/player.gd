@@ -74,6 +74,7 @@ func reduce_life(n: int):
 
 func increase_life(n: int):
 	hp += n
+	$AudioStreamPlayer2D2.play()
 	bubbles.pushBubbles(n)
 
 func affectBubbles(n, isGood: bool):

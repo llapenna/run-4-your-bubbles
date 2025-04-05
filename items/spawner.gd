@@ -5,9 +5,10 @@ var item_list = [
 	preload("res://items_new/Arbustos/ar_2.tscn"),
 	preload("res://items_new/Arbustos/ar_3.tscn"),
 	preload("res://items_new/Arbustos/ar_4.tscn"),
-	#preload("res://items/kid.tscn"),
-	#preload("res://items/luigi.tscn"),
-	#preload("res://items/mario.tscn"),
+	preload("res://items_new/Conserjes_PowerUp/luigi.tscn"),
+	preload("res://items_new/Conserjes_PowerUp/mario.tscn"),
+	preload("res://items_new/Hidrante/hidrante.tscn"),
+	preload("res://items_new/Kid_PowerUp/kid.tscn"),
 	#preload("res://items/ladies.tscn"),
 ]
 

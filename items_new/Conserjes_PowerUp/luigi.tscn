@@ -1,11 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1h5hqdk5kdec"]
+[gd_scene load_steps=4 format=3 uid="uid://c012b6kng4pkc"]
 
-[ext_resource type="Script" path="res://items/item.gd" id="1_o7k6p"]
-[ext_resource type="Texture2D" uid="uid://bnll74i5j20p4" path="res://items_new/Arbustos/ar_1.png" id="2_pemgt"]
+[ext_resource type="Script" path="res://items_new/Conserjes_PowerUp/luigi.gd" id="1_xtr8x"]
+[ext_resource type="Texture2D" uid="uid://etsridyewg03" path="res://items_new/Conserjes_PowerUp/Luiggi.png" id="2_1ex4b"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bculb"]
-radius = 47.0
-height = 239.0
+radius = 37.0
+height = 202.0
 
 [node name="Bush1" type="Area2D"]
 z_index = 50
@@ -13,13 +13,17 @@ position = Vector2(-1, 1)
 collision_layer = 2
 collision_mask = 2
 input_pickable = false
-script = ExtResource("1_o7k6p")
+script = ExtResource("1_xtr8x")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_pemgt")
+z_index = 5
+position = Vector2(5, 68)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_1ex4b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 95)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_bculb")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
