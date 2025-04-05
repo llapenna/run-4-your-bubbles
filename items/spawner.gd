@@ -2,9 +2,9 @@ extends Node
 
 var item_list = [
 	preload("res://items_new/Arbustos/ar_1.tscn"),
-	#preload("res://items/arbusto_2.tscn"),
-	#preload("res://items/arbusto_3.tscn"),
-	#preload("res://items/arbusto_4.tscn"),
+	preload("res://items_new/Arbustos/ar_2.tscn"),
+	preload("res://items_new/Arbustos/ar_3.tscn"),
+	preload("res://items_new/Arbustos/ar_4.tscn"),
 	#preload("res://items/kid.tscn"),
 	#preload("res://items/luigi.tscn"),
 	#preload("res://items/mario.tscn"),
