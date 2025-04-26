@@ -17,7 +17,7 @@ initialSpeed = 10.0
 
 [node name="Background" parent="." instance=ExtResource("6_y2lx5")]
 z_index = -10
-position = Vector2(0, 450)
+position = Vector2(0, 400)
 
 [node name="Player" parent="." instance=ExtResource("7_hi7x6")]
 position = Vector2(245, 702)

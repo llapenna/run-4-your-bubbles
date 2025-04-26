@@ -20,3 +20,6 @@ resize = 1.0
 
 [node name="Layer3" parent="." instance=ExtResource("1_h16yg")]
 resize = 1.0
+
+[node name="Layer4" parent="." instance=ExtResource("1_h16yg")]
+resize = 1.0
