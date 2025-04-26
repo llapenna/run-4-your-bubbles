@@ -13,8 +13,8 @@ var item_list = [
 ]
 
 var time: float = 1
-@export var minimumTime = time * 1000 # 2 seconds
-@export var maximumTime = time * 2.5 * 1000 # 5 seconds
+@export var minimumTime = time * 2 * 1000 # 2 seconds
+@export var maximumTime = time * 5 * 1000 # 5 seconds
 var elapsed_time = 0
 
 func get_random_time():
