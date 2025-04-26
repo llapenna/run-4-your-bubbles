@@ -1,781 +1,1165 @@
 [gd_scene load_steps=196 format=3 uid="uid://fae52iws45p5"]
 
 [ext_resource type="Script" path="res://items_new/Hidrante/hidrante.gd" id="1_vblup"]
-[ext_resource type="Texture2D" uid="uid://cjo1fjukhkus2" path="res://items_new/Hidrante/Hidra (1).png" id="2_oavl0"]
-[ext_resource type="Texture2D" uid="uid://dpy6vf6k7nhsr" path="res://items_new/Hidrante/Hidra (2).png" id="3_xcypy"]
-[ext_resource type="Texture2D" uid="uid://coih56fvsneod" path="res://items_new/Hidrante/Hidra (3).png" id="4_06igy"]
-[ext_resource type="Texture2D" uid="uid://bg3nwfjmu8tqk" path="res://items_new/Hidrante/Hidra (4).png" id="5_f7sbl"]
-[ext_resource type="Texture2D" uid="uid://do07rluoui7o1" path="res://items_new/Hidrante/Hidra (5).png" id="6_18s8b"]
-[ext_resource type="Texture2D" uid="uid://cjl2ghf3p114r" path="res://items_new/Hidrante/Hidra (6).png" id="7_fgov2"]
-[ext_resource type="Texture2D" uid="uid://8vj628t773jc" path="res://items_new/Hidrante/Hidra (7).png" id="8_a3no4"]
-[ext_resource type="Texture2D" uid="uid://ul38jsrxo25q" path="res://items_new/Hidrante/Hidra (8).png" id="9_yre45"]
-[ext_resource type="Texture2D" uid="uid://djk22dyb7av8w" path="res://items_new/Hidrante/Hidra (9).png" id="10_33fym"]
-[ext_resource type="Texture2D" uid="uid://dk6ysg5but2j2" path="res://items_new/Hidrante/Hidra (10).png" id="11_ne5my"]
-[ext_resource type="Texture2D" uid="uid://bs0b7lcwrisdb" path="res://items_new/Hidrante/Hidra (11).png" id="12_56u6e"]
-[ext_resource type="Texture2D" uid="uid://dl5kdqljhx800" path="res://items_new/Hidrante/Hidra (12).png" id="13_518s7"]
-[ext_resource type="Texture2D" uid="uid://0mx5q86bqjon" path="res://items_new/Hidrante/Hidra (13).png" id="14_x6x7n"]
-[ext_resource type="Texture2D" uid="uid://t1naudrthpys" path="res://items_new/Hidrante/Hidra (14).png" id="15_mjexh"]
-[ext_resource type="Texture2D" uid="uid://g1yy25wtiec6" path="res://items_new/Hidrante/Hidra (15).png" id="16_7urr5"]
-[ext_resource type="Texture2D" uid="uid://ecpu7ft4joij" path="res://items_new/Hidrante/Hidra (16).png" id="17_laspt"]
-[ext_resource type="Texture2D" uid="uid://chs0x8gwocap8" path="res://items_new/Hidrante/Hidra (17).png" id="18_dpuk4"]
-[ext_resource type="Texture2D" uid="uid://bld7akyvbx3k4" path="res://items_new/Hidrante/Hidra (18).png" id="19_mifm6"]
-[ext_resource type="Texture2D" uid="uid://btaiuu08846li" path="res://items_new/Hidrante/Hidra (19).png" id="20_17ldm"]
-[ext_resource type="Texture2D" uid="uid://djk2upmhs56mb" path="res://items_new/Hidrante/Hidra (20).png" id="21_h1a8a"]
-[ext_resource type="Texture2D" uid="uid://ch8ng0uhic374" path="res://items_new/Hidrante/Hidra (21).png" id="22_4hn1b"]
-[ext_resource type="Texture2D" uid="uid://xtcrw4y1rtis" path="res://items_new/Hidrante/Hidra (22).png" id="23_xd0d6"]
-[ext_resource type="Texture2D" uid="uid://c2175m01mu384" path="res://items_new/Hidrante/Hidra (23).png" id="24_a2vtm"]
-[ext_resource type="Texture2D" uid="uid://bin4fklxr4dae" path="res://items_new/Hidrante/Hidra (24).png" id="25_3qn42"]
-[ext_resource type="Texture2D" uid="uid://dw3qmcs4w74ah" path="res://items_new/Hidrante/Hidra (25).png" id="26_8v132"]
-[ext_resource type="Texture2D" uid="uid://ci8dn8r8jubb" path="res://items_new/Hidrante/Hidra (26).png" id="27_ij22v"]
-[ext_resource type="Texture2D" uid="uid://cdbub6yud1je8" path="res://items_new/Hidrante/Hidra (27).png" id="28_q0bah"]
-[ext_resource type="Texture2D" uid="uid://dnryfd6j8b68j" path="res://items_new/Hidrante/Hidra (28).png" id="29_ehssk"]
-[ext_resource type="Texture2D" uid="uid://qvd16u1g5acd" path="res://items_new/Hidrante/Hidra (29).png" id="30_n7sa6"]
-[ext_resource type="Texture2D" uid="uid://dvp60wylw2g58" path="res://items_new/Hidrante/Hidra (30).png" id="31_35t3q"]
-[ext_resource type="Texture2D" uid="uid://xr508l10o30p" path="res://items_new/Hidrante/Hidra (31).png" id="32_g1mbk"]
-[ext_resource type="Texture2D" uid="uid://dnmtnfgyjt0ln" path="res://items_new/Hidrante/Hidra (32).png" id="33_bgexi"]
-[ext_resource type="Texture2D" uid="uid://bfark7xfuvgcf" path="res://items_new/Hidrante/Hidra (33).png" id="34_2rtec"]
-[ext_resource type="Texture2D" uid="uid://qwb22k5qv5i3" path="res://items_new/Hidrante/Hidra (34).png" id="35_wc7ff"]
-[ext_resource type="Texture2D" uid="uid://dafeuq4n4qlcd" path="res://items_new/Hidrante/Hidra (35).png" id="36_gl5lq"]
-[ext_resource type="Texture2D" uid="uid://bocyy13n7su6w" path="res://items_new/Hidrante/Hidra (36).png" id="37_eg2xu"]
-[ext_resource type="Texture2D" uid="uid://3bwimtq7y5ww" path="res://items_new/Hidrante/Hidra (37).png" id="38_p5fpd"]
-[ext_resource type="Texture2D" uid="uid://l3nne57n51un" path="res://items_new/Hidrante/Hidra (38).png" id="39_6spcc"]
-[ext_resource type="Texture2D" uid="uid://du720kr8xhy82" path="res://items_new/Hidrante/Hidra (39).png" id="40_l46gh"]
-[ext_resource type="Texture2D" uid="uid://bnbea2wxm7tjv" path="res://items_new/Hidrante/Hidra (40).png" id="41_bc4mj"]
-[ext_resource type="Texture2D" uid="uid://c5a3nawlk3vu5" path="res://items_new/Hidrante/Hidra (41).png" id="42_qrk37"]
-[ext_resource type="Texture2D" uid="uid://r266dvjw4p83" path="res://items_new/Hidrante/Hidra (42).png" id="43_hqpno"]
-[ext_resource type="Texture2D" uid="uid://dt6eiytpnbndd" path="res://items_new/Hidrante/Hidra (43).png" id="44_4h0su"]
-[ext_resource type="Texture2D" uid="uid://dpfoh4a686wd" path="res://items_new/Hidrante/Hidra (44).png" id="45_m2qt5"]
-[ext_resource type="Texture2D" uid="uid://blgjkd1mgom07" path="res://items_new/Hidrante/Hidra (45).png" id="46_emptj"]
-[ext_resource type="Texture2D" uid="uid://balhbmlcv0ay7" path="res://items_new/Hidrante/Hidra (46).png" id="47_liimw"]
-[ext_resource type="Texture2D" uid="uid://ccqihjyas53xc" path="res://items_new/Hidrante/Hidra (47).png" id="48_n2yap"]
-[ext_resource type="Texture2D" uid="uid://ve3f2t8khrtq" path="res://items_new/Hidrante/Hidra (48).png" id="49_8h14c"]
-[ext_resource type="Texture2D" uid="uid://eb6p43wijsan" path="res://items_new/Hidrante/Hidra (49).png" id="50_qw4g3"]
-[ext_resource type="Texture2D" uid="uid://dpdf3erdiim1a" path="res://items_new/Hidrante/Hidra (50).png" id="51_ei5am"]
-[ext_resource type="Texture2D" uid="uid://dgsm7y254e2ek" path="res://items_new/Hidrante/Hidra (51).png" id="52_33vox"]
-[ext_resource type="Texture2D" uid="uid://pvexc3yayugj" path="res://items_new/Hidrante/Hidra (52).png" id="53_gp8cq"]
-[ext_resource type="Texture2D" uid="uid://c8n1feg7nc5df" path="res://items_new/Hidrante/Hidra (53).png" id="54_774cg"]
-[ext_resource type="Texture2D" uid="uid://1map3fegt4ol" path="res://items_new/Hidrante/Hidra (54).png" id="55_qrm2x"]
-[ext_resource type="Texture2D" uid="uid://duputmwedftty" path="res://items_new/Hidrante/Hidra (55).png" id="56_qby54"]
-[ext_resource type="Texture2D" uid="uid://b55s3ux6aqwqs" path="res://items_new/Hidrante/Hidra (56).png" id="57_ynng0"]
-[ext_resource type="Texture2D" uid="uid://ku33g776fo04" path="res://items_new/Hidrante/Hidra (57).png" id="58_8f3s8"]
-[ext_resource type="Texture2D" uid="uid://clnctopdwl46c" path="res://items_new/Hidrante/Hidra (58).png" id="59_i0w7n"]
-[ext_resource type="Texture2D" uid="uid://bc7fo2b6400js" path="res://items_new/Hidrante/Hidra (59).png" id="60_spjio"]
-[ext_resource type="Texture2D" uid="uid://b0mpjv4thj6s5" path="res://items_new/Hidrante/Hidra (60).png" id="61_7s4fo"]
-[ext_resource type="Texture2D" uid="uid://c1cnfpe44u2i5" path="res://items_new/Hidrante/Hidra (61).png" id="62_msytj"]
-[ext_resource type="Texture2D" uid="uid://c44bn80r2fvfb" path="res://items_new/Hidrante/Hidra (62).png" id="63_2eb5q"]
-[ext_resource type="Texture2D" uid="uid://4e14q5tyw04f" path="res://items_new/Hidrante/Hidra (63).png" id="64_8c5ne"]
-[ext_resource type="Texture2D" uid="uid://dikaxnwevc2r7" path="res://items_new/Hidrante/Hidra (64).png" id="65_w8r7c"]
-[ext_resource type="Texture2D" uid="uid://3cqqmy3jfux5" path="res://items_new/Hidrante/Hidra (65).png" id="66_dr5im"]
-[ext_resource type="Texture2D" uid="uid://dwhu43dh7ovlf" path="res://items_new/Hidrante/Hidra (66).png" id="67_301sm"]
-[ext_resource type="Texture2D" uid="uid://b5iqnj8paw544" path="res://items_new/Hidrante/Hidra (67).png" id="68_wo77s"]
-[ext_resource type="Texture2D" uid="uid://hcjsa4xrbd7y" path="res://items_new/Hidrante/Hidra (68).png" id="69_2kb6f"]
-[ext_resource type="Texture2D" uid="uid://bk06morsdpju5" path="res://items_new/Hidrante/Hidra (69).png" id="70_l1ahr"]
-[ext_resource type="Texture2D" uid="uid://c5t4nogiiimbs" path="res://items_new/Hidrante/Hidra (70).png" id="71_g7di2"]
-[ext_resource type="Texture2D" uid="uid://6cqanfvqq2ip" path="res://items_new/Hidrante/Hidra (71).png" id="72_fpajp"]
-[ext_resource type="Texture2D" uid="uid://c02uorayy13sw" path="res://items_new/Hidrante/Hidra (72).png" id="73_810ea"]
-[ext_resource type="Texture2D" uid="uid://dy1bc4gfalosv" path="res://items_new/Hidrante/Hidra (73).png" id="74_7o6b6"]
-[ext_resource type="Texture2D" uid="uid://drk2ttetvypbp" path="res://items_new/Hidrante/Hidra (74).png" id="75_amu25"]
-[ext_resource type="Texture2D" uid="uid://cj7wn3ui7hcso" path="res://items_new/Hidrante/Hidra (75).png" id="76_s8k2n"]
-[ext_resource type="Texture2D" uid="uid://ch1x883l8377v" path="res://items_new/Hidrante/Hidra (76).png" id="77_yw7l5"]
-[ext_resource type="Texture2D" uid="uid://bevo007bs4f8x" path="res://items_new/Hidrante/Hidra (77).png" id="78_7cbuo"]
-[ext_resource type="Texture2D" uid="uid://dfjqqe3tuf7m8" path="res://items_new/Hidrante/Hidra (78).png" id="79_h5h8r"]
-[ext_resource type="Texture2D" uid="uid://mixgh7u6nkdg" path="res://items_new/Hidrante/Hidra (79).png" id="80_uyoug"]
-[ext_resource type="Texture2D" uid="uid://berttshx377ix" path="res://items_new/Hidrante/Hidra (80).png" id="81_55efw"]
-[ext_resource type="Texture2D" uid="uid://ciw8kb2thv1ao" path="res://items_new/Hidrante/Hidra (81).png" id="82_glf00"]
-[ext_resource type="Texture2D" uid="uid://d3aoaxua2reta" path="res://items_new/Hidrante/Hidra (82).png" id="83_nxfoq"]
-[ext_resource type="Texture2D" uid="uid://2scr6cmxmnrq" path="res://items_new/Hidrante/Hidra (83).png" id="84_v26g3"]
-[ext_resource type="Texture2D" uid="uid://cdu0qjgmb4tm5" path="res://items_new/Hidrante/Hidra (84).png" id="85_e0xhs"]
-[ext_resource type="Texture2D" uid="uid://bxdpt78ce0vtf" path="res://items_new/Hidrante/Hidra (85).png" id="86_wq8cj"]
-[ext_resource type="Texture2D" uid="uid://dvppkonhql8a0" path="res://items_new/Hidrante/Hidra (86).png" id="87_gx114"]
-[ext_resource type="Texture2D" uid="uid://s3tots7lhx2p" path="res://items_new/Hidrante/Hidra (87).png" id="88_u2ygq"]
-[ext_resource type="Texture2D" uid="uid://c6uvb5t2blaie" path="res://items_new/Hidrante/Hidra (88).png" id="89_e6knk"]
-[ext_resource type="Texture2D" uid="uid://df0od2f3mcfa3" path="res://items_new/Hidrante/Hidra (89).png" id="90_isglv"]
-[ext_resource type="Texture2D" uid="uid://ceultn5nhuwkx" path="res://items_new/Hidrante/Hidra (90).png" id="91_nugd4"]
-[ext_resource type="Texture2D" uid="uid://cue1dyrum6t28" path="res://items_new/Hidrante/Hidra (91).png" id="92_psq2f"]
-[ext_resource type="Texture2D" uid="uid://cwpwmfuxoeiq3" path="res://items_new/Hidrante/Hidra (92).png" id="93_tugvn"]
-[ext_resource type="Texture2D" uid="uid://dwk7b0e3j0j22" path="res://items_new/Hidrante/Hidra (93).png" id="94_a0pr2"]
-[ext_resource type="Texture2D" uid="uid://cox0pogk8iilm" path="res://items_new/Hidrante/Hidra (94).png" id="95_dax8k"]
-[ext_resource type="Texture2D" uid="uid://bbq66fx6gtvqk" path="res://items_new/Hidrante/Hidra (95).png" id="96_4err4"]
-[ext_resource type="Texture2D" uid="uid://b5af6mn7cg2wi" path="res://items_new/Hidrante/Hidra (96).png" id="97_cckjg"]
-[ext_resource type="Texture2D" uid="uid://b7ph3pulbcvd2" path="res://items_new/Hidrante/Hidra (97).png" id="98_b1vfo"]
-[ext_resource type="Texture2D" uid="uid://h14b3yqm3ap0" path="res://items_new/Hidrante/Hidra (98).png" id="99_8lkdn"]
-[ext_resource type="Texture2D" uid="uid://doglx11ktnvql" path="res://items_new/Hidrante/Hidra (99).png" id="100_rqe0e"]
-[ext_resource type="Texture2D" uid="uid://w1wa6o3ou8ww" path="res://items_new/Hidrante/Hidra (100).png" id="101_ufcrx"]
-[ext_resource type="Texture2D" uid="uid://bfockmpfqegqd" path="res://items_new/Hidrante/Hidra (101).png" id="102_xllpy"]
-[ext_resource type="Texture2D" uid="uid://cnbilyad8u7c5" path="res://items_new/Hidrante/Hidra (102).png" id="103_tkpbw"]
-[ext_resource type="Texture2D" uid="uid://djuttfi3vsyqt" path="res://items_new/Hidrante/Hidra (103).png" id="104_6b5cs"]
-[ext_resource type="Texture2D" uid="uid://ng5hkattflna" path="res://items_new/Hidrante/Hidra (104).png" id="105_bugop"]
-[ext_resource type="Texture2D" uid="uid://1vvnnyunun0p" path="res://items_new/Hidrante/Hidra (105).png" id="106_0808n"]
-[ext_resource type="Texture2D" uid="uid://bixp6jkug3np6" path="res://items_new/Hidrante/Hidra (106).png" id="107_v30yr"]
-[ext_resource type="Texture2D" uid="uid://bxnfdtshni5dm" path="res://items_new/Hidrante/Hidra (107).png" id="108_oj1cy"]
-[ext_resource type="Texture2D" uid="uid://boo7ni3vhmwvy" path="res://items_new/Hidrante/Hidra (108).png" id="109_oe8an"]
-[ext_resource type="Texture2D" uid="uid://ctep2tskovl70" path="res://items_new/Hidrante/Hidra (109).png" id="110_og0i1"]
-[ext_resource type="Texture2D" uid="uid://3m6638w811kx" path="res://items_new/Hidrante/Hidra (110).png" id="111_oagcx"]
-[ext_resource type="Texture2D" uid="uid://cnved6h141uiu" path="res://items_new/Hidrante/Hidra (111).png" id="112_lnsm5"]
-[ext_resource type="Texture2D" uid="uid://c4rb5pvyt8y44" path="res://items_new/Hidrante/Hidra (112).png" id="113_tps6o"]
-[ext_resource type="Texture2D" uid="uid://dpe1kgj2idxi8" path="res://items_new/Hidrante/Hidra (113).png" id="114_nbk5b"]
-[ext_resource type="Texture2D" uid="uid://mhcaaujkke3g" path="res://items_new/Hidrante/Hidra (114).png" id="115_6256c"]
-[ext_resource type="Texture2D" uid="uid://bftekbs51523e" path="res://items_new/Hidrante/Hidra (115).png" id="116_lcepd"]
-[ext_resource type="Texture2D" uid="uid://dh2jpcjqb11ts" path="res://items_new/Hidrante/Hidra (116).png" id="117_so3bf"]
-[ext_resource type="Texture2D" uid="uid://36r2sa0pey4q" path="res://items_new/Hidrante/Hidra (117).png" id="118_u6ci0"]
-[ext_resource type="Texture2D" uid="uid://gg5t3358u0ai" path="res://items_new/Hidrante/Hidra (118).png" id="119_vwba8"]
-[ext_resource type="Texture2D" uid="uid://bir51qu8t7l1n" path="res://items_new/Hidrante/Hidra (119).png" id="120_t7skb"]
-[ext_resource type="Texture2D" uid="uid://dp82lfac1hg8s" path="res://items_new/Hidrante/Hidra (120).png" id="121_0l63p"]
-[ext_resource type="Texture2D" uid="uid://1eoa5ha41xfd" path="res://items_new/Hidrante/Hidra (121).png" id="122_iyvys"]
-[ext_resource type="Texture2D" uid="uid://fycosks6j51p" path="res://items_new/Hidrante/Hidra (122).png" id="123_8oacd"]
-[ext_resource type="Texture2D" uid="uid://bf1hoxyabau0y" path="res://items_new/Hidrante/Hidra (123).png" id="124_cc75l"]
-[ext_resource type="Texture2D" uid="uid://ufxt3wypw1kx" path="res://items_new/Hidrante/Hidra (124).png" id="125_5kv0d"]
-[ext_resource type="Texture2D" uid="uid://diy2gy6l0x34e" path="res://items_new/Hidrante/Hidra (125).png" id="126_2epse"]
-[ext_resource type="Texture2D" uid="uid://dpvnlpxa68koi" path="res://items_new/Hidrante/Hidra (126).png" id="127_mr1vo"]
-[ext_resource type="Texture2D" uid="uid://iefkh35t680p" path="res://items_new/Hidrante/Hidra (127).png" id="128_umt53"]
-[ext_resource type="Texture2D" uid="uid://bqfsqexgt3c43" path="res://items_new/Hidrante/Hidra (128).png" id="129_buvco"]
-[ext_resource type="Texture2D" uid="uid://dc3k7lmp5lc1m" path="res://items_new/Hidrante/Hidra (129).png" id="130_oq3g1"]
-[ext_resource type="Texture2D" uid="uid://vrfc3rjo6wsl" path="res://items_new/Hidrante/Hidra (130).png" id="131_g68b3"]
-[ext_resource type="Texture2D" uid="uid://bn5ywg1yvdu6e" path="res://items_new/Hidrante/Hidra (131).png" id="132_hhfow"]
-[ext_resource type="Texture2D" uid="uid://c20swpcqvtfdt" path="res://items_new/Hidrante/Hidra (132).png" id="133_5qgke"]
-[ext_resource type="Texture2D" uid="uid://fjboc0bqflc7" path="res://items_new/Hidrante/Hidra (133).png" id="134_en3ot"]
-[ext_resource type="Texture2D" uid="uid://done6mtgrqoq4" path="res://items_new/Hidrante/Hidra (134).png" id="135_rr2is"]
-[ext_resource type="Texture2D" uid="uid://dunwt8trpns5n" path="res://items_new/Hidrante/Hidra (135).png" id="136_pfy2g"]
-[ext_resource type="Texture2D" uid="uid://x8nlxllxjvil" path="res://items_new/Hidrante/Hidra (136).png" id="137_l45u1"]
-[ext_resource type="Texture2D" uid="uid://8f6ym7j3535r" path="res://items_new/Hidrante/Hidra (137).png" id="138_mut3n"]
-[ext_resource type="Texture2D" uid="uid://cvutfteqrnx83" path="res://items_new/Hidrante/Hidra (138).png" id="139_qb0co"]
-[ext_resource type="Texture2D" uid="uid://dyt3c6s2g1gt6" path="res://items_new/Hidrante/Hidra (139).png" id="140_njfgh"]
-[ext_resource type="Texture2D" uid="uid://jxsfgh3kyki1" path="res://items_new/Hidrante/Hidra (140).png" id="141_iw807"]
-[ext_resource type="Texture2D" uid="uid://dlhq7sr36a6cs" path="res://items_new/Hidrante/Hidra (141).png" id="142_040xe"]
-[ext_resource type="Texture2D" uid="uid://bubx7aotrd7el" path="res://items_new/Hidrante/Hidra (142).png" id="143_oqreb"]
-[ext_resource type="Texture2D" uid="uid://chc7x8us84k4g" path="res://items_new/Hidrante/Hidra (143).png" id="144_exn5p"]
-[ext_resource type="Texture2D" uid="uid://c7cur1jb6rnal" path="res://items_new/Hidrante/Hidra (144).png" id="145_ybkbv"]
-[ext_resource type="Texture2D" uid="uid://bhib4pfgtsw5q" path="res://items_new/Hidrante/Hidra (145).png" id="146_hhe5m"]
-[ext_resource type="Texture2D" uid="uid://b4vck33fxqao" path="res://items_new/Hidrante/Hidra (146).png" id="147_atwvo"]
-[ext_resource type="Texture2D" uid="uid://bhg2i5p6shju2" path="res://items_new/Hidrante/Hidra (147).png" id="148_dx5tp"]
-[ext_resource type="Texture2D" uid="uid://c5sij253ydm7b" path="res://items_new/Hidrante/Hidra (148).png" id="149_ran04"]
-[ext_resource type="Texture2D" uid="uid://cnkyhxsbwo6yc" path="res://items_new/Hidrante/Hidra (149).png" id="150_gxghj"]
-[ext_resource type="Texture2D" uid="uid://bihbcx0iwpitg" path="res://items_new/Hidrante/Hidra (150).png" id="151_e343p"]
-[ext_resource type="Texture2D" uid="uid://01lt421hfvhk" path="res://items_new/Hidrante/Hidra (151).png" id="152_hut42"]
-[ext_resource type="Texture2D" uid="uid://b2k8v4wxe2810" path="res://items_new/Hidrante/Hidra (152).png" id="153_rdo5d"]
-[ext_resource type="Texture2D" uid="uid://bh84axwj71kl2" path="res://items_new/Hidrante/Hidra (153).png" id="154_7khq4"]
-[ext_resource type="Texture2D" uid="uid://4qi768kjgpqt" path="res://items_new/Hidrante/Hidra (154).png" id="155_85den"]
-[ext_resource type="Texture2D" uid="uid://df02qlc55xdt3" path="res://items_new/Hidrante/Hidra (155).png" id="156_t1a0m"]
-[ext_resource type="Texture2D" uid="uid://gegh2wo88cse" path="res://items_new/Hidrante/Hidra (156).png" id="157_syj5o"]
-[ext_resource type="Texture2D" uid="uid://dp80ha212ft05" path="res://items_new/Hidrante/Hidra (157).png" id="158_5hx34"]
-[ext_resource type="Texture2D" uid="uid://cxqsrm8vbeh3k" path="res://items_new/Hidrante/Hidra (158).png" id="159_tpyyi"]
-[ext_resource type="Texture2D" uid="uid://b1q02i88lmriy" path="res://items_new/Hidrante/Hidra (159).png" id="160_njp28"]
-[ext_resource type="Texture2D" uid="uid://ddx3cmddhplxu" path="res://items_new/Hidrante/Hidra (160).png" id="161_t70bg"]
-[ext_resource type="Texture2D" uid="uid://hf333ji2hke1" path="res://items_new/Hidrante/Hidra (161).png" id="162_i2hwt"]
-[ext_resource type="Texture2D" uid="uid://cv6ur1m2ldpqn" path="res://items_new/Hidrante/Hidra (162).png" id="163_3t2ym"]
-[ext_resource type="Texture2D" uid="uid://dn0v8nweu0f3q" path="res://items_new/Hidrante/Hidra (163).png" id="164_sm0nw"]
-[ext_resource type="Texture2D" uid="uid://b6vow5gyf1dpd" path="res://items_new/Hidrante/Hidra (164).png" id="165_d4x26"]
-[ext_resource type="Texture2D" uid="uid://b46sh31pakrgx" path="res://items_new/Hidrante/Hidra (165).png" id="166_yct3l"]
-[ext_resource type="Texture2D" uid="uid://bxr2i11p0gidk" path="res://items_new/Hidrante/Hidra (166).png" id="167_tnuqb"]
-[ext_resource type="Texture2D" uid="uid://bvwqxjf0ic0he" path="res://items_new/Hidrante/Hidra (167).png" id="168_uo3s7"]
-[ext_resource type="Texture2D" uid="uid://b65dkdyq6v0sj" path="res://items_new/Hidrante/Hidra (168).png" id="169_m3xai"]
-[ext_resource type="Texture2D" uid="uid://f6f8np5s41e3" path="res://items_new/Hidrante/Hidra (169).png" id="170_0jdoa"]
-[ext_resource type="Texture2D" uid="uid://n6ea5lngj1en" path="res://items_new/Hidrante/Hidra (170).png" id="171_2fo0b"]
-[ext_resource type="Texture2D" uid="uid://bejqahamm0503" path="res://items_new/Hidrante/Hidra (171).png" id="172_ui6ht"]
-[ext_resource type="Texture2D" uid="uid://df2g7rbxnyp4j" path="res://items_new/Hidrante/Hidra (172).png" id="173_mbwx6"]
-[ext_resource type="Texture2D" uid="uid://wya8mfodsv2g" path="res://items_new/Hidrante/Hidra (173).png" id="174_7f5q3"]
-[ext_resource type="Texture2D" uid="uid://b1okfhp3n87jp" path="res://items_new/Hidrante/Hidra (174).png" id="175_ldu3j"]
-[ext_resource type="Texture2D" uid="uid://rf8hgs6e7x6e" path="res://items_new/Hidrante/Hidra (175).png" id="176_g8ywy"]
-[ext_resource type="Texture2D" uid="uid://bhnkdw8xwu6cr" path="res://items_new/Hidrante/Hidra (176).png" id="177_hrb7l"]
-[ext_resource type="Texture2D" uid="uid://xhxpjbc1514t" path="res://items_new/Hidrante/Hidra (177).png" id="178_yemya"]
-[ext_resource type="Texture2D" uid="uid://bhj8sqoytw7e5" path="res://items_new/Hidrante/Hidra (178).png" id="179_2fvk6"]
-[ext_resource type="Texture2D" uid="uid://ult30m8lrod5" path="res://items_new/Hidrante/Hidra (179).png" id="180_ymo7j"]
-[ext_resource type="Texture2D" uid="uid://b8kjnyrrnhco6" path="res://items_new/Hidrante/Hidra (180).png" id="181_wjhv7"]
-[ext_resource type="Texture2D" uid="uid://oxy3vl5pdunm" path="res://items_new/Hidrante/Hidra (181).png" id="182_vsyl7"]
-[ext_resource type="Texture2D" uid="uid://df6nuj8hi1wl5" path="res://items_new/Hidrante/Hidra (182).png" id="183_jsjr2"]
-[ext_resource type="Texture2D" uid="uid://5xd641ixe1b8" path="res://items_new/Hidrante/Hidra (183).png" id="184_eo5ed"]
-[ext_resource type="Texture2D" uid="uid://bkllwhql0a6nu" path="res://items_new/Hidrante/Hidra (184).png" id="185_d3mkq"]
-[ext_resource type="Texture2D" uid="uid://dtyr2q8ut1afn" path="res://items_new/Hidrante/Hidra (185).png" id="186_q0wm1"]
-[ext_resource type="Texture2D" uid="uid://dvaqc5w6pkrmr" path="res://items_new/Hidrante/Hidra (186).png" id="187_ucs22"]
-[ext_resource type="Texture2D" uid="uid://lvgjnqu3ytap" path="res://items_new/Hidrante/Hidra (187).png" id="188_jikcy"]
-[ext_resource type="Texture2D" uid="uid://bfmgvamkyp6sr" path="res://items_new/Hidrante/Hidra (188).png" id="189_7081e"]
-[ext_resource type="Texture2D" uid="uid://b450hbyioufdt" path="res://items_new/Hidrante/Hidra (189).png" id="190_l0ien"]
-[ext_resource type="Texture2D" uid="uid://d0d0qqynqtlyd" path="res://items_new/Hidrante/Hidra (190).png" id="191_seoxm"]
-[ext_resource type="Texture2D" uid="uid://bnui6a04c0s51" path="res://items_new/Hidrante/Hidra (191).png" id="192_r0t5q"]
-[ext_resource type="Texture2D" uid="uid://g0fqi7fol2kx" path="res://items_new/Hidrante/Hidra (192).png" id="193_gxf20"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bculb"]
 radius = 47.0
 height = 142.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sx625"]
+load_path = "res://.godot/imported/Hidra (1).png-1667c96f09b955a095d3c7a36e26ef33.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7gwmr"]
+load_path = "res://.godot/imported/Hidra (2).png-2069a31e1941c887ed5f3577af3a6293.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sdidl"]
+load_path = "res://.godot/imported/Hidra (3).png-6a5a6a8cb7c4f34ac0cdcfc13f9d8e0e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k33qj"]
+load_path = "res://.godot/imported/Hidra (4).png-081af4c9f8cd602e692b332e7da6a186.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3jnfx"]
+load_path = "res://.godot/imported/Hidra (5).png-42cf112ed7bddb9524796c7670be801d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_seg4d"]
+load_path = "res://.godot/imported/Hidra (6).png-7abd84349076157f2b3fdae042ef3ee5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m5vym"]
+load_path = "res://.godot/imported/Hidra (7).png-04707ca4eb8e8933753a204167557c95.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vu8ei"]
+load_path = "res://.godot/imported/Hidra (8).png-4db3eabba0ed9160982e20e7073f2f96.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ufrcg"]
+load_path = "res://.godot/imported/Hidra (9).png-932bf9e06b51d7e4fa708c3bcce627d4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kpmyt"]
+load_path = "res://.godot/imported/Hidra (10).png-0fcab4b9ed61238dd09edf694bdf5f8e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3o0sj"]
+load_path = "res://.godot/imported/Hidra (11).png-03e0951591388181ed6420b8b335da67.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dm8qv"]
+load_path = "res://.godot/imported/Hidra (12).png-afafc691852e5c6c6ab02fd80391e38a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7m0ki"]
+load_path = "res://.godot/imported/Hidra (13).png-e4275f09dcec6bc525a3297ab40090ba.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u1k26"]
+load_path = "res://.godot/imported/Hidra (14).png-745a1b1b0a098cfe39e26e20c60e43c0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gy5c7"]
+load_path = "res://.godot/imported/Hidra (15).png-62b453d7f7723998e2815de095205b5f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ubf3c"]
+load_path = "res://.godot/imported/Hidra (16).png-355bd80216a586dbf363ec53f42a1721.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tlwo3"]
+load_path = "res://.godot/imported/Hidra (17).png-32c734f89887c99ba6380b3905d2de08.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3oiio"]
+load_path = "res://.godot/imported/Hidra (18).png-dbfecb8fc7a071936a7b8ad2d15763b8.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cdeud"]
+load_path = "res://.godot/imported/Hidra (19).png-57bdc08df898c131efa930051a1e5b95.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mpkrr"]
+load_path = "res://.godot/imported/Hidra (20).png-93dc8281757004f233074e12244c172e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1qfhg"]
+load_path = "res://.godot/imported/Hidra (21).png-235da85754158a5b48738a73a0fc6abc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ny7sp"]
+load_path = "res://.godot/imported/Hidra (22).png-ea12830f8efd81246d0b481c81383018.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vgjia"]
+load_path = "res://.godot/imported/Hidra (23).png-fbf11eeeb5b91e008d5aecb86e67c38f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vaf6i"]
+load_path = "res://.godot/imported/Hidra (24).png-20f4bfeb7bc3cc6fa456207e887aa51b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m4uux"]
+load_path = "res://.godot/imported/Hidra (25).png-0c8d4232679a14ae2d45d431146ee883.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kjdqy"]
+load_path = "res://.godot/imported/Hidra (26).png-d666db529f0e00a83d12584eecc4adc2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_foo1o"]
+load_path = "res://.godot/imported/Hidra (27).png-32abf34428ba8d344129d823f99ac6a5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_27slm"]
+load_path = "res://.godot/imported/Hidra (28).png-145a8688318704e682d711dd90d36d4f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rkxdn"]
+load_path = "res://.godot/imported/Hidra (29).png-5cb641c797e5fd0a1608d2c6c95735b3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j72xp"]
+load_path = "res://.godot/imported/Hidra (30).png-a5b6a847b2853cd91964d89939edea7a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sd6pi"]
+load_path = "res://.godot/imported/Hidra (31).png-51dce3a0021d9e8a47ca2fa7ce6239ea.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ig00"]
+load_path = "res://.godot/imported/Hidra (32).png-c4d992d132c74f286c43e6a60db54b74.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3hd2e"]
+load_path = "res://.godot/imported/Hidra (33).png-929ec733d0a987999536937b208d6623.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o0mml"]
+load_path = "res://.godot/imported/Hidra (34).png-7125ef20fb174ba862afe6e0c14f2a53.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4h5l6"]
+load_path = "res://.godot/imported/Hidra (35).png-d0c59c8fdc5863f4c8ead268301f4a84.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l12af"]
+load_path = "res://.godot/imported/Hidra (36).png-ef6395ec75a6ec1f7f59b3ad51d9d8db.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d6b8j"]
+load_path = "res://.godot/imported/Hidra (37).png-0bbd5a4bcd95f4f05eafdc061d85ef23.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sv2lg"]
+load_path = "res://.godot/imported/Hidra (38).png-91b82269619e1465cea36e67eee3e320.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xiiwa"]
+load_path = "res://.godot/imported/Hidra (39).png-5e882c59082b55133116bc3db5583489.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8nrq0"]
+load_path = "res://.godot/imported/Hidra (40).png-31060525eef966390795d228e8b00605.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_86uex"]
+load_path = "res://.godot/imported/Hidra (41).png-6d1ec7fff7b2116e761137b6e02ad967.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jmtis"]
+load_path = "res://.godot/imported/Hidra (42).png-adae6c3a0ceb2e503b1caaeb3ceb0505.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jh6ae"]
+load_path = "res://.godot/imported/Hidra (43).png-38474265f4557069addd8e8d198ebc3c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cyevh"]
+load_path = "res://.godot/imported/Hidra (44).png-bc15503260ffd9e1aadc99bd80b1a460.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_llxsh"]
+load_path = "res://.godot/imported/Hidra (45).png-5532a0a387b0886cf9950f93d3c1a503.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wlb37"]
+load_path = "res://.godot/imported/Hidra (46).png-40c5a5adac5ee0ece70daaac6f513c72.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uytew"]
+load_path = "res://.godot/imported/Hidra (47).png-d7f94e2afe77683cf60c64245ca42567.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dgwel"]
+load_path = "res://.godot/imported/Hidra (48).png-4d6d8a5607b70c6252cfd3d4ea52a949.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dvxbd"]
+load_path = "res://.godot/imported/Hidra (49).png-a8d73e36765458ee1900e228e381c47c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_21sgu"]
+load_path = "res://.godot/imported/Hidra (50).png-331dd22de449e683e806c8ad46f315f7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g6e4o"]
+load_path = "res://.godot/imported/Hidra (51).png-319762d142ea0dde8d61d6636bb2a357.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q1520"]
+load_path = "res://.godot/imported/Hidra (52).png-e0a994b24c7c4ddc31deaa356d2c5b22.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7d0yp"]
+load_path = "res://.godot/imported/Hidra (53).png-84175093aed6e365a3f89508ab701fe4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gjw3v"]
+load_path = "res://.godot/imported/Hidra (54).png-a7499c3b33b51e39bf5481eb502f2481.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y4qym"]
+load_path = "res://.godot/imported/Hidra (55).png-dacfd6793233ee443152dc96d4f6481a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ah16i"]
+load_path = "res://.godot/imported/Hidra (56).png-49d634ea68ae3e34c5952d403db3656c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6pjxe"]
+load_path = "res://.godot/imported/Hidra (57).png-b546cf22689b02aac3eda741fc06b7c8.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7upe3"]
+load_path = "res://.godot/imported/Hidra (58).png-49eced07f55d32e6ea331cc038c48804.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gn0u2"]
+load_path = "res://.godot/imported/Hidra (59).png-d05b57c21c07734925eedcbcf50bca3f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_chsvu"]
+load_path = "res://.godot/imported/Hidra (60).png-d4b5433ae3cda0986f8b29e597ffdef4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0gcus"]
+load_path = "res://.godot/imported/Hidra (61).png-6fc78d13d1c86c334d3c7e80c966486c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8lcjx"]
+load_path = "res://.godot/imported/Hidra (62).png-8a88168dc36d2ab2c8ccdefa4699d496.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ikydc"]
+load_path = "res://.godot/imported/Hidra (63).png-61b81f419be26e6fe07648c3a8556012.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ubp5j"]
+load_path = "res://.godot/imported/Hidra (64).png-81e64a8a63bce598d5935c7be2dc7fe0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sfgyr"]
+load_path = "res://.godot/imported/Hidra (65).png-ea6dc1ca9ed237a560c05b53500235a6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_shfp4"]
+load_path = "res://.godot/imported/Hidra (66).png-2aad9a861f4c782ec2b06d6b6912a9dd.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5qwu1"]
+load_path = "res://.godot/imported/Hidra (67).png-f4501ff2ec5a4b6005846b6f5c4a0a06.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l8kev"]
+load_path = "res://.godot/imported/Hidra (68).png-a1425557885929b01c5f3cfccad3efb3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g1rc8"]
+load_path = "res://.godot/imported/Hidra (69).png-dd9ef9e057d3ca987fa09858a8742013.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3mhub"]
+load_path = "res://.godot/imported/Hidra (70).png-6fc6494f0a995f510e2a70bb7e7e29aa.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_72q5j"]
+load_path = "res://.godot/imported/Hidra (71).png-dfbac3c669b248b3e985ce7ce4eceae7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_55dm6"]
+load_path = "res://.godot/imported/Hidra (72).png-b9b43996b5ea53b2e1a3f01b1735e84f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q77h5"]
+load_path = "res://.godot/imported/Hidra (73).png-73b4bbacb11fbecff1dddec09d5869ce.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sl48x"]
+load_path = "res://.godot/imported/Hidra (74).png-2988eec2269bf45fdd507789a38f3961.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_do62r"]
+load_path = "res://.godot/imported/Hidra (75).png-9a20fd9a41485733affde12d98660213.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0xwea"]
+load_path = "res://.godot/imported/Hidra (76).png-2a5d9e4a9e0c45e993c7ada9f546f911.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w4rs2"]
+load_path = "res://.godot/imported/Hidra (77).png-de396ca81d775f87e1c1b77ba66f1739.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ej3e5"]
+load_path = "res://.godot/imported/Hidra (78).png-03836930027fa5d3c4e81e09e2b22a6b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qjdpr"]
+load_path = "res://.godot/imported/Hidra (79).png-5eafd918fb298bd1c095b74a58715b47.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_he8x7"]
+load_path = "res://.godot/imported/Hidra (80).png-33aeefe39457691cdb29122769d4c8a7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eukom"]
+load_path = "res://.godot/imported/Hidra (81).png-90f05bf84d5b1dd1fc9523596abb0fd8.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_upc1p"]
+load_path = "res://.godot/imported/Hidra (82).png-61c48d45ede4835560dcc5f692d02bdf.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gq8iv"]
+load_path = "res://.godot/imported/Hidra (83).png-219dac6fef83549420f5ec854132b44d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0frn1"]
+load_path = "res://.godot/imported/Hidra (84).png-1592759e2e70ec0e2334b5d3f1b63532.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_blbd3"]
+load_path = "res://.godot/imported/Hidra (85).png-a21fa182a20432a7b7ba2b3ca0631cf0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3gijr"]
+load_path = "res://.godot/imported/Hidra (86).png-6db64c9aec1413dbd51dbbbc4cbabf85.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7e7t3"]
+load_path = "res://.godot/imported/Hidra (87).png-08e7f2a92bf4d9aa180773aa2da9f343.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lsf2g"]
+load_path = "res://.godot/imported/Hidra (88).png-c16e9c671210b3865849f65993410946.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2o3ea"]
+load_path = "res://.godot/imported/Hidra (89).png-5f3d605b7c37e5cd8e75694785900eaf.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w5a5j"]
+load_path = "res://.godot/imported/Hidra (90).png-447ac6d18b686a3bf2a8e5cd70177581.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qlaix"]
+load_path = "res://.godot/imported/Hidra (91).png-2a745f35ca06072c0d819dc285b69767.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ggxtc"]
+load_path = "res://.godot/imported/Hidra (92).png-9447bd0e04fcf0a6027ec7441b76cac3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_si2ve"]
+load_path = "res://.godot/imported/Hidra (93).png-67701c23e2253cb332312a35f3b7981f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l476h"]
+load_path = "res://.godot/imported/Hidra (94).png-57c3ad587b98bf2f93de8eb4f4953986.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yrd7x"]
+load_path = "res://.godot/imported/Hidra (95).png-893ae17f4caf8121ea1528d34fb572ce.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f22gx"]
+load_path = "res://.godot/imported/Hidra (96).png-b32bc89ef4f0bfdfff3a6a75cd44e823.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8q0pm"]
+load_path = "res://.godot/imported/Hidra (97).png-a7a8988ed1ab9ab2a4670af281ffb940.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qlf3e"]
+load_path = "res://.godot/imported/Hidra (98).png-1ba7be81d36e19b743432fe993083e31.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jvt61"]
+load_path = "res://.godot/imported/Hidra (99).png-8910bf76c987c991f76f089701ad151c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t3h3n"]
+load_path = "res://.godot/imported/Hidra (100).png-402b86891d400002213362ceb0a2e8b2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c7f2x"]
+load_path = "res://.godot/imported/Hidra (101).png-3f7be91be6ac1f90bd0e9dcf55ec7ecf.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3kqfi"]
+load_path = "res://.godot/imported/Hidra (102).png-377c5a36991ea25ce5d864cb92282141.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ggqch"]
+load_path = "res://.godot/imported/Hidra (103).png-09d790d4ce8eeb55315191aa756177d5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j8k1a"]
+load_path = "res://.godot/imported/Hidra (104).png-ed7fb1f59ad871c8398f86ed64e757b4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yahp7"]
+load_path = "res://.godot/imported/Hidra (105).png-9395079866a397d32ed60bc1942150ee.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_avajt"]
+load_path = "res://.godot/imported/Hidra (106).png-b081e03efcccd1016cd8870824c0ae80.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g6bte"]
+load_path = "res://.godot/imported/Hidra (107).png-3d96f1250910621a2ef6b8889a2e9f32.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5idv7"]
+load_path = "res://.godot/imported/Hidra (108).png-39b5e88ec732c8a218edaa918025a403.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j7gpm"]
+load_path = "res://.godot/imported/Hidra (109).png-8dd3e0d266ae573addd593878ea5539e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_urypm"]
+load_path = "res://.godot/imported/Hidra (110).png-1e85a97ab795af7b5f7f75023785e5df.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dfpql"]
+load_path = "res://.godot/imported/Hidra (111).png-caae52d8aabdef2390e007ab4025b5e3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tutoe"]
+load_path = "res://.godot/imported/Hidra (112).png-f5d97237048b0b5ea6a1cff65c1fd4dc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m7vmu"]
+load_path = "res://.godot/imported/Hidra (113).png-f2887931214b802b9e03156000ee00a9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u3pwn"]
+load_path = "res://.godot/imported/Hidra (114).png-469b08794d700c0baca300be26c9bd4d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6s03v"]
+load_path = "res://.godot/imported/Hidra (115).png-b29941bd3d40aad47a0cb98c373056ae.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hv57a"]
+load_path = "res://.godot/imported/Hidra (116).png-62737fb531c2b00b6be2da2cf0e658a4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1i01d"]
+load_path = "res://.godot/imported/Hidra (117).png-8e2b62fc02af67640d7543da91b09511.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6sbtf"]
+load_path = "res://.godot/imported/Hidra (118).png-dc1e75cee7d319745401f7507a7c201a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yldej"]
+load_path = "res://.godot/imported/Hidra (119).png-9b2ebebd7cc213d0d2f5a180e8af0473.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q43wf"]
+load_path = "res://.godot/imported/Hidra (120).png-e9b015f158fff5c8db0759e0b22d577c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iuuqv"]
+load_path = "res://.godot/imported/Hidra (121).png-ee8f8a4ec289d021e8b4c9c7b44b776a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rkcb2"]
+load_path = "res://.godot/imported/Hidra (122).png-90365db0982e6e0919a8dc887995f21b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ekwwv"]
+load_path = "res://.godot/imported/Hidra (123).png-d428bd3338a7c93822c62baefec93f8c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ksqoc"]
+load_path = "res://.godot/imported/Hidra (124).png-4aa90d39e48076356d6cfbcf8ff181dd.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ffrud"]
+load_path = "res://.godot/imported/Hidra (125).png-b266428368e5f8fad98d20da6e0d1389.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hobla"]
+load_path = "res://.godot/imported/Hidra (126).png-ebd9d1f0122f566dad5b78fec7c86d0c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2t5rd"]
+load_path = "res://.godot/imported/Hidra (127).png-6ed793d600dd9f73738513ca59543a56.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vbvxc"]
+load_path = "res://.godot/imported/Hidra (128).png-3a8bdd42d9e0444239b46546907aa4e0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_akahs"]
+load_path = "res://.godot/imported/Hidra (129).png-2143dcdc4d7080104dc7a240b2cb2baa.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sor2a"]
+load_path = "res://.godot/imported/Hidra (130).png-857fdd8587c81faba88f5b9b06eeb6d5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_41yo7"]
+load_path = "res://.godot/imported/Hidra (131).png-a08938511b82a32eecf968ccc7f5be0e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tl0kb"]
+load_path = "res://.godot/imported/Hidra (132).png-6d9fd51a1a25b3707a64ea66eebc075f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f3ela"]
+load_path = "res://.godot/imported/Hidra (133).png-5a2b4448dc6b9d4963dcd995f6bbca10.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_efiox"]
+load_path = "res://.godot/imported/Hidra (134).png-6631e6252d79a6a575fc9dca2680d7b6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eskee"]
+load_path = "res://.godot/imported/Hidra (135).png-0f896a2d0e98d80147ee20e2c541c847.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uqnfj"]
+load_path = "res://.godot/imported/Hidra (136).png-bd11a65e4b097304721ab8be3ba1b672.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_870v0"]
+load_path = "res://.godot/imported/Hidra (137).png-6ebeea4c3c9fa2498c6b7e6d62e2000a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fr253"]
+load_path = "res://.godot/imported/Hidra (138).png-76f49889f18d37c9143b738aec30d0a7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ydlkp"]
+load_path = "res://.godot/imported/Hidra (139).png-61936d6d496678085d2c8c31716aef88.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0p4wa"]
+load_path = "res://.godot/imported/Hidra (140).png-76b15012ff6110607a7cdd56a3aefb62.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t48lh"]
+load_path = "res://.godot/imported/Hidra (141).png-b29440fb6e14fa2d06c5b4e5aa03737e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dqqq2"]
+load_path = "res://.godot/imported/Hidra (142).png-20f129bf45109e713a6d550f198fc93e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s1pvc"]
+load_path = "res://.godot/imported/Hidra (143).png-4817437c8e64555e6b7e711d963cc339.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sgypq"]
+load_path = "res://.godot/imported/Hidra (144).png-dbce1730f2d926ea3ee5a84a1e61afc6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ladrc"]
+load_path = "res://.godot/imported/Hidra (145).png-356ac50c56d3dbede3330224a18334f3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p8m60"]
+load_path = "res://.godot/imported/Hidra (146).png-81177969408077f29943da5c27e73061.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lfc84"]
+load_path = "res://.godot/imported/Hidra (147).png-5b0cde99e07e3a4b9763ef20f44f8f9a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wanho"]
+load_path = "res://.godot/imported/Hidra (148).png-05182a6b56f018f15ca3fc753aca6f60.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hprl6"]
+load_path = "res://.godot/imported/Hidra (149).png-363c008e80808d3fe6f83d96fc03e7b9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nbbem"]
+load_path = "res://.godot/imported/Hidra (150).png-4516524dc114247d82e8f6c0a7f9cad6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0336x"]
+load_path = "res://.godot/imported/Hidra (151).png-a2b3386208b01369127d5d6c8f7a169b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l20iq"]
+load_path = "res://.godot/imported/Hidra (152).png-35050d28c00c5d465efdcf2d3ab119ed.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vx5q8"]
+load_path = "res://.godot/imported/Hidra (153).png-e6bc7497871bc7d17e607731bda51ce9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5hgot"]
+load_path = "res://.godot/imported/Hidra (154).png-998c58d219c34124a2cd321506d44734.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_upxfx"]
+load_path = "res://.godot/imported/Hidra (155).png-627351a9a7598d5caf2b231ecff6e787.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w1wmt"]
+load_path = "res://.godot/imported/Hidra (156).png-73fe4496debcc6d4aa5a994b52b8c267.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rl7gc"]
+load_path = "res://.godot/imported/Hidra (157).png-a3967e5cad9b2b99728bb336042d206a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vhk1n"]
+load_path = "res://.godot/imported/Hidra (158).png-fa7a2151637a13ae78d30d6b94bc817f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jjua0"]
+load_path = "res://.godot/imported/Hidra (159).png-ffc95c8e4f56207a2b5fe522325f8254.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ldjgm"]
+load_path = "res://.godot/imported/Hidra (160).png-13866b99aff588593e5149d2d5cc545b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qenmc"]
+load_path = "res://.godot/imported/Hidra (161).png-1ef1a99678c9a9e53e78c16e84c6fb16.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_grecm"]
+load_path = "res://.godot/imported/Hidra (162).png-eeae6d1926a469e42a317750d299c2a2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d43r8"]
+load_path = "res://.godot/imported/Hidra (163).png-442c1ede39ccbc2add6d0a8c84e097f3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i86ua"]
+load_path = "res://.godot/imported/Hidra (164).png-18180ea1135852ef9240dc862254cc8e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p3uyx"]
+load_path = "res://.godot/imported/Hidra (165).png-635cf2deb50b172e228938378e2c112f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ih0ed"]
+load_path = "res://.godot/imported/Hidra (166).png-726dd1fe3ece84eff3ca5ed371228edb.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_twx37"]
+load_path = "res://.godot/imported/Hidra (167).png-89b82a91cc540afa15fe611a7e0c1ec7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8mm6d"]
+load_path = "res://.godot/imported/Hidra (168).png-aebef1745a990e6032845458609d62fb.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hrxrf"]
+load_path = "res://.godot/imported/Hidra (169).png-2670bf10eb9c59eab96f5ad8b85e93d8.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tbf3s"]
+load_path = "res://.godot/imported/Hidra (170).png-b92cb8f47d9f77da9260447ce48f3a66.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bft32"]
+load_path = "res://.godot/imported/Hidra (171).png-0ff508d41013e0e5c27fe4e78fb820aa.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1oxoc"]
+load_path = "res://.godot/imported/Hidra (172).png-0f3ffb0347f03c25b733597f4cb10a2e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c6huf"]
+load_path = "res://.godot/imported/Hidra (173).png-109e16106ce1b82965bcf33cc6d2e59c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yieke"]
+load_path = "res://.godot/imported/Hidra (174).png-65056074e8cc3866b26c4e7f41abbf34.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wmkdj"]
+load_path = "res://.godot/imported/Hidra (175).png-7330dbc2427f90eb18b84805e25fcdb4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fd3p0"]
+load_path = "res://.godot/imported/Hidra (176).png-d4ea2553493022c8b2adb0868214c92e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_11dla"]
+load_path = "res://.godot/imported/Hidra (177).png-b41a0b0a55a17da9ee37ada3efad7b94.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_23vsy"]
+load_path = "res://.godot/imported/Hidra (178).png-bc8a5972b81203e21005e87095798cd9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ip7cm"]
+load_path = "res://.godot/imported/Hidra (179).png-837c1c9672d441e70e0ccc8eeaf30b8e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ksomn"]
+load_path = "res://.godot/imported/Hidra (180).png-6de5d0394191bd6a22edf0cf48c22561.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_htnwj"]
+load_path = "res://.godot/imported/Hidra (181).png-944d7ed58671ec33a1c48f3d039919d5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iq6o4"]
+load_path = "res://.godot/imported/Hidra (182).png-532947838bd1a4659f9b32431ff7cad9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_um6yb"]
+load_path = "res://.godot/imported/Hidra (183).png-83e4e8000719904d85ec52a7fc4fe1f4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5wx84"]
+load_path = "res://.godot/imported/Hidra (184).png-2d370c33033371eea50c22a42f6481c5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1vad7"]
+load_path = "res://.godot/imported/Hidra (185).png-b70f0b4f2299b50fe22451a84396aa7c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4gkbs"]
+load_path = "res://.godot/imported/Hidra (186).png-bb454d193eadd8801fed213be4e21e5a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_irgjr"]
+load_path = "res://.godot/imported/Hidra (187).png-4cda73054ad7239ede7bc7c7ea7a0923.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ue1ps"]
+load_path = "res://.godot/imported/Hidra (188).png-5c25233f69a442fd3253b141ae0feb6a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ra1py"]
+load_path = "res://.godot/imported/Hidra (189).png-1206a27e2bc0460c4846328bbf1b7388.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xvcx4"]
+load_path = "res://.godot/imported/Hidra (190).png-de28cc5ccab6f566bf571fd9ebe1a11c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d5rcp"]
+load_path = "res://.godot/imported/Hidra (191).png-3c1d736f8517c9700e1427d791fdc686.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2w21y"]
+load_path = "res://.godot/imported/Hidra (192).png-579f0f13a8c4b0740426bb5f7ab1f1c6.ctex"
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_nmqdo"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_oavl0")
+"texture": SubResource("CompressedTexture2D_sx625")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_xcypy")
+"texture": SubResource("CompressedTexture2D_7gwmr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_06igy")
+"texture": SubResource("CompressedTexture2D_sdidl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_f7sbl")
+"texture": SubResource("CompressedTexture2D_k33qj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_18s8b")
+"texture": SubResource("CompressedTexture2D_3jnfx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_fgov2")
+"texture": SubResource("CompressedTexture2D_seg4d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_a3no4")
+"texture": SubResource("CompressedTexture2D_m5vym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_yre45")
+"texture": SubResource("CompressedTexture2D_vu8ei")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_33fym")
+"texture": SubResource("CompressedTexture2D_ufrcg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_ne5my")
+"texture": SubResource("CompressedTexture2D_kpmyt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_56u6e")
+"texture": SubResource("CompressedTexture2D_3o0sj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_518s7")
+"texture": SubResource("CompressedTexture2D_dm8qv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_x6x7n")
+"texture": SubResource("CompressedTexture2D_7m0ki")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_mjexh")
+"texture": SubResource("CompressedTexture2D_u1k26")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_7urr5")
+"texture": SubResource("CompressedTexture2D_gy5c7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_laspt")
+"texture": SubResource("CompressedTexture2D_ubf3c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_dpuk4")
+"texture": SubResource("CompressedTexture2D_tlwo3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_mifm6")
+"texture": SubResource("CompressedTexture2D_3oiio")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_17ldm")
+"texture": SubResource("CompressedTexture2D_cdeud")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_h1a8a")
+"texture": SubResource("CompressedTexture2D_mpkrr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_4hn1b")
+"texture": SubResource("CompressedTexture2D_1qfhg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_xd0d6")
+"texture": SubResource("CompressedTexture2D_ny7sp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_a2vtm")
+"texture": SubResource("CompressedTexture2D_vgjia")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_3qn42")
+"texture": SubResource("CompressedTexture2D_vaf6i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_8v132")
+"texture": SubResource("CompressedTexture2D_m4uux")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_ij22v")
+"texture": SubResource("CompressedTexture2D_kjdqy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_q0bah")
+"texture": SubResource("CompressedTexture2D_foo1o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_ehssk")
+"texture": SubResource("CompressedTexture2D_27slm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_n7sa6")
+"texture": SubResource("CompressedTexture2D_rkxdn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_35t3q")
+"texture": SubResource("CompressedTexture2D_j72xp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_g1mbk")
+"texture": SubResource("CompressedTexture2D_sd6pi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_bgexi")
+"texture": SubResource("CompressedTexture2D_2ig00")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_2rtec")
+"texture": SubResource("CompressedTexture2D_3hd2e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_wc7ff")
+"texture": SubResource("CompressedTexture2D_o0mml")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_gl5lq")
+"texture": SubResource("CompressedTexture2D_4h5l6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_eg2xu")
+"texture": SubResource("CompressedTexture2D_l12af")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_p5fpd")
+"texture": SubResource("CompressedTexture2D_d6b8j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_6spcc")
+"texture": SubResource("CompressedTexture2D_sv2lg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_l46gh")
+"texture": SubResource("CompressedTexture2D_xiiwa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("41_bc4mj")
+"texture": SubResource("CompressedTexture2D_8nrq0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_qrk37")
+"texture": SubResource("CompressedTexture2D_86uex")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_hqpno")
+"texture": SubResource("CompressedTexture2D_jmtis")
 }, {
 "duration": 1.0,
-"texture": ExtResource("44_4h0su")
+"texture": SubResource("CompressedTexture2D_jh6ae")
 }, {
 "duration": 1.0,
-"texture": ExtResource("45_m2qt5")
+"texture": SubResource("CompressedTexture2D_cyevh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("46_emptj")
+"texture": SubResource("CompressedTexture2D_llxsh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_liimw")
+"texture": SubResource("CompressedTexture2D_wlb37")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_n2yap")
+"texture": SubResource("CompressedTexture2D_uytew")
 }, {
 "duration": 1.0,
-"texture": ExtResource("49_8h14c")
+"texture": SubResource("CompressedTexture2D_dgwel")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_qw4g3")
+"texture": SubResource("CompressedTexture2D_dvxbd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_ei5am")
+"texture": SubResource("CompressedTexture2D_21sgu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_33vox")
+"texture": SubResource("CompressedTexture2D_g6e4o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_gp8cq")
+"texture": SubResource("CompressedTexture2D_q1520")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_774cg")
+"texture": SubResource("CompressedTexture2D_7d0yp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_qrm2x")
+"texture": SubResource("CompressedTexture2D_gjw3v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("56_qby54")
+"texture": SubResource("CompressedTexture2D_y4qym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("57_ynng0")
+"texture": SubResource("CompressedTexture2D_ah16i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("58_8f3s8")
+"texture": SubResource("CompressedTexture2D_6pjxe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("59_i0w7n")
+"texture": SubResource("CompressedTexture2D_7upe3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("60_spjio")
+"texture": SubResource("CompressedTexture2D_gn0u2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("61_7s4fo")
+"texture": SubResource("CompressedTexture2D_chsvu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("62_msytj")
+"texture": SubResource("CompressedTexture2D_0gcus")
 }, {
 "duration": 1.0,
-"texture": ExtResource("63_2eb5q")
+"texture": SubResource("CompressedTexture2D_8lcjx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_8c5ne")
+"texture": SubResource("CompressedTexture2D_ikydc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("65_w8r7c")
+"texture": SubResource("CompressedTexture2D_ubp5j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("66_dr5im")
+"texture": SubResource("CompressedTexture2D_sfgyr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("67_301sm")
+"texture": SubResource("CompressedTexture2D_shfp4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("68_wo77s")
+"texture": SubResource("CompressedTexture2D_5qwu1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_2kb6f")
+"texture": SubResource("CompressedTexture2D_l8kev")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_l1ahr")
+"texture": SubResource("CompressedTexture2D_g1rc8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_g7di2")
+"texture": SubResource("CompressedTexture2D_3mhub")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_fpajp")
+"texture": SubResource("CompressedTexture2D_72q5j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("73_810ea")
+"texture": SubResource("CompressedTexture2D_55dm6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("74_7o6b6")
+"texture": SubResource("CompressedTexture2D_q77h5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("75_amu25")
+"texture": SubResource("CompressedTexture2D_sl48x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("76_s8k2n")
+"texture": SubResource("CompressedTexture2D_do62r")
 }, {
 "duration": 1.0,
-"texture": ExtResource("77_yw7l5")
+"texture": SubResource("CompressedTexture2D_0xwea")
 }, {
 "duration": 1.0,
-"texture": ExtResource("78_7cbuo")
+"texture": SubResource("CompressedTexture2D_w4rs2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("79_h5h8r")
+"texture": SubResource("CompressedTexture2D_ej3e5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("80_uyoug")
+"texture": SubResource("CompressedTexture2D_qjdpr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("81_55efw")
+"texture": SubResource("CompressedTexture2D_he8x7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("82_glf00")
+"texture": SubResource("CompressedTexture2D_eukom")
 }, {
 "duration": 1.0,
-"texture": ExtResource("83_nxfoq")
+"texture": SubResource("CompressedTexture2D_upc1p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("84_v26g3")
+"texture": SubResource("CompressedTexture2D_gq8iv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("85_e0xhs")
+"texture": SubResource("CompressedTexture2D_0frn1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("86_wq8cj")
+"texture": SubResource("CompressedTexture2D_blbd3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("87_gx114")
+"texture": SubResource("CompressedTexture2D_3gijr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("88_u2ygq")
+"texture": SubResource("CompressedTexture2D_7e7t3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("89_e6knk")
+"texture": SubResource("CompressedTexture2D_lsf2g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("90_isglv")
+"texture": SubResource("CompressedTexture2D_2o3ea")
 }, {
 "duration": 1.0,
-"texture": ExtResource("91_nugd4")
+"texture": SubResource("CompressedTexture2D_w5a5j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("92_psq2f")
+"texture": SubResource("CompressedTexture2D_qlaix")
 }, {
 "duration": 1.0,
-"texture": ExtResource("93_tugvn")
+"texture": SubResource("CompressedTexture2D_ggxtc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("94_a0pr2")
+"texture": SubResource("CompressedTexture2D_si2ve")
 }, {
 "duration": 1.0,
-"texture": ExtResource("95_dax8k")
+"texture": SubResource("CompressedTexture2D_l476h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("96_4err4")
+"texture": SubResource("CompressedTexture2D_yrd7x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("97_cckjg")
+"texture": SubResource("CompressedTexture2D_f22gx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("98_b1vfo")
+"texture": SubResource("CompressedTexture2D_8q0pm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("99_8lkdn")
+"texture": SubResource("CompressedTexture2D_qlf3e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("100_rqe0e")
+"texture": SubResource("CompressedTexture2D_jvt61")
 }, {
 "duration": 1.0,
-"texture": ExtResource("101_ufcrx")
+"texture": SubResource("CompressedTexture2D_t3h3n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("102_xllpy")
+"texture": SubResource("CompressedTexture2D_c7f2x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("103_tkpbw")
+"texture": SubResource("CompressedTexture2D_3kqfi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("104_6b5cs")
+"texture": SubResource("CompressedTexture2D_ggqch")
 }, {
 "duration": 1.0,
-"texture": ExtResource("105_bugop")
+"texture": SubResource("CompressedTexture2D_j8k1a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("106_0808n")
+"texture": SubResource("CompressedTexture2D_yahp7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("107_v30yr")
+"texture": SubResource("CompressedTexture2D_avajt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("108_oj1cy")
+"texture": SubResource("CompressedTexture2D_g6bte")
 }, {
 "duration": 1.0,
-"texture": ExtResource("109_oe8an")
+"texture": SubResource("CompressedTexture2D_5idv7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("110_og0i1")
+"texture": SubResource("CompressedTexture2D_j7gpm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("111_oagcx")
+"texture": SubResource("CompressedTexture2D_urypm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("112_lnsm5")
+"texture": SubResource("CompressedTexture2D_dfpql")
 }, {
 "duration": 1.0,
-"texture": ExtResource("113_tps6o")
+"texture": SubResource("CompressedTexture2D_tutoe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("114_nbk5b")
+"texture": SubResource("CompressedTexture2D_m7vmu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("115_6256c")
+"texture": SubResource("CompressedTexture2D_u3pwn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("116_lcepd")
+"texture": SubResource("CompressedTexture2D_6s03v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("117_so3bf")
+"texture": SubResource("CompressedTexture2D_hv57a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("118_u6ci0")
+"texture": SubResource("CompressedTexture2D_1i01d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("119_vwba8")
+"texture": SubResource("CompressedTexture2D_6sbtf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("120_t7skb")
+"texture": SubResource("CompressedTexture2D_yldej")
 }, {
 "duration": 1.0,
-"texture": ExtResource("121_0l63p")
+"texture": SubResource("CompressedTexture2D_q43wf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("122_iyvys")
+"texture": SubResource("CompressedTexture2D_iuuqv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("123_8oacd")
+"texture": SubResource("CompressedTexture2D_rkcb2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("124_cc75l")
+"texture": SubResource("CompressedTexture2D_ekwwv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("125_5kv0d")
+"texture": SubResource("CompressedTexture2D_ksqoc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("126_2epse")
+"texture": SubResource("CompressedTexture2D_ffrud")
 }, {
 "duration": 1.0,
-"texture": ExtResource("127_mr1vo")
+"texture": SubResource("CompressedTexture2D_hobla")
 }, {
 "duration": 1.0,
-"texture": ExtResource("128_umt53")
+"texture": SubResource("CompressedTexture2D_2t5rd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("129_buvco")
+"texture": SubResource("CompressedTexture2D_vbvxc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("130_oq3g1")
+"texture": SubResource("CompressedTexture2D_akahs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("131_g68b3")
+"texture": SubResource("CompressedTexture2D_sor2a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("132_hhfow")
+"texture": SubResource("CompressedTexture2D_41yo7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("133_5qgke")
+"texture": SubResource("CompressedTexture2D_tl0kb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("134_en3ot")
+"texture": SubResource("CompressedTexture2D_f3ela")
 }, {
 "duration": 1.0,
-"texture": ExtResource("135_rr2is")
+"texture": SubResource("CompressedTexture2D_efiox")
 }, {
 "duration": 1.0,
-"texture": ExtResource("136_pfy2g")
+"texture": SubResource("CompressedTexture2D_eskee")
 }, {
 "duration": 1.0,
-"texture": ExtResource("137_l45u1")
+"texture": SubResource("CompressedTexture2D_uqnfj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("138_mut3n")
+"texture": SubResource("CompressedTexture2D_870v0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("139_qb0co")
+"texture": SubResource("CompressedTexture2D_fr253")
 }, {
 "duration": 1.0,
-"texture": ExtResource("140_njfgh")
+"texture": SubResource("CompressedTexture2D_ydlkp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("141_iw807")
+"texture": SubResource("CompressedTexture2D_0p4wa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("142_040xe")
+"texture": SubResource("CompressedTexture2D_t48lh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("143_oqreb")
+"texture": SubResource("CompressedTexture2D_dqqq2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("144_exn5p")
+"texture": SubResource("CompressedTexture2D_s1pvc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("145_ybkbv")
+"texture": SubResource("CompressedTexture2D_sgypq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("146_hhe5m")
+"texture": SubResource("CompressedTexture2D_ladrc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("147_atwvo")
+"texture": SubResource("CompressedTexture2D_p8m60")
 }, {
 "duration": 1.0,
-"texture": ExtResource("148_dx5tp")
+"texture": SubResource("CompressedTexture2D_lfc84")
 }, {
 "duration": 1.0,
-"texture": ExtResource("149_ran04")
+"texture": SubResource("CompressedTexture2D_wanho")
 }, {
 "duration": 1.0,
-"texture": ExtResource("150_gxghj")
+"texture": SubResource("CompressedTexture2D_hprl6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("151_e343p")
+"texture": SubResource("CompressedTexture2D_nbbem")
 }, {
 "duration": 1.0,
-"texture": ExtResource("152_hut42")
+"texture": SubResource("CompressedTexture2D_0336x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("153_rdo5d")
+"texture": SubResource("CompressedTexture2D_l20iq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("154_7khq4")
+"texture": SubResource("CompressedTexture2D_vx5q8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("155_85den")
+"texture": SubResource("CompressedTexture2D_5hgot")
 }, {
 "duration": 1.0,
-"texture": ExtResource("156_t1a0m")
+"texture": SubResource("CompressedTexture2D_upxfx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("157_syj5o")
+"texture": SubResource("CompressedTexture2D_w1wmt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("158_5hx34")
+"texture": SubResource("CompressedTexture2D_rl7gc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("159_tpyyi")
+"texture": SubResource("CompressedTexture2D_vhk1n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("160_njp28")
+"texture": SubResource("CompressedTexture2D_jjua0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("161_t70bg")
+"texture": SubResource("CompressedTexture2D_ldjgm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("162_i2hwt")
+"texture": SubResource("CompressedTexture2D_qenmc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("163_3t2ym")
+"texture": SubResource("CompressedTexture2D_grecm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("164_sm0nw")
+"texture": SubResource("CompressedTexture2D_d43r8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("165_d4x26")
+"texture": SubResource("CompressedTexture2D_i86ua")
 }, {
 "duration": 1.0,
-"texture": ExtResource("166_yct3l")
+"texture": SubResource("CompressedTexture2D_p3uyx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("167_tnuqb")
+"texture": SubResource("CompressedTexture2D_ih0ed")
 }, {
 "duration": 1.0,
-"texture": ExtResource("168_uo3s7")
+"texture": SubResource("CompressedTexture2D_twx37")
 }, {
 "duration": 1.0,
-"texture": ExtResource("169_m3xai")
+"texture": SubResource("CompressedTexture2D_8mm6d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("170_0jdoa")
+"texture": SubResource("CompressedTexture2D_hrxrf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("171_2fo0b")
+"texture": SubResource("CompressedTexture2D_tbf3s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("172_ui6ht")
+"texture": SubResource("CompressedTexture2D_bft32")
 }, {
 "duration": 1.0,
-"texture": ExtResource("173_mbwx6")
+"texture": SubResource("CompressedTexture2D_1oxoc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("174_7f5q3")
+"texture": SubResource("CompressedTexture2D_c6huf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("175_ldu3j")
+"texture": SubResource("CompressedTexture2D_yieke")
 }, {
 "duration": 1.0,
-"texture": ExtResource("176_g8ywy")
+"texture": SubResource("CompressedTexture2D_wmkdj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("177_hrb7l")
+"texture": SubResource("CompressedTexture2D_fd3p0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("178_yemya")
+"texture": SubResource("CompressedTexture2D_11dla")
 }, {
 "duration": 1.0,
-"texture": ExtResource("179_2fvk6")
+"texture": SubResource("CompressedTexture2D_23vsy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("180_ymo7j")
+"texture": SubResource("CompressedTexture2D_ip7cm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("181_wjhv7")
+"texture": SubResource("CompressedTexture2D_ksomn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("182_vsyl7")
+"texture": SubResource("CompressedTexture2D_htnwj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("183_jsjr2")
+"texture": SubResource("CompressedTexture2D_iq6o4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("184_eo5ed")
+"texture": SubResource("CompressedTexture2D_um6yb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("185_d3mkq")
+"texture": SubResource("CompressedTexture2D_5wx84")
 }, {
 "duration": 1.0,
-"texture": ExtResource("186_q0wm1")
+"texture": SubResource("CompressedTexture2D_1vad7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("187_ucs22")
+"texture": SubResource("CompressedTexture2D_4gkbs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("188_jikcy")
+"texture": SubResource("CompressedTexture2D_irgjr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("189_7081e")
+"texture": SubResource("CompressedTexture2D_ue1ps")
 }, {
 "duration": 1.0,
-"texture": ExtResource("190_l0ien")
+"texture": SubResource("CompressedTexture2D_ra1py")
 }, {
 "duration": 1.0,
-"texture": ExtResource("191_seoxm")
+"texture": SubResource("CompressedTexture2D_xvcx4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("192_r0t5q")
+"texture": SubResource("CompressedTexture2D_d5rcp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("193_gxf20")
+"texture": SubResource("CompressedTexture2D_2w21y")
 }],
 "loop": true,
 "name": &"default",
@@ -800,7 +1184,7 @@ position = Vector2(8, -41)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_nmqdo")
 autoplay = "default"
-frame_progress = 0.851202
+frame_progress = 0.740793
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
