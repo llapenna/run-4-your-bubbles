@@ -6,20 +6,24 @@
 [ext_resource type="Texture2D" uid="uid://kxq3u3busfxc" path="res://background/piso.png" id="4_fs80t"]
 
 [node name="Background" type="Node2D"]
+z_index = -1
 position = Vector2(0, 350)
 
 [node name="Layer" parent="." instance=ExtResource("1_8hep6")]
+z_index = -20
 position = Vector2(0, -100)
 texture = ExtResource("2_o3cju")
 slowingFactor = 0.01
 resize = 1.0
 
 [node name="Layer2" parent="." instance=ExtResource("1_8hep6")]
+z_index = -18
 texture = ExtResource("3_ki7wc")
 slowingFactor = 0.7
 resize = 1.0
 
 [node name="Layer3" parent="." instance=ExtResource("1_8hep6")]
+z_index = -16
 resize = 1.0
 
 [node name="Floor" parent="." instance=ExtResource("1_8hep6")]
