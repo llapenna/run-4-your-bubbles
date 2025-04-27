@@ -24,4 +24,4 @@ func _process(delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
-	$Player.affectBubbles(5, false)
+	$Player.affectBubbles(1.0, false)

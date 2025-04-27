@@ -9,7 +9,7 @@ var item_list = [
 	preload("res://items_new/Conserjes_PowerUp/mario.tscn"),
 	preload("res://items_new/Hidrante/hidrante.tscn"),
 	preload("res://items_new/Kid_PowerUp/kid.tscn"),
-	#preload("res://items/ladies.tscn"),
+	preload("res://items_new/Señoras_Obstaculo/ladies.tscn"),
 ]
 
 var time: float = 1

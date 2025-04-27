@@ -1179,12 +1179,12 @@ position = Vector2(1, -87)
 shape = SubResource("CapsuleShape2D_bculb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-z_index = 2
+z_index = 10
 position = Vector2(8, -41)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_nmqdo")
 autoplay = "default"
-frame_progress = 0.740793
+frame_progress = 0.658473
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

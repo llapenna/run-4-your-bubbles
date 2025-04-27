@@ -70,10 +70,11 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	
 func reduce_life(n: int):
 	hp -= n
-	bubbles.popBubbles(n, 0.5)
+	bubbles.popBubbles(n, 2.0)
 
 func increase_life(n: int):
 	hp += n
+	hp = clamp(hp, 0, 200)
 	$AudioStreamPlayer2D2.play()
 	bubbles.pushBubbles(n)
 
