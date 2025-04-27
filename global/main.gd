@@ -25,3 +25,8 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	$Player.affectBubbles(2.0, false)
+
+
+func _on_exit_pressed() -> void:
+	print("end")
+	GlobalSceneManager.quit_game()

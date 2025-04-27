@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dt16av3gwv058"]
+[gd_scene load_steps=9 format=3 uid="uid://dt16av3gwv058"]
 
 [ext_resource type="Script" path="res://global/main.gd" id="1_a40dn"]
 [ext_resource type="PackedScene" uid="uid://dmrvlsa441bdp" path="res://backgroundParallax.tscn" id="2_kqvka"]
 [ext_resource type="PackedScene" uid="uid://bfj8u884cbgvn" path="res://items/Spawner.tscn" id="7_4x6uh"]
 [ext_resource type="PackedScene" uid="uid://cobitw0jlcec0" path="res://player/player.tscn" id="7_hi7x6"]
+[ext_resource type="Texture2D" uid="uid://cjagqfrbqpod" path="res://assets/exitButton.png" id="7_wour3"]
 [ext_resource type="PackedScene" uid="uid://b3eut8dox8t1n" path="res://audio/audio.tscn" id="8_f6raq"]
 [ext_resource type="PackedScene" uid="uid://dyqogsd4wcoja" path="res://life_bar/life_bar.tscn" id="8_w7qui"]
 
@@ -45,4 +46,18 @@ position = Vector2(100, 0)
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+position = Vector2(1592, -8)
+scale = Vector2(0.3, 0.3)
+
+[node name="Exit" type="Button" parent="Node2D"]
+offset_left = -5203.33
+offset_top = -63.3333
+offset_right = -4944.33
+offset_bottom = 212.667
+icon = ExtResource("7_wour3")
+flat = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Node2D/Exit" to="." method="_on_exit_pressed"]
