@@ -1,6 +1,6 @@
 [gd_scene load_steps=42 format=3 uid="uid://ctxalywv2jvhu"]
 
-[ext_resource type="Script" path="res://items_new/Arbustos/ar_1.gd" id="1_5ax01"]
+[ext_resource type="Script" path="res://items_new/Vidrio/vidrio.gd" id="1_ywcmq"]
 [ext_resource type="Texture2D" uid="uid://c8fmsh60qygpe" path="res://items_new/Vidrio/T2.png" id="2_cgumn"]
 [ext_resource type="Texture2D" uid="uid://sj3mriq1ewf3" path="res://items_new/Vidrio/T1.png" id="3_074pu"]
 [ext_resource type="Texture2D" uid="uid://d357si06aujq0" path="res://items_new/Vidrio/vidriopix_00000.png" id="4_p2qgj"]
@@ -167,7 +167,7 @@ scale = Vector2(1.2, 1.2)
 collision_layer = 2
 collision_mask = 2
 input_pickable = false
-script = ExtResource("1_5ax01")
+script = ExtResource("1_ywcmq")
 
 [node name="T2" type="Sprite2D" parent="."]
 z_index = -2
@@ -187,13 +187,6 @@ z_as_relative = false
 position = Vector2(71.6667, 106.667)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_3yqpk")
-
-[node name="Vidriopix00000" type="Sprite2D" parent="."]
-z_index = -1
-z_as_relative = false
-position = Vector2(71.6667, 106.667)
-scale = Vector2(2, 2)
-texture = ExtResource("4_p2qgj")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-86.6667, -150, -90, 45, 80, 146.667, 95, -98.3333)

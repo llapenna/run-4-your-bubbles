@@ -1,0 +1,186 @@
+[gd_scene load_steps=38 format=3 uid="uid://ctxalywv2jvhu"]
+
+[ext_resource type="Script" path="res://items_new/Lavador_Auto/limpiaAuto.gd" id="1_sdd1q"]
+[ext_resource type="Texture2D" uid="uid://bjgf6ytqsgyop" path="res://items_new/Lavador_Auto/limpiador_00000.png" id="2_lo3ig"]
+[ext_resource type="Texture2D" uid="uid://8qb8p4lw0c5k" path="res://items_new/Lavador_Auto/limpiador_00001.png" id="3_r4mfo"]
+[ext_resource type="Texture2D" uid="uid://chu4d8cg1b0cl" path="res://items_new/Lavador_Auto/limpiador_00002.png" id="4_buflb"]
+[ext_resource type="Texture2D" uid="uid://di208loyp8bnk" path="res://items_new/Lavador_Auto/limpiador_00003.png" id="5_a6c8w"]
+[ext_resource type="Texture2D" uid="uid://6al2xt6i5cxx" path="res://items_new/Lavador_Auto/limpiador_00004.png" id="6_v3f2q"]
+[ext_resource type="Texture2D" uid="uid://cwvmp3cnnpx8r" path="res://items_new/Lavador_Auto/limpiador_00005.png" id="7_fvdo1"]
+[ext_resource type="Texture2D" uid="uid://crs3nu6i8lcvu" path="res://items_new/Lavador_Auto/limpiador_00006.png" id="8_lred4"]
+[ext_resource type="Texture2D" uid="uid://dm6trgqbfhq34" path="res://items_new/Lavador_Auto/limpiador_00007.png" id="9_a02pe"]
+[ext_resource type="Texture2D" uid="uid://g5j1uskl36e8" path="res://items_new/Lavador_Auto/limpiador_00008.png" id="10_mqmng"]
+[ext_resource type="Texture2D" uid="uid://dics30l7i3wv2" path="res://items_new/Lavador_Auto/limpiador_00009.png" id="11_x781o"]
+[ext_resource type="Texture2D" uid="uid://bpnej33rsnp12" path="res://items_new/Lavador_Auto/limpiador_00010.png" id="12_5adyi"]
+[ext_resource type="Texture2D" uid="uid://cjb0qrnakgrdt" path="res://items_new/Lavador_Auto/limpiador_00011.png" id="13_4u7cy"]
+[ext_resource type="Texture2D" uid="uid://bybdq7nhfme4y" path="res://items_new/Lavador_Auto/limpiador_00012.png" id="14_2ylk1"]
+[ext_resource type="Texture2D" uid="uid://b01616njyw030" path="res://items_new/Lavador_Auto/limpiador_00013.png" id="15_nydcf"]
+[ext_resource type="Texture2D" uid="uid://cpt1phbxgedgr" path="res://items_new/Lavador_Auto/limpiador_00014.png" id="16_7qlcf"]
+[ext_resource type="Texture2D" uid="uid://dljv0rnqve7f3" path="res://items_new/Lavador_Auto/limpiador_00015.png" id="17_yx8to"]
+[ext_resource type="Texture2D" uid="uid://dc7xymtxgxxet" path="res://items_new/Lavador_Auto/limpiador_00016.png" id="18_qsnth"]
+[ext_resource type="Texture2D" uid="uid://ba65hdu2i8fq7" path="res://items_new/Lavador_Auto/limpiador_00017.png" id="19_in7gj"]
+[ext_resource type="Texture2D" uid="uid://cwl05gi5igdyx" path="res://items_new/Lavador_Auto/limpiador_00018.png" id="20_fa3rw"]
+[ext_resource type="Texture2D" uid="uid://b730ryeqxmdvb" path="res://items_new/Lavador_Auto/limpiador_00019.png" id="21_5radx"]
+[ext_resource type="Texture2D" uid="uid://b1cd6in4p6qxj" path="res://items_new/Lavador_Auto/limpiador_00020.png" id="22_x6kfc"]
+[ext_resource type="Texture2D" uid="uid://lmnyuogo5cqq" path="res://items_new/Lavador_Auto/limpiador_00021.png" id="23_8udub"]
+[ext_resource type="Texture2D" uid="uid://b37jo0lkcbe53" path="res://items_new/Lavador_Auto/limpiador_00022.png" id="24_q8gv0"]
+[ext_resource type="Texture2D" uid="uid://cylf7rn3dsrfi" path="res://items_new/Lavador_Auto/limpiador_00023.png" id="25_b4dyb"]
+[ext_resource type="Texture2D" uid="uid://dc1r1ai4tvwgh" path="res://items_new/Lavador_Auto/limpiador_00024.png" id="26_mrtm3"]
+[ext_resource type="Texture2D" uid="uid://ca23fhba5gc4t" path="res://items_new/Lavador_Auto/limpiador_00025.png" id="27_v1qp3"]
+[ext_resource type="Texture2D" uid="uid://dxkw6dg4fh8k4" path="res://items_new/Lavador_Auto/limpiador_00026.png" id="28_7xrl7"]
+[ext_resource type="Texture2D" uid="uid://bbdjeenmx6lh7" path="res://items_new/Lavador_Auto/limpiador_00027.png" id="29_u3xxj"]
+[ext_resource type="Texture2D" uid="uid://dpcufufl16vui" path="res://items_new/Lavador_Auto/limpiador_00028.png" id="30_q3khk"]
+[ext_resource type="Texture2D" uid="uid://wuagytdry7jn" path="res://items_new/Lavador_Auto/limpiador_00029.png" id="31_nl6j8"]
+[ext_resource type="Texture2D" uid="uid://ch5lrrq8idce" path="res://items_new/Lavador_Auto/limpiador_00030.png" id="32_f2ctt"]
+[ext_resource type="Texture2D" uid="uid://cn1a74cksj3o6" path="res://items_new/Lavador_Auto/limpiador_00031.png" id="33_dvxuh"]
+[ext_resource type="Texture2D" uid="uid://duuwsmdyr4y87" path="res://items_new/Lavador_Auto/limpiador_00032.png" id="34_fiy55"]
+[ext_resource type="PackedScene" uid="uid://c4nskme0ww5w4" path="res://sprite_bubble_cloud.tscn" id="35_36vp3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3yqpk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lo3ig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_r4mfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_buflb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a6c8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_v3f2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fvdo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lred4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_a02pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_mqmng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_x781o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5adyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_4u7cy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2ylk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nydcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7qlcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_yx8to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qsnth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_in7gj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fa3rw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5radx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_x6kfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8udub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_q8gv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_b4dyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_mrtm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_v1qp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_7xrl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_u3xxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q3khk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_nl6j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_f2ctt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_dvxuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_fiy55")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o1ug1"]
+radius = 66.0
+height = 132.0
+
+[node name="Bush1" type="Area2D"]
+z_as_relative = false
+position = Vector2(1, 0)
+collision_layer = 2
+collision_mask = 2
+input_pickable = false
+script = ExtResource("1_sdd1q")
+
+[node name="vidrioSprite" type="AnimatedSprite2D" parent="."]
+z_index = -1
+z_as_relative = false
+position = Vector2(481, 48)
+sprite_frames = SubResource("SpriteFrames_3yqpk")
+autoplay = "default"
+frame_progress = 0.870519
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(110, 160)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_o1ug1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(694, 95)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_o1ug1")
+
+[node name="BubbleCloud" parent="." instance=ExtResource("35_36vp3")]
+z_index = 10
+position = Vector2(674, 101)
+
+[node name="BubbleCloud2" parent="." instance=ExtResource("35_36vp3")]
+z_index = 10
+position = Vector2(113, 164)
+rotation = 3.28296
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

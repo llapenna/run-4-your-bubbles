@@ -1,15 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://c012b6kng4pkc"]
+[gd_scene load_steps=5 format=3 uid="uid://c012b6kng4pkc"]
 
 [ext_resource type="Script" path="res://items_new/Conserjes_PowerUp/luigi.gd" id="1_xtr8x"]
 [ext_resource type="Texture2D" uid="uid://etsridyewg03" path="res://items_new/Conserjes_PowerUp/Luiggi.png" id="2_1ex4b"]
+[ext_resource type="PackedScene" uid="uid://c4nskme0ww5w4" path="res://sprite_bubble_cloud.tscn" id="3_uxeur"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bculb"]
-radius = 37.0
+radius = 45.0
 height = 202.0
 
 [node name="Bush1" type="Area2D"]
 z_index = 50
 position = Vector2(-1, 1)
+scale = Vector2(1.1, 1.1)
 collision_layer = 2
 collision_mask = 2
 input_pickable = false
@@ -22,9 +24,17 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_1ex4b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 95)
+position = Vector2(93, 141)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_bculb")
+
+[node name="BubbleCloud" parent="." instance=ExtResource("3_uxeur")]
+position = Vector2(88, 137)
+scale = Vector2(0.7, 0.7)
+
+[node name="BubbleCloud2" parent="." instance=ExtResource("3_uxeur")]
+position = Vector2(138, 144)
+scale = Vector2(0.7, 0.7)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

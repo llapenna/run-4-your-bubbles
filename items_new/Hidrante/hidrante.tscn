@@ -1,6 +1,7 @@
-[gd_scene load_steps=196 format=3 uid="uid://fae52iws45p5"]
+[gd_scene load_steps=197 format=3 uid="uid://fae52iws45p5"]
 
 [ext_resource type="Script" path="res://items_new/Hidrante/hidrante.gd" id="1_vblup"]
+[ext_resource type="PackedScene" uid="uid://c4nskme0ww5w4" path="res://sprite_bubble_cloud.tscn" id="2_ca02x"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bculb"]
 radius = 47.0
@@ -1185,6 +1186,17 @@ scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_nmqdo")
 autoplay = "default"
 frame_progress = 0.658473
+
+[node name="BubbleCloud" parent="." instance=ExtResource("2_ca02x")]
+z_index = 6
+position = Vector2(-116, 102)
+scale = Vector2(0.5, 0.5)
+
+[node name="BubbleCloud2" parent="." instance=ExtResource("2_ca02x")]
+z_index = 6
+position = Vector2(117, 104)
+rotation = -0.120428
+scale = Vector2(-0.5, -0.5)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -11,8 +11,7 @@ var item_list = [
 	preload("res://items_new/Kid_PowerUp/kid.tscn"),
 	preload("res://items_new/Señoras_Obstaculo/ladies.tscn"),
 	preload("res://items_new/Vidrio/vidrio.tscn"),
-	preload("res://items_new/Vidrio/vidrio.tscn"),
-	preload("res://items_new/Vidrio/vidrio.tscn"),
+	preload("res://items_new/Lavador_Auto/limpiaAuto.tscn"),
 ]
 
 var time: float = 1

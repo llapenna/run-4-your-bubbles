@@ -1,0 +1,119 @@
+[gd_scene load_steps=11 format=3 uid="uid://c4nskme0ww5w4"]
+
+[ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="1_yltwa"]
+[ext_resource type="Texture2D" uid="uid://cxth8eeqgxpyk" path="res://assets/Burbujas/Bub (2).png" id="2_m70wk"]
+[ext_resource type="Texture2D" uid="uid://ue35v5hs40qm" path="res://assets/Burbujas/Bub (3).png" id="3_vx77g"]
+[ext_resource type="Texture2D" uid="uid://cctyu7gxhykcc" path="res://assets/Burbujas/Bub (4).png" id="4_of5x6"]
+[ext_resource type="Texture2D" uid="uid://o5mhv6c7edxu" path="res://assets/Burbujas/Bub (5).png" id="5_unnj0"]
+[ext_resource type="Texture2D" uid="uid://d0hx0n3qqbra0" path="res://assets/Burbujas/Bub (6).png" id="6_cpub5"]
+[ext_resource type="Texture2D" uid="uid://b2kra3hsbbjnd" path="res://assets/Burbujas/Bub (7).png" id="7_3nm2j"]
+[ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="8_7stlj"]
+[ext_resource type="Texture2D" uid="uid://dp2k40glu2kq3" path="res://bubbles-player/single-bubble/empty png.png" id="9_xujnc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mvhug"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yltwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m70wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vx77g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_of5x6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_unnj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cpub5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3nm2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7stlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xujnc")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yltwa")
+}],
+"loop": true,
+"name": &"static",
+"speed": 5.0
+}]
+
+[node name="BubbleCloud" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(-61.5, -14.5)
+scale = Vector2(0.17, 0.17)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(-29.833, -41.167)
+scale = Vector2(0.16, 0.16)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(-41.5, 27.167)
+scale = Vector2(0.16, 0.16)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(-3.1663, -1.16699)
+scale = Vector2(0.21, 0.21)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(29.3337, -37)
+scale = Vector2(0.18, 0.18)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(29.3337, 48.833)
+scale = Vector2(0.14, 0.14)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(-4.833, 43)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(51.8337, 20.5)
+scale = Vector2(0.17, 0.166667)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(72.667, -15.333)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_mvhug")
+animation = &"explode"

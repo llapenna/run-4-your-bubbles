@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d1h5hqdk5kdec"]
 
-[ext_resource type="Script" path="res://items_new/Arbustos/ar_1.gd" id="1_5ax01"]
+[ext_resource type="Script" path="res://items_new/Señoras_Obstaculo/ladies.gd" id="1_17nbm"]
 [ext_resource type="Texture2D" uid="uid://c6d71rop5u0up" path="res://items_new/Señoras_Obstaculo/Ladies.png" id="2_5pqnb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bculb"]
@@ -14,7 +14,7 @@ scale = Vector2(0.6, 0.6)
 collision_layer = 2
 collision_mask = 2
 input_pickable = false
-script = ExtResource("1_5ax01")
+script = ExtResource("1_17nbm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 10
