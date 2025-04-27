@@ -1179,7 +1179,7 @@ position = Vector2(1, -87)
 shape = SubResource("CapsuleShape2D_bculb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-z_index = 10
+z_index = 5
 position = Vector2(8, -41)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_nmqdo")
