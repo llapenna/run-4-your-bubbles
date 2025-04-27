@@ -10,7 +10,7 @@ func _physics_process(delta: float) -> void:
 	var speed = $"/root/Main".speed
 	position.x -= speed
 
-	if (global_position.x < (-300)):
+	if (global_position.x < (-1000)):
 		queue_free()
 
 func _on_body_entered(body: Node2D) -> void:
@@ -23,3 +23,5 @@ func _on_area_entered(area: Area2D) -> void:
 	var player = $"/root/Main/Player"
 	player.affectBubbles(itemStrength, isGood)
 	$vidrioSprite.play()
+	$glassShatter.play()
+	$scream.play()

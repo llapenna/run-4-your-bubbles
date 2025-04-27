@@ -1,17 +1,17 @@
 extends Node
 
 var item_list = [
-	preload("res://items_new/Arbustos/ar_1.tscn"),
-	preload("res://items_new/Arbustos/ar_2.tscn"),
-	preload("res://items_new/Arbustos/ar_3.tscn"),
-	preload("res://items_new/Arbustos/ar_4.tscn"),
-	preload("res://items_new/Conserjes_PowerUp/luigi.tscn"),
-	preload("res://items_new/Conserjes_PowerUp/mario.tscn"),
-	preload("res://items_new/Hidrante/hidrante.tscn"),
-	preload("res://items_new/Kid_PowerUp/kid.tscn"),
-	preload("res://items_new/Señoras_Obstaculo/ladies.tscn"),
+	#preload("res://items_new/Arbustos/ar_1.tscn"),
+	#preload("res://items_new/Arbustos/ar_2.tscn"),
+	#preload("res://items_new/Arbustos/ar_3.tscn"),
+	#preload("res://items_new/Arbustos/ar_4.tscn"),
+	#preload("res://items_new/Conserjes_PowerUp/luigi.tscn"),
+	#preload("res://items_new/Conserjes_PowerUp/mario.tscn"),
+	#preload("res://items_new/Hidrante/hidrante.tscn"),
+	#preload("res://items_new/Kid_PowerUp/kid.tscn"),
+	#preload("res://items_new/Señoras_Obstaculo/ladies.tscn"),
 	preload("res://items_new/Vidrio/vidrio.tscn"),
-	preload("res://items_new/Lavador_Auto/limpiaAuto.tscn"),
+	#preload("res://items_new/Lavador_Auto/limpiaAuto.tscn"),
 ]
 
 var time: float = 1

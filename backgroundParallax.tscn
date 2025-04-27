@@ -27,6 +27,7 @@ z_index = -16
 resize = 1.0
 
 [node name="Floor" parent="." instance=ExtResource("1_8hep6")]
+z_index = -2
 position = Vector2(0, 550)
 texture = ExtResource("4_fs80t")
 resize = 1.0

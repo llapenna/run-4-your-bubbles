@@ -18,18 +18,18 @@ script = ExtResource("1_n1a6b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 15
-position = Vector2(5, 68)
+position = Vector2(-84, 173)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("2_j3jid")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(47, 43)
+position = Vector2(21, 58)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_bculb")
 
 [node name="BubbleCloud" parent="." instance=ExtResource("3_xiunk")]
-position = Vector2(44, 42)
-scale = Vector2(0.4, 0.4)
+position = Vector2(18, 59)
+scale = Vector2(0.6, 0.6)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

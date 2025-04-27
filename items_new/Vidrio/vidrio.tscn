@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://ctxalywv2jvhu"]
+[gd_scene load_steps=44 format=3 uid="uid://ctxalywv2jvhu"]
 
 [ext_resource type="Script" path="res://items_new/Vidrio/vidrio.gd" id="1_ywcmq"]
 [ext_resource type="Texture2D" uid="uid://c8fmsh60qygpe" path="res://items_new/Vidrio/T2.png" id="2_cgumn"]
@@ -40,6 +40,8 @@
 [ext_resource type="Texture2D" uid="uid://dgpseupg2j4uw" path="res://items_new/Vidrio/vidriopix_00034.png" id="38_xrt2o"]
 [ext_resource type="Texture2D" uid="uid://dvekts7prjxpp" path="res://items_new/Vidrio/vidriopix_00035.png" id="39_tx10k"]
 [ext_resource type="Texture2D" uid="uid://dgsbxglus1muh" path="res://items_new/Vidrio/vidriopix_00036.png" id="40_inx5g"]
+[ext_resource type="AudioStream" uid="uid://k4ujdxi0ib8u" path="res://audio/glassShatter.ogg" id="41_n1kpv"]
+[ext_resource type="AudioStream" uid="uid://84aanr780eij" path="res://audio/OneShot/Player/Player_Scream_2.ogg" id="42_ogopm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3yqpk"]
 animations = [{
@@ -190,6 +192,13 @@ sprite_frames = SubResource("SpriteFrames_3yqpk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-86.6667, -150, -90, 45, 80, 146.667, 95, -98.3333)
+
+[node name="glassShatter" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("41_n1kpv")
+
+[node name="scream" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("42_ogopm")
+volume_db = 15.0
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
