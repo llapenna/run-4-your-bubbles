@@ -29,10 +29,10 @@ var trigger_time = get_random_time()
 
 func pick_random_instance():
 	var rng = RandomNumberGenerator.new()
-	var index = rng.randi_range(0, item_list.size())
+	var index = rng.randi_range(0, item_list.size()-1)
 	
 	while index == last_index:
-		index = rng.randi_range(0, item_list.size())
+		index = rng.randi_range(0, item_list.size()-1)
 	
 	last_index = index
 	return item_list[index]

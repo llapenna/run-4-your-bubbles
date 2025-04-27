@@ -43,11 +43,13 @@ func get_input():
 	# Prevent ducking if already ducking
 	elif slide_down and is_on_floor() and not is_ducking:
 		$AnimationPlayer.play("SlideDown")  # Play the "SlideDown" animation
+		$AudioSlide.play()
 		is_ducking = true
 		
 	# Handle getting up from ducking
 	elif slide_up and is_on_floor() and is_ducking:
 		$AnimationPlayer.play("SlideUp")  # Play the "SlideUp" animation
+		$AudioSlide.stop()
 		is_ducking = false
 
 	# Handle regular running state (on the ground)
@@ -59,12 +61,10 @@ func get_input():
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "SlideDown":
 		$AnimationPlayer.play("slide")  # Play the sliding animation
-		$AudioSlide.play()
 		is_ducking = true
 		
 	if anim_name == "SlideUp":
 		$AnimationPlayer.play("run")  # Return to running animation after sliding up
-		$AudioSlide.stop()
 		is_ducking = false
 	
 	if anim_name == "jump":
