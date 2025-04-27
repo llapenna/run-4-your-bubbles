@@ -59,10 +59,12 @@ func get_input():
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "SlideDown":
 		$AnimationPlayer.play("slide")  # Play the sliding animation
+		$AudioSlide.play()
 		is_ducking = true
 		
 	if anim_name == "SlideUp":
 		$AnimationPlayer.play("run")  # Return to running animation after sliding up
+		$AudioSlide.stop()
 		is_ducking = false
 	
 	if anim_name == "jump":

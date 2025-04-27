@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=3 uid="uid://cobitw0jlcec0"]
+[gd_scene load_steps=85 format=3 uid="uid://cobitw0jlcec0"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_ud835"]
 [ext_resource type="Texture2D" uid="uid://dbrx4fc1dxo4g" path="res://player/Jump/Jump (1).png" id="2_4piiv"]
@@ -71,6 +71,7 @@
 [ext_resource type="Texture2D" uid="uid://cqe5waddelsaa" path="res://player/Slide/Slide (34).png" id="35_w7aer"]
 [ext_resource type="Texture2D" uid="uid://g3hx2jaigbvk" path="res://player/Run/Run (21).png" id="36_00nia"]
 [ext_resource type="AudioStream" uid="uid://c5tyxl28nineu" path="res://audio/Loops/Player/Player_Barefoot_Loop.ogg" id="71_0hsqh"]
+[ext_resource type="AudioStream" uid="uid://ccfvt04yxjbip" path="res://audio/Loops/Player/Player_Slide_Loop_1.ogg" id="72_kexfa"]
 [ext_resource type="PackedScene" uid="uid://dmotfnmgns03i" path="res://bubbles-player/bubbles.tscn" id="72_uoy4q"]
 [ext_resource type="AudioStream" uid="uid://cm1f6dk1ni8pm" path="res://audio/OneShot/Global/Power_Up_1.ogg" id="73_rsmai"]
 [ext_resource type="AudioStream" uid="uid://4bdt6ppi2ac0" path="res://audio/OneShot/Global/Power_Down_1.wav" id="74_cimai"]
@@ -571,6 +572,11 @@ autoplay = "run"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("71_0hsqh")
 volume_db = 3.0
+
+[node name="AudioSlide" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("72_kexfa")
+volume_db = 3.0
+parameters/looping = false
 
 [node name="BubbleCloud" parent="." instance=ExtResource("72_uoy4q")]
 position = Vector2(-32, 30)

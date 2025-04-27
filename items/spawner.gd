@@ -15,9 +15,10 @@ var item_list = [
 ]
 
 var time: float = 1
-@export var minimumTime = time * 2 * 1000 # 2 seconds
-@export var maximumTime = time * 5 * 1000 # 5 seconds
+@export var minimumTime = time * 1.5 * 1000 # 1.5 seconds
+@export var maximumTime = time * 4 * 1000 # 4 seconds
 var elapsed_time = 0
+var last_index = 0
 
 func get_random_time():
 	var rng = RandomNumberGenerator.new()
@@ -30,6 +31,10 @@ func pick_random_instance():
 	var rng = RandomNumberGenerator.new()
 	var index = rng.randf_range(0, item_list.size())
 	
+	while index == last_index:
+		index = rng.randf_range(0, item_list.size())
+	
+	last_index = index
 	return item_list[index]
 
 func spawn():
