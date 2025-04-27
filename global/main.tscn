@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dt16av3gwv058"]
 
 [ext_resource type="Script" path="res://global/main.gd" id="1_a40dn"]
-[ext_resource type="PackedScene" uid="uid://cf122xxe7tu2c" path="res://parallaxBg.tscn" id="6_y2lx5"]
+[ext_resource type="PackedScene" uid="uid://dmrvlsa441bdp" path="res://backgroundParallax.tscn" id="2_kqvka"]
 [ext_resource type="PackedScene" uid="uid://bfj8u884cbgvn" path="res://items/Spawner.tscn" id="7_4x6uh"]
 [ext_resource type="PackedScene" uid="uid://cobitw0jlcec0" path="res://player/player.tscn" id="7_hi7x6"]
 [ext_resource type="PackedScene" uid="uid://b3eut8dox8t1n" path="res://audio/audio.tscn" id="8_f6raq"]
@@ -11,13 +11,12 @@
 size = Vector2(2522.5, 254.5)
 
 [node name="Main" type="Node2D"]
+position = Vector2(0, 50)
 script = ExtResource("1_a40dn")
 acceleration = 0.05
 initialSpeed = 10.0
 
-[node name="Background" parent="." instance=ExtResource("6_y2lx5")]
-z_index = -10
-position = Vector2(0, 400)
+[node name="Background" parent="." instance=ExtResource("2_kqvka")]
 
 [node name="Player" parent="." instance=ExtResource("7_hi7x6")]
 position = Vector2(245, 702)
@@ -25,6 +24,7 @@ position = Vector2(245, 702)
 [node name="Audio" parent="." instance=ExtResource("8_f6raq")]
 
 [node name="UI" type="Node2D" parent="."]
+position = Vector2(0, -75)
 
 [node name="LifeBar" parent="UI" instance=ExtResource("8_w7qui")]
 z_index = 1000
