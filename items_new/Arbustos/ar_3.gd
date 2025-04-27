@@ -8,7 +8,7 @@ func _physics_process(delta: float) -> void:
 	#print($CollisionShape2D.global_position)
 	
 	var speed = $"/root/Main".speed
-	position.x -= (speed/2)
+	position.x -= speed
 
 	if (global_position.x < (-100)):
 		queue_free()
