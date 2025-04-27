@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://7aw3yaguwkh7"]
 
-[ext_resource type="Script" path="res://bubbles-player/single-bubble/bubble.gd" id="1_tgmx8"]
+[ext_resource type="Script" path="res://bubblesPlayer/singleBubble/bubble.gd" id="1_tgmx8"]
 [ext_resource type="Texture2D" uid="uid://drd83fbt1b7mb" path="res://assets/Burbujas/Bub (1).png" id="2_u8lal"]
 [ext_resource type="Texture2D" uid="uid://cxth8eeqgxpyk" path="res://assets/Burbujas/Bub (2).png" id="3_wuy6q"]
 [ext_resource type="Texture2D" uid="uid://ue35v5hs40qm" path="res://assets/Burbujas/Bub (3).png" id="4_vqttv"]
@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d0hx0n3qqbra0" path="res://assets/Burbujas/Bub (6).png" id="7_eim5o"]
 [ext_resource type="Texture2D" uid="uid://b2kra3hsbbjnd" path="res://assets/Burbujas/Bub (7).png" id="8_qow0n"]
 [ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="9_rl8ug"]
-[ext_resource type="Texture2D" uid="uid://dp2k40glu2kq3" path="res://bubbles-player/single-bubble/empty png.png" id="10_bl68c"]
+[ext_resource type="Texture2D" uid="uid://dp2k40glu2kq3" path="res://bubblesPlayer/singleBubble/empty png.png" id="10_bl68c"]
 [ext_resource type="AudioStream" uid="uid://bo52cgpf2fhoi" path="res://audio/OneShot/Bubbles/Bubble_Pop_1.ogg" id="11_lwj0s"]
 [ext_resource type="AudioStream" uid="uid://0ckoli2f67kw" path="res://audio/OneShot/Bubbles/Bubble_Pop_2.ogg" id="12_1yoro"]
 [ext_resource type="AudioStream" uid="uid://ba3nml1csvem7" path="res://audio/OneShot/Bubbles/Bubble_Pop_3.ogg" id="13_4cpfx"]

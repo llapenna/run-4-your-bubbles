@@ -1,6 +1,6 @@
 extends Node2D
 
-var bubbleScene = preload("res://bubbles-player/single-bubble/bubble.tscn")
+var bubbleScene = preload("res://bubblesPlayer/singleBubble/bubble.tscn")
 
 var bubbles = []
 var posOrigin

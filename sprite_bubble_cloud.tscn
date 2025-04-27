@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://d0hx0n3qqbra0" path="res://assets/Burbujas/Bub (6).png" id="6_cpub5"]
 [ext_resource type="Texture2D" uid="uid://b2kra3hsbbjnd" path="res://assets/Burbujas/Bub (7).png" id="7_3nm2j"]
 [ext_resource type="Texture2D" uid="uid://dwb0lfpkh1drm" path="res://assets/Burbujas/Bub (8).png" id="8_7stlj"]
-[ext_resource type="Texture2D" uid="uid://dp2k40glu2kq3" path="res://bubbles-player/single-bubble/empty png.png" id="9_xujnc"]
+[ext_resource type="Texture2D" uid="uid://dp2k40glu2kq3" path="res://bubblesPlayer/singleBubble/empty png.png" id="9_xujnc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mvhug"]
 animations = [{

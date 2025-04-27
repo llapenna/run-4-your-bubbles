@@ -1168,7 +1168,8 @@ animations = [{
 }]
 
 [node name="Bush1" type="Area2D"]
-z_index = 50
+z_index = -3
+z_as_relative = false
 position = Vector2(-1, 1)
 collision_layer = 2
 collision_mask = 2
@@ -1180,7 +1181,6 @@ position = Vector2(1, -87)
 shape = SubResource("CapsuleShape2D_bculb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-z_index = 5
 position = Vector2(8, -41)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_nmqdo")
@@ -1188,12 +1188,12 @@ autoplay = "default"
 frame_progress = 0.658473
 
 [node name="BubbleCloud" parent="." instance=ExtResource("2_ca02x")]
-z_index = 6
+z_index = 10
 position = Vector2(-116, 102)
 scale = Vector2(0.5, 0.5)
 
 [node name="BubbleCloud2" parent="." instance=ExtResource("2_ca02x")]
-z_index = 6
+z_index = 10
 position = Vector2(117, 104)
 rotation = -0.120428
 scale = Vector2(-0.5, -0.5)

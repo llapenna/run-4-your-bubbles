@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dmotfnmgns03i"]
 
-[ext_resource type="Script" path="res://bubbles-player/bubbles.gd" id="1_4775h"]
+[ext_resource type="Script" path="res://bubblesPlayer/bubbles.gd" id="1_4775h"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dvylh"]
 radius = 36.8782

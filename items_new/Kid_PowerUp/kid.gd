@@ -1,6 +1,6 @@
 extends Area2D
 
-var itemStrength = 20
+var itemStrength = 5
 var isGood: bool = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
